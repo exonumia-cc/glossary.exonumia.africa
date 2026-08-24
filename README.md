@@ -34,7 +34,7 @@ static host.
 | `i18n/<code>.json` | One file per language — the data that changes when a translation lands |
 | `conversion-script.py` | Turns the translators' CSV exports into the `i18n/` files |
 | `tests/` | Unittest suite asserting the documented data claims and helper behavior |
-| `.claude/skills/glossary-localization/` | Self-contained agent skill teaching LLM coding agents to localize with this glossary — `SKILL.md`, the termbase helper in `scripts/glossary.py` (lookup, text scan, reverse lookup), and `references/eval-plan.md` |
+| `.claude/skills/glossary-localization/` | Self-contained agent skill teaching LLM coding agents to localize with this glossary — `SKILL.md`, the termbase helper in `scripts/glossary.py` (lookup, text scan, reverse and cross-language reverse lookup), and `references/eval-plan.md` |
 
 ## The data
 
@@ -140,13 +140,23 @@ title-cased slug until you add a label there.
 python3 -m unittest discover -s tests
 ```
 
-Stdlib `unittest`, no dependencies. `tests/test_glossary_data.py` asserts the factual claims
-this README and the agent skill make about the data (term count, category slugs, language
-alignment, entry shape) and tracks data hygiene — multi-variant (`/`) and trailing-period
-term fields may only ever shrink. `tests/test_glossary.py` unit-tests the skill's helper
-(`.claude/skills/glossary-localization/scripts/glossary.py`)
-against a synthetic fixture that includes a deliberately untranslated entry, a gap the real
-data does not currently exercise.
+Stdlib `unittest`, no dependencies, run against Python 3.9, 3.12 and 3.13 in CI.
+
+`tests/test_glossary_data.py` asserts the factual claims this README and the agent skill
+make about the data — term count, category slugs, language alignment, entry shape — and
+pins three baselines that should only move deliberately: multi-variant (`/`) term fields,
+trailing-period term fields, and strings whose translation serves two distinct concepts
+(`Erey dib usoocelin` is both `passphrase` and `recovery-words`). It also locks the exact
+set of entries the helper treats as safety-critical, so editing a `notes` field cannot
+silently widen or narrow it. The baselines are exact rather than upper bounds: cleaning
+data up is meant to fail the test, so the improvement gets recorded instead of leaving
+room to regress back.
+
+`tests/test_glossary.py` unit-tests the skill's helper
+(`.claude/skills/glossary-localization/scripts/glossary.py`) against a synthetic fixture
+that mirrors three gaps the real data does not exercise on its own: an entry one language
+has not translated, two concepts sharing a single translation, and a value sitting in a
+file of the wrong language.
 
 ## Deploying
 

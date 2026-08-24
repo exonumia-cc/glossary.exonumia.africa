@@ -13,8 +13,9 @@ or scan free text for covered terms::
     g.lookup("seed phrase")                 # English term -> entry + translations
     g.scan("Send bitcoin to this address")  # glossary terms found in free text
     g.reverse("Orodha ya maneno", "sw")     # translated term -> entry
+    g.reverse_any("Baaqiga")                # ...when you do not know the language
 
-Everything is stdlib-only; no dependencies to install.
+Everything is stdlib-only; no dependencies to install. Python 3.9+.
 """
 
 from __future__ import annotations
@@ -29,13 +30,32 @@ from pathlib import Path
 #: are working outside the glossary repository.
 BASE_URL = "https://glossary.exonumia.africa/i18n"
 
+#: Seconds to wait on a remote load before giving up. Without this urllib
+#: inherits the default socket timeout, which is ``None`` — an unreachable
+#: host would hang an agent indefinitely rather than failing.
+DEFAULT_TIMEOUT = 30
+
 #: English ``notes`` matching this pattern flag strings where a mistranslation
-#: can cost the user money ("Extremely safety-critical.", "High-priority UI
-#: warning.", "Never mistranslate. Extremely high risk."). Route those to a
-#: human reviewer instead of shipping them silently.
+#: can cost the user money ("Extremely safety-critical.", "High-risk action.",
+#: "Never mistranslate. Extremely high risk."). Route those to a human
+#: reviewer instead of shipping them silently.
+#:
+#: Deliberately phrase-scoped rather than matching bare "critical": some notes
+#: use that word for presentation constraints, not risk — ``session-timeout``
+#: is "Critical for feature phones ... must be very brief", which is a
+#: screen-width note, not a financial one. Widen this only with a phrase that
+#: actually denotes risk, and update ``tests/test_glossary_data.py``.
 SAFETY_RE = re.compile(
-    r"safety|critical|warning|high.risk|never mistranslate", re.IGNORECASE
+    r"safety|high[- ]risk|never mistranslate"
+    r"|extremely critical|critical educational|high[- ]priority ui warning",
+    re.IGNORECASE,
 )
+
+#: Categories that hold generic interface chrome ("Back", "Next", "Save")
+#: rather than domain vocabulary. ``scan`` still reports them — you do want
+#: button labels translated consistently — but they match ordinary English
+#: prose freely, so weigh them differently from a ``concepts`` hit.
+CHROME_CATEGORIES = ("ui", "wallet-ui")
 
 
 def _normalize(text: str) -> str:
@@ -62,8 +82,8 @@ class Glossary:
     def __init__(self, data: dict[str, dict[str, list[dict]]]):
         self.data = data
         self.langs = list(data)
-        # (category, key) -> {lang: entry}; None for a language that has not
-        # translated the entry yet.
+        # (category, key) -> {lang: entry}; a language missing from the slot
+        # has not translated the entry yet.
         self._entries: dict[tuple[str, str], dict] = {}
         for lang, categories in data.items():
             for category, entries in categories.items():
@@ -72,12 +92,18 @@ class Glossary:
                     slot[lang] = entry
 
     @classmethod
-    def load(cls, source: str | Path = "i18n") -> "Glossary":
-        """Load from a local ``i18n/`` directory or an HTTP base URL."""
+    def load(cls, source: str | Path = "i18n",
+             timeout: float = DEFAULT_TIMEOUT) -> "Glossary":
+        """Load from a local ``i18n/`` directory or an HTTP base URL.
+
+        ``timeout`` applies to remote loads only, and defaults to
+        ``DEFAULT_TIMEOUT`` so a blocked network fails fast.
+        """
         source = str(source)
         if source.startswith(("http://", "https://")):
             def read(name: str) -> dict:
-                with urllib.request.urlopen(f"{source.rstrip('/')}/{name}") as r:
+                url = f"{source.rstrip('/')}/{name}"
+                with urllib.request.urlopen(url, timeout=timeout) as r:
                     return json.loads(r.read().decode("utf-8"))
         else:
             base = Path(source)
@@ -117,17 +143,25 @@ class Glossary:
                 return self._translations(category, key)
         return None
 
-    def scan(self, text: str, lang: str = "en") -> list[dict]:
+    def scan(self, text: str, lang: str = "en",
+             categories: tuple[str, ...] | None = None) -> list[dict]:
         """Find glossary terms inside free text, longest match first.
 
         Returns one ``lookup``-style dict per distinct term found, so you can
         extract the domain vocabulary of a screen or paragraph before
         translating it. Matching is case- and diacritic-insensitive on word
         boundaries; overlapping matches keep the longest term.
+
+        Every result carries its ``category``. Short entries in the
+        ``CHROME_CATEGORIES`` — "Back", "Next", "Save" — match ordinary
+        English freely, so check the category before treating a hit as
+        domain terminology. Pass ``categories`` to restrict the scan.
         """
         haystack = _normalize(text)
         needles = []  # (normalized term, category, key), longest first
         for (category, key), slot in self._entries.items():
+            if categories is not None and category not in categories:
+                continue
             entry = slot.get(lang)
             if entry:
                 needles.append((_normalize(entry["term"]), category, key))
@@ -146,28 +180,68 @@ class Glossary:
                     break
         return found
 
-    def reverse(self, term: str, lang: str) -> dict | None:
-        """Match a translated term back to its glossary entry.
+    def reverse_all(self, term: str, lang: str) -> list[dict]:
+        """Every glossary concept a translated term could belong to.
 
-        The direction needed when reviewing an existing translation file:
-        given e.g. a Kiswahili string from an app's ``strings.sw.json``, find
-        the concept it belongs to. Matches the whole ``term`` field or any
-        single candidate of a multi-variant (``/``) field, ignoring trailing
-        sentence punctuation. Prefers an exact case-sensitive match (so
-        ``Bitcoin`` and ``bitcoin`` stay distinct); falls back to case- and
-        diacritic-insensitive matching.
+        Distinct concepts genuinely share a translation — Soomaali
+        ``Erey dib usoocelin`` is both ``passphrase`` and ``recovery-words``,
+        Gĩkũyũ ``Kugura`` is both ``limit-order`` and ``market-order``. When
+        reviewing a translation file you need to see the whole set, not one
+        arbitrary pick.
+
+        Matches the whole ``term`` field or any single candidate of a
+        multi-variant (``/``) field, ignoring trailing sentence punctuation.
+        Case-sensitive matches win outright (so ``Bitcoin`` the network and
+        ``bitcoin`` the currency stay distinct); only if none exist does it
+        fall back to case- and diacritic-insensitive matching.
         """
         query = term.strip().rstrip(".")
         for match in (lambda c: c == query,
                       lambda c: _normalize(c) == _normalize(query)):
+            hits = []
             for (category, key), slot in self._entries.items():
                 entry = slot.get(lang)
                 if not entry:
                     continue
                 candidates = [entry["term"], *variants(entry["term"])]
                 if any(match(c.rstrip(".")) for c in candidates):
-                    return self._translations(category, key)
-        return None
+                    hits.append(self._translations(category, key))
+            if hits:
+                return hits
+        return []
+
+    def reverse(self, term: str, lang: str) -> dict | None:
+        """Match a translated term back to its glossary entry.
+
+        The direction needed when reviewing an existing translation file:
+        given e.g. a Kiswahili string from an app's ``strings.sw.json``, find
+        the concept it belongs to. Returns the first match, and when the
+        string is genuinely ambiguous adds an ``"ambiguous"`` key listing the
+        other concepts it could equally be — confirm those with the user
+        rather than guessing. Use ``reverse_all`` to get the full set.
+        """
+        hits = self.reverse_all(term, lang)
+        if not hits:
+            return None
+        first = dict(hits[0])
+        if len(hits) > 1:
+            first["ambiguous"] = [h["key"] for h in hits[1:]]
+        return first
+
+    def reverse_any(self, term: str) -> list[dict]:
+        """Reverse-look a term up across every language.
+
+        Use when you do not know which language a string is in — including
+        the case that proves it: a value in the wrong language for the file
+        it sits in. ``reverse(value, "sw")`` returning ``None`` while
+        ``reverse_any(value)`` matches under ``so`` is exactly that finding.
+        Each result carries ``matched_lang``.
+        """
+        return [
+            {**hit, "matched_lang": lang}
+            for lang in self.langs
+            for hit in self.reverse_all(term, lang)
+        ]
 
 
 if __name__ == "__main__":

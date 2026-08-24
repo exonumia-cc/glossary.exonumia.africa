@@ -8,9 +8,15 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # The skill's `compatibility` frontmatter claims Python 3.9+; test the
+        # floor, a current release, and the newest so the claim stays true.
+        python-version: ["3.9", "3.12", "3.13"]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: ${{ matrix.python-version }}
       - run: python -m unittest discover -s tests -v

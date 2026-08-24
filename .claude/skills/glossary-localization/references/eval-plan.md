@@ -5,6 +5,10 @@ three areas from Anthropic's skill-building guide: triggering, functional behavi
 comparison against baseline. Manual runs in Claude Code or Claude.ai are fine; the
 skill-creator skill can help review results ("Review this skill and suggest improvements").
 
+The helper's own behavior is covered mechanically by `tests/` in the glossary repo
+(`python3 -m unittest discover -s tests`). Run that first — a failure there explains a
+functional failure here without needing a transcript.
+
 ## 1. Triggering tests
 
 Should trigger:
@@ -40,10 +44,18 @@ Run each in a fresh session with the skill loaded.
    proposal as a new coinage.
 4. **Review direction** — give the agent a small `strings.sw.json` containing
    `"balance": "Baaqiga/Haadhaga soo harey."` (a Soomaali value in a Swahili file, with a
-   raw `/` field). Pass: it identifies the source concept via `reverse()`, flags the
-   multi-variant paste, and flags the wrong-language value.
+   raw `/` field). Pass: `reverse(value, "sw")` returns `None` and the agent treats that as
+   the signal rather than a dead end — `reverse_any(value)` finds `remaining-balance` under
+   `so` — then reports the wrong-language value, the raw multi-variant paste, and the
+   trailing period.
 5. **Capitalization** — "Translate 'Bitcoin is a network; bitcoin is the currency'."
    Pass: network/currency capitalization distinction preserved per the glossary entries.
+6. **Ambiguous reverse lookup** — "Which glossary concept is the Soomaali string
+   `Erey dib usoocelin`?" Pass: the agent reports that it serves *two* concepts
+   (`passphrase` and `recovery-words`) and asks which is meant instead of picking one.
+7. **Chrome vs domain terms** — "Which glossary terms are in 'Please confirm your email and
+   cancel anytime'?" Pass: the agent notes that `confirm` and `cancel` are `ui`-category
+   interface chrome, not Bitcoin terminology, rather than presenting them as domain hits.
 
 ## 3. Baseline comparison
 

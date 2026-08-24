@@ -2,10 +2,10 @@
 name: glossary-localization
 description: Localize apps and copy with the exonumia.africa multilingual Bitcoin glossary (English, Gĩkũyũ, Kiswahili, Soomaali) so terminology stays consistent and community-vetted. Use when translating or reviewing Bitcoin, Lightning, or mobile-money UI strings, app copy, or documentation in these languages — for example when the user asks to "translate my app to Swahili", "localize my Bitcoin wallet", "review my strings.sw.json", or "check this translation against the glossary". Not for general translation unrelated to Bitcoin, Lightning, or mobile money.
 license: MIT
-compatibility: Requires Python 3 (stdlib only) for the bundled helper script. Network access is needed only when loading the glossary from the published URL instead of a local checkout.
+compatibility: Requires Python 3.9+ (stdlib only) for the bundled helper script. Network access is needed only when loading the glossary from the published URL instead of a local checkout.
 metadata:
   author: exonumia.africa
-  version: 1.1.0
+  version: 1.2.0
 ---
 
 # Glossary-driven localization
@@ -24,10 +24,11 @@ Three rules override everything else in this skill:
    *lists of candidate translations* — pick one, say which. Some fields end in a spurious
    sentence period — strip it for UI labels. See "Term fields are data, not paste-ready
    copy".
-2. **Never ship a safety-critical translation without human review.** Entries flagged
-   `"safety_critical": True` (seed phrases, private keys, address verification) have
-   financial consequences if mistranslated — mark your translation as machine-assisted and
-   escalate it. See "Safety-critical strings need human review".
+2. **Never ship a safety-critical translation without human review.** Fourteen entries
+   (seed phrases, private keys, address verification) have financial consequences if
+   mistranslated — mark your translation as machine-assisted and escalate it. The helper
+   flags them as `"safety_critical": True`; working from raw JSON, match the English `notes`
+   phrasings listed under "Safety-critical strings need human review".
 3. **Never silently invent a translation for a term the glossary does not cover.** A
    missing entry means no community-vetted translation exists — flag it, or propose a
    coinage clearly marked as new.
@@ -59,18 +60,30 @@ g = Glossary.load("https://glossary.exonumia.africa/i18n")  # remote, from any p
 g.lookup("seed phrase")     # English term -> {category, key, en, ki, sw, so, ...}
 g.scan("Never share your seed phrase")  # glossary terms found inside free text
 g.reverse("jiganiru", "ki")             # translated term -> its glossary entry
+g.reverse_any("Baaqiga")                # ...when you do not know which language it is
 ```
 
 - `lookup()` — exact match on an English term or its key. Returns `None` per language for
   entries that language has not translated yet, and adds `"safety_critical": True` when the
   English `notes` flag the entry.
-- `scan(text)` — finds glossary terms *inside* a sentence (longest match first, case- and
-  diacritic-insensitive). This is the hard first step of any translation job: extracting
-  which domain terms the copy actually contains.
+- `scan(text, lang="en", categories=None)` — finds glossary terms *inside* a sentence
+  (longest match first, case- and diacritic-insensitive). This is the hard first step of any
+  translation job. Every hit carries its `category`, and that matters: `ui` and `wallet-ui`
+  hold generic interface chrome ("Back", "Next", "Save", "Confirm") that matches ordinary
+  English freely. Weigh those differently from a `concepts` hit, or pass `categories=` to
+  restrict the scan.
 - `reverse(term, lang)` — translated term → entry, for reviewing an existing translation
   file. Matches whole fields and single candidates of multi-variant fields; prefers an
-  exact case-sensitive match.
+  exact case-sensitive match. When a string genuinely serves two concepts it adds
+  `"ambiguous": [other keys]` — confirm with the user rather than taking the first.
+- `reverse_all(term, lang)` — every concept the string could belong to, not just the first.
+- `reverse_any(term)` — sweeps all four languages, tagging each hit with `matched_lang`.
+  Reach for it when `reverse()` returns `None`: a hit under a different language means the
+  file holds a wrong-language value.
 - `variants(term)` — splits a multi-variant (`/`) field into its candidate translations.
+
+`Glossary.load` accepts `timeout=` (default 30s) for remote loads, so a blocked network
+fails instead of hanging.
 
 If you are not in a Python environment, the rules below are enough to work directly with
 the JSON.
@@ -95,7 +108,8 @@ of entries:
 - `explanation` — a plain-language definition, useful as context when choosing between
   possible translations.
 - `notes` — translator guidance. Respect it when translating, but never surface it in
-  user-facing copy. Often empty.
+  user-facing copy. Often empty. The English `notes` are also where the safety flags come
+  from — there is no `safety_critical` field in the JSON itself.
 - A language may omit an entry it has not translated yet — that is Critical rule 3's
   trigger.
 
@@ -127,7 +141,9 @@ and route it to a human reviewer — Critical rule 2. `lookup()` surfaces these 
 
 ### 1. Translate new copy
 
-1. `g.scan(copy_text)` to extract every glossary-covered term in the source text.
+1. `g.scan(copy_text)` to extract every glossary-covered term in the source text, then
+   check each hit's `category` — `ui`/`wallet-ui` hits are interface chrome, not domain
+   terminology.
 2. Translate the copy, using one chosen variant per matched term (Critical rule 1).
 3. Read each matched entry's `explanation` and `notes` first — several terms have subtle
    distinctions (e.g. `Bitcoin` the network vs `bitcoin (BTC)` the currency; "avoid
@@ -143,6 +159,10 @@ concept it claims to translate. Then check:
 
 - the value uses one of the glossary's variants for that concept (a mismatch is either an
   inconsistency to fix or a deliberate choice to confirm with the user);
+- results carrying `"ambiguous"` — that string serves two concepts, so ask which is meant
+  instead of assuming the first;
+- values where `reverse()` returns `None` — run `g.reverse_any(value)`; a hit under another
+  language means the value is in the wrong language for this file;
 - the same concept is translated the same way everywhere in the file;
 - no value pastes a raw multi-variant (`/`) field;
 - every `safety_critical` concept has had human review.
@@ -166,18 +186,25 @@ User says: "Translate my wallet's settings screen into Kiswahili."
 User says: "Review my `strings.sw.json` against the glossary."
 
 1. For each value, `g.reverse(value, "sw")` → concept key.
-2. Flag values that match no entry (uncovered or divergent), values that paste a raw `/`
-   field, and concepts translated two different ways in the same file.
+2. Flag values that match no entry (re-check those with `reverse_any()` — they may be in
+   the wrong language), results carrying `"ambiguous"`, values that paste a raw `/` field,
+   and concepts translated two different ways in the same file.
 3. Result: a mismatch report keyed by concept, plus the list of `safety_critical` strings
    requiring human sign-off.
 
 ## Troubleshooting
 
-- **Remote load fails** (`URLError`, network blocked): use a local checkout's `i18n/`
-  directory instead, or attach the JSON files to the conversation and load them from disk.
-  The data is identical.
+- **Remote load fails** (`URLError`, timeout, network blocked): use a local checkout's
+  `i18n/` directory instead, or attach the JSON files to the conversation and load them from
+  disk. The data is identical. `Glossary.load(..., timeout=N)` adjusts the 30s default.
 - **`lookup()` returns `None`**: the term is not covered — apply Critical rule 3. Try the
   key slug form (`"seed-phrase"`) if the display-term form found nothing.
+- **`reverse()` returns `None`**: the string is not a glossary translation in that language.
+  Try `reverse_any()` — a hit under another language means the file has a wrong-language
+  value, which is itself the finding.
+- **`reverse()` result carries `"ambiguous"`**: two concepts share that translation — e.g.
+  Soomaali `Erey dib usoocelin` is both `passphrase` and `recovery-words`. Ask the user
+  which is meant; do not rewrite the string on a guess.
 - **`reverse()` matches the wrong entry**: it prefers case-sensitive matches, so pass the
   string with its original casing; if a match still looks wrong, confirm with the user
   rather than rewriting the string.
