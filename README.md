@@ -33,6 +33,9 @@ static host.
 | `i18n/manifest.json` | Lists the language codes, in column order |
 | `i18n/<code>.json` | One file per language — the data that changes when a translation lands |
 | `conversion-script.py` | Turns the translators' CSV exports into the `i18n/` files |
+| `scripts/glossary.py` | Stdlib-only helper for using the glossary as a termbase — lookup, text scan, reverse lookup |
+| `tests/` | Unittest suite asserting the documented data claims and helper behavior |
+| `.claude/skills/glossary-localization/SKILL.md` | Agent skill teaching LLM coding agents to localize with this glossary |
 
 ## The data
 
@@ -94,6 +97,14 @@ in that cell and keeps the row aligned.
    rows, and rows missing a category or English term. **Read the warnings** — a partially filled
    sheet still produces valid output, so nothing forces you to notice the gaps.
 
+   Then run the test suite — it asserts the documented counts and category slugs against the
+   regenerated files, so a regeneration that changes them fails loudly instead of letting the
+   docs drift:
+
+   ```bash
+   python3 -m unittest discover -s tests
+   ```
+
 3. **Check the display name.** `LANG_META` at the top of `app.js` maps codes to the names shown
    in the column header and filter chip, and carries `dir: 'rtl'` where needed. It already covers
    `en ki sw so am ha yo ig zu xh st tn sn ln lg wo af fr pt ar`. An unlisted code still renders —
@@ -123,6 +134,19 @@ title-cased slug until you add a label there.
   entry, clearing filters if it is currently hidden. Hovering a row reveals a `§` permalink.
 - **Keyboard** — `/` focuses search, `Escape` clears it.
 - Theme, language and sidebar choices persist under the `exonumia-` prefix in `localStorage`.
+
+## Tests
+
+```bash
+python3 -m unittest discover -s tests
+```
+
+Stdlib `unittest`, no dependencies. `tests/test_glossary_data.py` asserts the factual claims
+this README and the agent skill make about the data (term count, category slugs, language
+alignment, entry shape) and tracks data hygiene — multi-variant (`/`) and trailing-period
+term fields may only ever shrink. `tests/test_glossary.py` unit-tests `scripts/glossary.py`
+against a synthetic fixture that includes a deliberately untranslated entry, a gap the real
+data does not currently exercise.
 
 ## Deploying
 
