@@ -13,8 +13,8 @@ exonumia.africa. Translations are community contributions and remain a work in p
 ## Running it
 
 Static HTML, CSS and JavaScript — no build step, no dependencies, no framework. It does need to
-be served over HTTP, because the page fetches `glossary.json` and browsers block that on
-`file://` URLs.
+be served over HTTP, because the page fetches the JSON files under `i18n/` and browsers block
+that on `file://` URLs.
 
 ```bash
 python3 -m http.server 4173
@@ -30,26 +30,29 @@ static host.
 | `index.html` | Page shell — masthead, toolbar, sidebar, footer |
 | `styles.css` | Dictionary theme, light and dark, responsive |
 | `app.js` | Loads the JSON, builds the model, renders and filters |
-| `glossary.json` | The data — the only file that changes when a translation lands |
-| `conversion-script.py` | Turns the translators' CSV exports into `glossary.json` |
+| `i18n/manifest.json` | Lists the language codes, in column order |
+| `i18n/<code>.json` | One file per language — the data that changes when a translation lands |
+| `conversion-script.py` | Turns the translators' CSV exports into the `i18n/` files |
 
 ## The data
 
-`glossary.json` is keyed by language, then by category, then a list of entries:
+Each language lives in its own file, `i18n/<code>.json`, keyed by category, then a list of
+entries. `i18n/manifest.json` holds the language codes in the order the columns should appear:
+
+```json
+["en", "ki", "sw", "so"]
+```
 
 ```json
 {
-  "en": {
-    "concepts": [
-      {
-        "key": "bitcoin",
-        "term": "Bitcoin",
-        "explanation": "A decentralized digital money network that works without banks or governments.",
-        "notes": "Distinguish network vs currency carefully."
-      }
-    ]
-  },
-  "ki": { "concepts": [ { "key": "bitcoin", "term": "Bitcoin", "…": "…" } ] }
+  "concepts": [
+    {
+      "key": "bitcoin",
+      "term": "Bitcoin",
+      "explanation": "A decentralized digital money network that works without banks or governments.",
+      "notes": "Distinguish network vs currency carefully."
+    }
+  ]
 }
 ```
 
@@ -72,11 +75,11 @@ in that cell and keeps the row aligned.
    The first column is blank, row 1 is blank, row 2 is the header. Columns are read by position,
    so the exact wording of the header does not matter.
 
-2. **Regenerate the JSON**, passing *every* sheet — the file is rebuilt from scratch each time,
+2. **Regenerate the JSON**, passing *every* sheet — the files are rebuilt from scratch each time,
    not patched:
 
    ```bash
-   python3 conversion-script.py glossary.json \
+   python3 conversion-script.py i18n \
      ki="Glossary - Kikuyu SHARED - All.csv" \
      sw="Glossary - Swahili (Kiswahili) - Complete.csv" \
      so="Glossary - Somali (Af-Soomaali) - Complete.csv" \
@@ -96,8 +99,8 @@ in that cell and keeps the row aligned.
    `en ki sw so am ha yo ig zu xh st tn sn ln lg wo af fr pt ar`. An unlisted code still renders —
    it just falls back to showing the bare code.
 
-No other change is needed. The page discovers its languages from the JSON's top-level keys and
-adds a column and a filter chip automatically.
+No other change is needed. The page discovers its languages from `i18n/manifest.json` and adds a
+column and a filter chip automatically.
 
 ## Adding or renaming a category
 
@@ -125,5 +128,5 @@ title-cased slug until you add a label there.
 
 Everything is static, so any host will do. One caveat: `app.js` and `styles.css` are referenced
 without a version query, so a host with long cache lifetimes can serve a returning visitor stale
-JavaScript against a freshly updated `glossary.json`. Either keep cache headers short for those
+JavaScript against a freshly updated `i18n/` directory. Either keep cache headers short for those
 two files or add a cache-busting query when you deploy.

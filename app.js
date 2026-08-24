@@ -1,6 +1,7 @@
 /* Bitcoin Glossary — multilingual dictionary view.
-   Reads glossary.json ({ lang: { category: [ {key, term, explanation, notes} ] } })
-   and renders one column per language, with every term sharing a row. */
+   Reads i18n/manifest.json (["en", "ki", ...]) plus one i18n/<lang>.json per
+   language ({ category: [ {key, term, explanation, notes} ] }) and renders one
+   column per language, with every term sharing a row. */
 
 (function () {
   'use strict';
@@ -30,7 +31,7 @@
     ar: { name: 'Arabic',     native: 'العربية', dir: 'rtl' }
   };
 
-  /* Display names for the category slugs used in glossary.json. */
+  /* Display names for the category slugs used in the i18n/*.json files. */
   var CATEGORY_LABELS = {
     'concepts':          'Bitcoin Concepts',
     'wallets':           'Wallets',
@@ -49,7 +50,7 @@
   };
 
   /* Persist which languages are switched OFF, not which are on: a language
-     added to glossary.json later should then appear for returning visitors
+     added to i18n/ later should then appear for returning visitors
      instead of staying hidden behind a stale preference. */
   var STORE_HIDDEN = 'exonumia-langs-hidden';
   var STORE_THEME = 'exonumia-theme';
@@ -577,7 +578,7 @@
     box.className = 'error';
 
     var title = document.createElement('h2');
-    title.textContent = 'Could not load glossary.json';
+    title.textContent = 'Could not load the glossary data';
     box.appendChild(title);
 
     var body = document.createElement('p');
@@ -592,11 +593,32 @@
     el.glossary.appendChild(box);
   }
 
-  fetch('glossary.json')
-    .then(function (response) {
-      if (!response.ok) throw new Error('HTTP ' + response.status);
-      return response.json();
-    })
+  /* Fetch i18n/manifest.json, then every language file it lists, and rebuild
+     the { lang: { category: [entry] } } shape buildModel expects. */
+  function loadGlossary() {
+    return fetch('i18n/manifest.json')
+      .then(function (response) {
+        if (!response.ok) throw new Error('HTTP ' + response.status);
+        return response.json();
+      })
+      .then(function (codes) {
+        return Promise.all(codes.map(function (code) {
+          return fetch('i18n/' + code + '.json').then(function (response) {
+            if (!response.ok) throw new Error('HTTP ' + response.status + ' for i18n/' + code + '.json');
+            return response.json();
+          }).then(function (langData) {
+            return { code: code, data: langData };
+          });
+        }));
+      })
+      .then(function (parts) {
+        var data = {};
+        parts.forEach(function (part) { data[part.code] = part.data; });
+        return data;
+      });
+  }
+
+  loadGlossary()
     .then(function (data) {
       model = buildModel(data);
       state.langs = restoreLangs(model.langCodes);

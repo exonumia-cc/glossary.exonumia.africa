@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build glossary.json from one hypertranslation sheet per language.
+"""Build the i18n/*.json files from one hypertranslation sheet per language.
 
 Each sheet is a CSV exported from the shared drive with the layout:
 
@@ -9,17 +9,21 @@ Each sheet is a CSV exported from the shared drive with the layout:
 The English side is taken from the first sheet listed; later sheets are checked
 against it and any disagreement is reported rather than silently overwritten.
 
+Writes one <OUTDIR>/<CODE>.json per language plus <OUTDIR>/manifest.json
+listing the codes in order.
+
 Usage:
-    conversion-script.py OUTPUT.json CODE=SHEET.csv [CODE=SHEET.csv ...]
+    conversion-script.py OUTDIR CODE=SHEET.csv [CODE=SHEET.csv ...]
 
 Example:
-    conversion-script.py glossary.json \\
+    conversion-script.py i18n \\
         ki="Glossary - Kikuyu SHARED - All.csv" \\
         sw="Glossary - Swahili (Kiswahili) - Complete.csv"
 """
 
 import csv
 import json
+import os
 import re
 import sys
 from collections import OrderedDict
@@ -162,12 +166,17 @@ def main(argv):
         if missing:
             warn("%s: %d of %d entries untranslated" % (code, missing, len(base)))
 
-    with open(dest, "w", encoding="utf-8") as fh:
-        json.dump(languages, fh, ensure_ascii=False, indent=2)
+    os.makedirs(dest, exist_ok=True)
+    for code in languages:
+        with open(os.path.join(dest, code + ".json"), "w", encoding="utf-8") as fh:
+            json.dump(languages[code], fh, ensure_ascii=False, indent=2)
+            fh.write("\n")
+    with open(os.path.join(dest, "manifest.json"), "w", encoding="utf-8") as fh:
+        json.dump(list(languages), fh, indent=2)
         fh.write("\n")
 
     print("wrote %s: %d entries across %d categories in %d languages (%s)"
-          % (dest, len(base), len(order), len(languages), ", ".join(languages)))
+          % (dest + os.sep, len(base), len(order), len(languages), ", ".join(languages)))
     header = "  %-20s %s" % ("category", "  ".join("%4s" % c for c in languages))
     print(header)
     for cat in order:

@@ -1,0 +1,2184 @@
+{
+  "concepts": [
+    {
+      "key": "bitcoin",
+      "term": "Bitcoin",
+      "explanation": "A decentralized digital money network that works without banks or governments.",
+      "notes": "Distinguish network vs currency carefully."
+    },
+    {
+      "key": "bitcoin-btc",
+      "term": "bitcoin (BTC)",
+      "explanation": "The currency unit used on the Bitcoin network.",
+      "notes": "Lowercase often refers to the currency itself."
+    },
+    {
+      "key": "satoshi-sat",
+      "term": "Satoshi (sat)",
+      "explanation": "The smallest unit of bitcoin. One bitcoin equals 100,000,000 satoshis.",
+      "notes": "Very common in Lightning wallets."
+    },
+    {
+      "key": "bit",
+      "term": "Bit",
+      "explanation": "A smaller denomination of bitcoin equal to 100 satoshis.",
+      "notes": "Optional term depending on regional adoption."
+    },
+    {
+      "key": "blockchain",
+      "term": "Blockchain",
+      "explanation": "A public record of all Bitcoin transactions.",
+      "notes": "Avoid misleading \"database\" metaphors."
+    },
+    {
+      "key": "block",
+      "term": "Block",
+      "explanation": "A group of transactions added to the blockchain.",
+      "notes": ""
+    },
+    {
+      "key": "block-height",
+      "term": "Block Height",
+      "explanation": "The number of a block in the blockchain sequence.",
+      "notes": "Technical term."
+    },
+    {
+      "key": "node",
+      "term": "Node",
+      "explanation": "A computer that validates and shares Bitcoin transactions and blocks.",
+      "notes": ""
+    },
+    {
+      "key": "longest-chain",
+      "term": "Longest Chain",
+      "explanation": "The version of the transaction history that has the most work put into it. Nodes always trust the longest chain as the \"official\" and correct record of what happened.",
+      "notes": ""
+    },
+    {
+      "key": "full-node",
+      "term": "Full Node",
+      "explanation": "A node that independently verifies all Bitcoin rules and stores the full blockchain.",
+      "notes": "Important for sovereignty concepts."
+    },
+    {
+      "key": "peer-to-peer-p2p",
+      "term": "Peer-to-Peer (P2P)",
+      "explanation": "A system where users interact directly without intermediaries.",
+      "notes": ""
+    },
+    {
+      "key": "decentralized",
+      "term": "Decentralized",
+      "explanation": "Not controlled by a single authority or organization.",
+      "notes": ""
+    },
+    {
+      "key": "consensus",
+      "term": "Consensus",
+      "explanation": "Agreement among network participants about the valid state of the blockchain.",
+      "notes": ""
+    },
+    {
+      "key": "mining",
+      "term": "Mining",
+      "explanation": "The process of securing Bitcoin and creating blocks using computing power.",
+      "notes": ""
+    },
+    {
+      "key": "miner",
+      "term": "Miner",
+      "explanation": "A participant or machine that performs Bitcoin mining.",
+      "notes": ""
+    },
+    {
+      "key": "proof-of-work",
+      "term": "Proof-of-Work",
+      "explanation": "The security system used by Bitcoin that requires computational effort.",
+      "notes": "High-priority term."
+    },
+    {
+      "key": "hash",
+      "term": "Hash",
+      "explanation": "A unique cryptographic fingerprint of data.",
+      "notes": ""
+    },
+    {
+      "key": "hash-rate",
+      "term": "Hash Rate",
+      "explanation": "The total computing power securing the Bitcoin network.",
+      "notes": ""
+    },
+    {
+      "key": "difficulty",
+      "term": "Difficulty",
+      "explanation": "A measure of how hard it is to mine a block.",
+      "notes": ""
+    },
+    {
+      "key": "transaction",
+      "term": "Transaction",
+      "explanation": "A transfer of bitcoin from one address to another.",
+      "notes": ""
+    },
+    {
+      "key": "transaction-id-txid",
+      "term": "Transaction ID (TXID)",
+      "explanation": "A unique identifier for a Bitcoin transaction.",
+      "notes": ""
+    },
+    {
+      "key": "transaction-fee",
+      "term": "Transaction Fee",
+      "explanation": "A payment to miners for processing a transaction.",
+      "notes": ""
+    },
+    {
+      "key": "confirmation",
+      "term": "Confirmation",
+      "explanation": "Proof that a transaction has been included in a block.",
+      "notes": ""
+    },
+    {
+      "key": "unconfirmed-transaction",
+      "term": "Unconfirmed Transaction",
+      "explanation": "A transaction not yet included in a block.",
+      "notes": ""
+    },
+    {
+      "key": "double-spend",
+      "term": "Double Spend",
+      "explanation": "An attempt to spend the same bitcoin twice.",
+      "notes": ""
+    },
+    {
+      "key": "utxo",
+      "term": "UTXO",
+      "explanation": "Unspent Transaction Output; piece of digital cash left over from a past transaction.",
+      "notes": "Advanced but important."
+    },
+    {
+      "key": "mempool",
+      "term": "Mempool",
+      "explanation": "The digital waiting room where transactions sit before being verified.",
+      "notes": ""
+    },
+    {
+      "key": "chain-reorganization",
+      "term": "Chain Reorganization",
+      "explanation": "A temporary change in blockchain history due to competing blocks.",
+      "notes": "Advanced term."
+    },
+    {
+      "key": "genesis-block",
+      "term": "Genesis Block",
+      "explanation": "The first block in the Bitcoin blockchain.",
+      "notes": ""
+    },
+    {
+      "key": "halving",
+      "term": "Halving",
+      "explanation": "An event that reduces the mining reward by half approximately every four years.",
+      "notes": ""
+    },
+    {
+      "key": "supply-cap",
+      "term": "Supply Cap",
+      "explanation": "The maximum number of bitcoins that can exist: 21 million.",
+      "notes": ""
+    },
+    {
+      "key": "open-source",
+      "term": "Open Source",
+      "explanation": "Software whose code can be inspected and modified by anyone.",
+      "notes": ""
+    },
+    {
+      "key": "permissionless",
+      "term": "Permissionless",
+      "explanation": "A system that anyone can use without approval.",
+      "notes": ""
+    },
+    {
+      "key": "censorship-resistance",
+      "term": "Censorship Resistance",
+      "explanation": "The ability to resist blocking or restricting transactions.",
+      "notes": "High-value concept."
+    },
+    {
+      "key": "incentive-mining-rewards",
+      "term": "Incentive (Mining Rewards)",
+      "explanation": "A reward given to the creator of a new block to encourage people to support the network. This reward consists of newly created coins and \"transaction fees\" paid by users.",
+      "notes": ""
+    }
+  ],
+  "wallets": [
+    {
+      "key": "wallet",
+      "term": "Wallet",
+      "explanation": "Software or hardware used to manage bitcoin and sign transactions.",
+      "notes": "Avoid implying funds are physically stored in wallet."
+    },
+    {
+      "key": "bitcoin-wallet",
+      "term": "Bitcoin Wallet",
+      "explanation": "A wallet specifically designed for Bitcoin transactions.",
+      "notes": ""
+    },
+    {
+      "key": "lightning-wallet",
+      "term": "Lightning Wallet",
+      "explanation": "A wallet that supports Lightning Network payments.",
+      "notes": ""
+    },
+    {
+      "key": "custodial-wallet",
+      "term": "Custodial Wallet",
+      "explanation": "A wallet where another party controls the user's keys.",
+      "notes": "High-risk concept."
+    },
+    {
+      "key": "non-custodial-wallet",
+      "term": "Non-Custodial Wallet",
+      "explanation": "A wallet where the user controls their own keys.",
+      "notes": "High-priority term."
+    },
+    {
+      "key": "self-custody",
+      "term": "Self-Custody",
+      "explanation": "Holding and controlling your own bitcoin without relying on a third party.",
+      "notes": "Core sovereignty concept."
+    },
+    {
+      "key": "hardware-wallet",
+      "term": "Hardware Wallet",
+      "explanation": "A physical device used to securely store signing keys.",
+      "notes": ""
+    },
+    {
+      "key": "hot-wallet",
+      "term": "Hot Wallet",
+      "explanation": "A wallet connected to the internet.",
+      "notes": ""
+    },
+    {
+      "key": "cold-wallet",
+      "term": "Cold Wallet",
+      "explanation": "A wallet kept offline for security.",
+      "notes": ""
+    },
+    {
+      "key": "watch-only-wallet",
+      "term": "Watch-Only Wallet",
+      "explanation": "A wallet that can view balances but cannot spend funds.",
+      "notes": ""
+    },
+    {
+      "key": "multisig-wallet",
+      "term": "Multisig Wallet",
+      "explanation": "A wallet requiring multiple approvals to spend funds.",
+      "notes": ""
+    },
+    {
+      "key": "vault",
+      "term": "Vault",
+      "explanation": "An advanced wallet setup with extra security restrictions.",
+      "notes": ""
+    },
+    {
+      "key": "airgapped",
+      "term": "Airgapped",
+      "explanation": "Completely isolated from internet-connected devices.",
+      "notes": "Important for SeedSigner."
+    },
+    {
+      "key": "seedsigner",
+      "term": "SeedSigner",
+      "explanation": "An open-source airgapped Bitcoin signing device.",
+      "notes": "Product-specific."
+    },
+    {
+      "key": "sign-transaction",
+      "term": "Sign Transaction",
+      "explanation": "Approve a transaction using cryptographic keys.",
+      "notes": ""
+    },
+    {
+      "key": "broadcast-transaction",
+      "term": "Broadcast Transaction",
+      "explanation": "To push your approved transaction out to the public network.",
+      "notes": ""
+    },
+    {
+      "key": "receive-bitcoin",
+      "term": "Receive Bitcoin",
+      "explanation": "Accept bitcoin into a wallet.",
+      "notes": "Common UI string."
+    },
+    {
+      "key": "send-bitcoin",
+      "term": "Send Bitcoin",
+      "explanation": "Transfer bitcoin to another address.",
+      "notes": "Common UI string."
+    },
+    {
+      "key": "wallet-balance",
+      "term": "Wallet Balance",
+      "explanation": "The amount of bitcoin available in a wallet.",
+      "notes": ""
+    },
+    {
+      "key": "available-balance",
+      "term": "Available Balance",
+      "explanation": "Funds currently spendable.",
+      "notes": ""
+    },
+    {
+      "key": "pending-balance",
+      "term": "Pending Balance",
+      "explanation": "Funds waiting for confirmations.",
+      "notes": ""
+    },
+    {
+      "key": "address-book",
+      "term": "Address Book",
+      "explanation": "A saved list of recipient addresses.",
+      "notes": ""
+    },
+    {
+      "key": "wallet-backup",
+      "term": "Wallet Backup",
+      "explanation": "A recovery copy of wallet credentials or seed words.",
+      "notes": "Safety-critical."
+    },
+    {
+      "key": "restore-wallet",
+      "term": "Restore Wallet",
+      "explanation": "Recover access to a wallet using backup information.",
+      "notes": ""
+    },
+    {
+      "key": "import-wallet",
+      "term": "Import Wallet",
+      "explanation": "Add an existing wallet into an application.",
+      "notes": ""
+    },
+    {
+      "key": "export-wallet",
+      "term": "Export Wallet",
+      "explanation": "Transfer wallet information out of an application.",
+      "notes": ""
+    },
+    {
+      "key": "wallet-descriptor",
+      "term": "Wallet Descriptor",
+      "explanation": "A format describing wallet structure and keys.",
+      "notes": "Advanced."
+    },
+    {
+      "key": "wallet-recovery",
+      "term": "Wallet Recovery",
+      "explanation": "Regaining access to a wallet after device loss or failure.",
+      "notes": ""
+    }
+  ],
+  "security": [
+    {
+      "key": "private-key",
+      "term": "Private Key",
+      "explanation": "A secret cryptographic key used to authorize spending bitcoin.",
+      "notes": "Never mistranslate. Extremely high risk."
+    },
+    {
+      "key": "public-key",
+      "term": "Public Key",
+      "explanation": "A cryptographic key used to generate addresses and verify signatures.",
+      "notes": ""
+    },
+    {
+      "key": "seed-phrase",
+      "term": "Seed Phrase",
+      "explanation": "A list of recovery words used to restore a wallet.",
+      "notes": "Extremely safety-critical."
+    },
+    {
+      "key": "recovery-phrase",
+      "term": "Recovery Phrase",
+      "explanation": "Another term for seed phrase.",
+      "notes": "Consistency required."
+    },
+    {
+      "key": "backup-phrase",
+      "term": "Backup Phrase",
+      "explanation": "A phrase used to recover wallet access.",
+      "notes": ""
+    },
+    {
+      "key": "secret-words",
+      "term": "Secret Words",
+      "explanation": "Informal term for seed phrase.",
+      "notes": "Avoid ambiguous translation."
+    },
+    {
+      "key": "mnemonic-phrase",
+      "term": "Mnemonic Phrase",
+      "explanation": "Technical term for seed phrase standard.",
+      "notes": ""
+    },
+    {
+      "key": "recovery-words",
+      "term": "Recovery Words",
+      "explanation": "The individual words in a seed phrase.",
+      "notes": ""
+    },
+    {
+      "key": "passphrase",
+      "term": "Passphrase",
+      "explanation": "A custom secret word added on top of your 12/24 words for extra security.",
+      "notes": "Must not be confused with password."
+    },
+    {
+      "key": "password",
+      "term": "Password",
+      "explanation": "A secret string used to protect an application or device.",
+      "notes": ""
+    },
+    {
+      "key": "pin",
+      "term": "PIN",
+      "explanation": "A short numeric password.",
+      "notes": ""
+    },
+    {
+      "key": "encryption",
+      "term": "Encryption",
+      "explanation": "Converting data into unreadable form to protect it.",
+      "notes": ""
+    },
+    {
+      "key": "decryption",
+      "term": "Decryption",
+      "explanation": "Restoring encrypted data to readable form.",
+      "notes": ""
+    },
+    {
+      "key": "digital-signature",
+      "term": "Digital Signature",
+      "explanation": "A cryptographic proof authorizing a transaction.",
+      "notes": ""
+    },
+    {
+      "key": "verify-signature",
+      "term": "Verify Signature",
+      "explanation": "Confirm that a signature is valid.",
+      "notes": ""
+    },
+    {
+      "key": "authentication",
+      "term": "Authentication",
+      "explanation": "Confirming a user's identity.",
+      "notes": ""
+    },
+    {
+      "key": "two-factor-authentication-2fa",
+      "term": "Two-Factor Authentication (2FA)",
+      "explanation": "An additional security step requiring a second verification method.",
+      "notes": ""
+    },
+    {
+      "key": "biometric-authentication",
+      "term": "Biometric Authentication",
+      "explanation": "Identity verification using fingerprints, face scans, or similar methods.",
+      "notes": ""
+    },
+    {
+      "key": "backup",
+      "term": "Backup",
+      "explanation": "A secure copy of important wallet information.",
+      "notes": ""
+    },
+    {
+      "key": "restore",
+      "term": "Restore",
+      "explanation": "Recover lost access using backup information.",
+      "notes": ""
+    },
+    {
+      "key": "recovery",
+      "term": "Recovery",
+      "explanation": "The process of regaining wallet access.",
+      "notes": ""
+    },
+    {
+      "key": "secure-storage",
+      "term": "Secure Storage",
+      "explanation": "Keeping sensitive information protected from theft or loss.",
+      "notes": ""
+    },
+    {
+      "key": "offline-storage",
+      "term": "Offline Storage",
+      "explanation": "Storing sensitive information without internet access.",
+      "notes": ""
+    },
+    {
+      "key": "tamper-resistant",
+      "term": "Tamper Resistant",
+      "explanation": "Designed to show or resist unauthorized modification.",
+      "notes": ""
+    },
+    {
+      "key": "secure-element",
+      "term": "Secure Element",
+      "explanation": "A specialized chip for protecting cryptographic keys.",
+      "notes": ""
+    },
+    {
+      "key": "phishing",
+      "term": "Phishing",
+      "explanation": "Fraudulent attempts to steal sensitive information.",
+      "notes": "Important safety term."
+    },
+    {
+      "key": "scam",
+      "term": "Scam",
+      "explanation": "A dishonest attempt to steal money or information.",
+      "notes": ""
+    },
+    {
+      "key": "malware",
+      "term": "Malware",
+      "explanation": "Malicious software designed to harm or steal data.",
+      "notes": ""
+    },
+    {
+      "key": "spyware",
+      "term": "Spyware",
+      "explanation": "Software that secretly collects information from a device.",
+      "notes": ""
+    },
+    {
+      "key": "social-engineering",
+      "term": "Social Engineering",
+      "explanation": "Manipulating people into revealing sensitive information.",
+      "notes": ""
+    },
+    {
+      "key": "compromised-device",
+      "term": "Compromised Device",
+      "explanation": "A device that may no longer be secure.",
+      "notes": ""
+    },
+    {
+      "key": "device-lock",
+      "term": "Device Lock",
+      "explanation": "A screen lock protecting device access.",
+      "notes": ""
+    },
+    {
+      "key": "screenshot-risk",
+      "term": "Screenshot Risk",
+      "explanation": "Danger of exposing sensitive information through screenshots.",
+      "notes": "Important training term."
+    },
+    {
+      "key": "never-share-your-seed-phrase",
+      "term": "Never Share Your Seed Phrase",
+      "explanation": "Warning that recovery words must remain secret.",
+      "notes": "High-priority UI warning."
+    },
+    {
+      "key": "write-it-down-offline",
+      "term": "Write It Down Offline",
+      "explanation": "Instruction to store recovery words on paper or offline media.",
+      "notes": ""
+    },
+    {
+      "key": "verify-recovery-phrase",
+      "term": "Verify Recovery Phrase",
+      "explanation": "Confirm recovery words are recorded correctly.",
+      "notes": ""
+    }
+  ],
+  "safety": [
+    {
+      "key": "never-share-your-private-key",
+      "term": "Never Share Your Private Key",
+      "explanation": "Warning that private keys must remain secret.",
+      "notes": "Extremely critical."
+    },
+    {
+      "key": "anyone-with-these-words-can-steal-your-funds",
+      "term": "Anyone With These Words Can Steal Your Funds",
+      "explanation": "Warning about seed phrase exposure risk.",
+      "notes": "Critical educational phrase."
+    },
+    {
+      "key": "verify-before-sending",
+      "term": "Verify Before Sending",
+      "explanation": "Confirm payment details before approving.",
+      "notes": ""
+    },
+    {
+      "key": "irreversible-transaction",
+      "term": "Irreversible Transaction",
+      "explanation": "Bitcoin transactions generally cannot be undone.",
+      "notes": "Important concept."
+    },
+    {
+      "key": "backup-required",
+      "term": "Backup Required",
+      "explanation": "Wallet recovery information must be stored safely.",
+      "notes": ""
+    },
+    {
+      "key": "this-action-cannot-be-undone",
+      "term": "This Action Cannot Be Undone",
+      "explanation": "Warning about permanent actions.",
+      "notes": ""
+    },
+    {
+      "key": "untrusted-source",
+      "term": "Untrusted Source",
+      "explanation": "A source that may not be safe or verified.",
+      "notes": ""
+    },
+    {
+      "key": "suspicious-activity",
+      "term": "Suspicious Activity",
+      "explanation": "Behavior indicating possible fraud or compromise.",
+      "notes": ""
+    },
+    {
+      "key": "security-check",
+      "term": "Security Check",
+      "explanation": "A process to verify safety or integrity.",
+      "notes": ""
+    },
+    {
+      "key": "device-not-secure",
+      "term": "Device Not Secure",
+      "explanation": "Warning that the device may be compromised.",
+      "notes": ""
+    },
+    {
+      "key": "low-battery",
+      "term": "Low Battery",
+      "explanation": "Battery level may interrupt important operations.",
+      "notes": "Important for signing devices."
+    },
+    {
+      "key": "update-available",
+      "term": "Update Available",
+      "explanation": "A newer software version is available.",
+      "notes": ""
+    },
+    {
+      "key": "verify-download",
+      "term": "Verify Download",
+      "explanation": "Confirm downloaded software authenticity.",
+      "notes": ""
+    }
+  ],
+  "lightning-network": [
+    {
+      "key": "lightning-network",
+      "term": "Lightning Network",
+      "explanation": "A faster and cheaper payment network built on Bitcoin.",
+      "notes": "Core term."
+    },
+    {
+      "key": "lightning-payment",
+      "term": "Lightning Payment",
+      "explanation": "A payment made through the Lightning Network.",
+      "notes": ""
+    },
+    {
+      "key": "lightning-invoice",
+      "term": "Lightning Invoice",
+      "explanation": "A payment request used in Lightning.",
+      "notes": "High-frequency UI term."
+    },
+    {
+      "key": "invoice",
+      "term": "Invoice",
+      "explanation": "A request for payment.",
+      "notes": ""
+    },
+    {
+      "key": "pay-invoice",
+      "term": "Pay Invoice",
+      "explanation": "Send payment using a Lightning invoice.",
+      "notes": ""
+    },
+    {
+      "key": "payment-request",
+      "term": "Payment Request",
+      "explanation": "A request asking for payment.",
+      "notes": ""
+    },
+    {
+      "key": "payment-channel",
+      "term": "Payment Channel",
+      "explanation": "A connection between Lightning users for instant payments.",
+      "notes": ""
+    },
+    {
+      "key": "open-channel",
+      "term": "Open Channel",
+      "explanation": "Create a Lightning payment channel.",
+      "notes": ""
+    },
+    {
+      "key": "close-channel",
+      "term": "Close Channel",
+      "explanation": "End a Lightning payment channel.",
+      "notes": ""
+    },
+    {
+      "key": "routing",
+      "term": "Routing",
+      "explanation": "Passing Lightning payments through connected nodes.",
+      "notes": ""
+    },
+    {
+      "key": "routing-fee",
+      "term": "Routing Fee",
+      "explanation": "A fee charged for forwarding Lightning payments.",
+      "notes": ""
+    },
+    {
+      "key": "lightning-address",
+      "term": "Lightning Address",
+      "explanation": "A human-readable identifier for Lightning payments.",
+      "notes": ""
+    },
+    {
+      "key": "lnurl",
+      "term": "LNURL",
+      "explanation": "A standard used to simplify Lightning interactions.",
+      "notes": "Technical term."
+    },
+    {
+      "key": "instant-payment",
+      "term": "Instant Payment",
+      "explanation": "A payment completed immediately.",
+      "notes": ""
+    },
+    {
+      "key": "micropayment",
+      "term": "Micropayment",
+      "explanation": "A very small payment amount.",
+      "notes": ""
+    },
+    {
+      "key": "payment-failed",
+      "term": "Payment Failed",
+      "explanation": "A payment that could not be completed.",
+      "notes": "Common UI message."
+    },
+    {
+      "key": "route-not-found",
+      "term": "Route Not Found",
+      "explanation": "No valid path exists for a Lightning payment.",
+      "notes": ""
+    },
+    {
+      "key": "channel-capacity",
+      "term": "Channel Capacity",
+      "explanation": "The amount a Lightning channel can carry.",
+      "notes": ""
+    },
+    {
+      "key": "inbound-liquidity",
+      "term": "Inbound Liquidity",
+      "explanation": "Capacity available to receive Lightning payments.",
+      "notes": "Advanced."
+    },
+    {
+      "key": "outbound-liquidity",
+      "term": "Outbound Liquidity",
+      "explanation": "Capacity available to send Lightning payments.",
+      "notes": "Advanced."
+    },
+    {
+      "key": "rebalance",
+      "term": "Rebalance",
+      "explanation": "Adjusting Lightning liquidity between channels.",
+      "notes": ""
+    },
+    {
+      "key": "keysend",
+      "term": "Keysend",
+      "explanation": "Sending Lightning payments without an invoice.",
+      "notes": ""
+    },
+    {
+      "key": "bolt11-invoice",
+      "term": "Bolt11 Invoice",
+      "explanation": "Standard encoded Lightning invoice format.",
+      "notes": "Advanced technical term."
+    },
+    {
+      "key": "expired-invoice",
+      "term": "Expired Invoice",
+      "explanation": "An invoice that can no longer be paid.",
+      "notes": ""
+    },
+    {
+      "key": "hold-invoice",
+      "term": "Hold Invoice",
+      "explanation": "An invoice that delays settlement until manually accepted.",
+      "notes": "Advanced."
+    }
+  ],
+  "payments": [
+    {
+      "key": "bitcoin-address",
+      "term": "Bitcoin Address",
+      "explanation": "A destination used to receive bitcoin.",
+      "notes": "Safety-critical."
+    },
+    {
+      "key": "wallet-address",
+      "term": "Wallet Address",
+      "explanation": "A string used to receive cryptocurrency payments.",
+      "notes": ""
+    },
+    {
+      "key": "receive-address",
+      "term": "Receive Address",
+      "explanation": "An address created for incoming payments.",
+      "notes": ""
+    },
+    {
+      "key": "qr-code",
+      "term": "QR Code",
+      "explanation": "A scannable image representing payment information.",
+      "notes": "Very common UI term."
+    },
+    {
+      "key": "scan-qr-code",
+      "term": "Scan QR Code",
+      "explanation": "Use the camera to read payment information.",
+      "notes": "Common action."
+    },
+    {
+      "key": "copy-address",
+      "term": "Copy Address",
+      "explanation": "Copy a wallet address to the clipboard.",
+      "notes": ""
+    },
+    {
+      "key": "paste-address",
+      "term": "Paste Address",
+      "explanation": "Insert a copied wallet address.",
+      "notes": ""
+    },
+    {
+      "key": "invalid-address",
+      "term": "Invalid Address",
+      "explanation": "An address format that is not recognized.",
+      "notes": "Important error string."
+    },
+    {
+      "key": "amount",
+      "term": "Amount",
+      "explanation": "The quantity of bitcoin or currency being sent.",
+      "notes": ""
+    },
+    {
+      "key": "amount-too-low",
+      "term": "Amount Too Low",
+      "explanation": "Payment amount is below the allowed minimum.",
+      "notes": ""
+    },
+    {
+      "key": "amount-too-high",
+      "term": "Amount Too High",
+      "explanation": "Payment amount exceeds available balance or limits.",
+      "notes": ""
+    },
+    {
+      "key": "recipient",
+      "term": "Recipient",
+      "explanation": "The person receiving a payment.",
+      "notes": ""
+    },
+    {
+      "key": "sender",
+      "term": "Sender",
+      "explanation": "The person sending a payment.",
+      "notes": ""
+    },
+    {
+      "key": "payment-sent",
+      "term": "Payment Sent",
+      "explanation": "Payment completed successfully.",
+      "notes": ""
+    },
+    {
+      "key": "payment-received",
+      "term": "Payment Received",
+      "explanation": "Payment successfully received.",
+      "notes": ""
+    },
+    {
+      "key": "pending-payment",
+      "term": "Pending Payment",
+      "explanation": "Payment awaiting confirmation or completion.",
+      "notes": ""
+    },
+    {
+      "key": "failed-payment",
+      "term": "Failed Payment",
+      "explanation": "Payment could not be completed.",
+      "notes": ""
+    },
+    {
+      "key": "payment-history",
+      "term": "Payment History",
+      "explanation": "Record of previous transactions.",
+      "notes": ""
+    },
+    {
+      "key": "memo",
+      "term": "Memo",
+      "explanation": "Optional note attached to a transaction.",
+      "notes": ""
+    },
+    {
+      "key": "description",
+      "term": "Description",
+      "explanation": "Additional information about a payment.",
+      "notes": ""
+    },
+    {
+      "key": "network-fee",
+      "term": "Network Fee",
+      "explanation": "Fee charged for processing a payment.",
+      "notes": ""
+    },
+    {
+      "key": "provider-fee-service-fee",
+      "term": "Provider Fee / Service Fee",
+      "explanation": "The commercial cost levied by the local platform gateway or mobile money agent to process an asset exchange.",
+      "notes": "Vital to differentiate from the base \"Network Fee\" so users understand exactly who is charging them during cash-out operations."
+    },
+    {
+      "key": "miner-fee",
+      "term": "Miner Fee",
+      "explanation": "Bitcoin transaction fee paid to miners.",
+      "notes": ""
+    },
+    {
+      "key": "fee-rate",
+      "term": "Fee Rate",
+      "explanation": "The fee level selected for a transaction.",
+      "notes": ""
+    },
+    {
+      "key": "priority-fee",
+      "term": "Priority Fee",
+      "explanation": "A higher fee for faster confirmation.",
+      "notes": ""
+    },
+    {
+      "key": "slow",
+      "term": "Slow",
+      "explanation": "Lower priority confirmation speed.",
+      "notes": "UI option."
+    },
+    {
+      "key": "fast",
+      "term": "Fast",
+      "explanation": "Higher priority confirmation speed.",
+      "notes": "UI option."
+    },
+    {
+      "key": "estimated-confirmation-time",
+      "term": "Estimated Confirmation Time",
+      "explanation": "Expected waiting time for transaction confirmation.",
+      "notes": ""
+    },
+    {
+      "key": "broadcast",
+      "term": "Broadcast",
+      "explanation": "Send transaction data to the network.",
+      "notes": ""
+    },
+    {
+      "key": "replace-by-fee-rbf",
+      "term": "Replace-by-Fee (RBF)",
+      "explanation": "A feature allowing fee increases on unconfirmed transactions.",
+      "notes": "Advanced but important."
+    },
+    {
+      "key": "child-pays-for-parent-cpfp",
+      "term": "Child Pays for Parent (CPFP)",
+      "explanation": "A method to speed up confirmation of stuck transactions.",
+      "notes": "Advanced."
+    }
+  ],
+  "privacy": [
+    {
+      "key": "privacy",
+      "term": "Privacy",
+      "explanation": "The ability to control access to personal information.",
+      "notes": ""
+    },
+    {
+      "key": "financial-privacy",
+      "term": "Financial Privacy",
+      "explanation": "Protection of transaction and financial information.",
+      "notes": ""
+    },
+    {
+      "key": "pseudonymous",
+      "term": "Pseudonymous",
+      "explanation": "Using identifiers that are not directly tied to real identity.",
+      "notes": ""
+    },
+    {
+      "key": "surveillance",
+      "term": "Surveillance",
+      "explanation": "Monitoring of user activity or communications.",
+      "notes": ""
+    },
+    {
+      "key": "metadata",
+      "term": "Metadata",
+      "explanation": "Information about transactions or communications.",
+      "notes": ""
+    },
+    {
+      "key": "coin-control",
+      "term": "Coin Control",
+      "explanation": "Choosing which UTXOs to spend in a transaction.",
+      "notes": "Advanced wallet term."
+    },
+    {
+      "key": "coinjoin",
+      "term": "CoinJoin",
+      "explanation": "A collaborative transaction technique improving privacy.",
+      "notes": "High-context term."
+    },
+    {
+      "key": "address-reuse",
+      "term": "Address Reuse",
+      "explanation": "Using the same Bitcoin address multiple times.",
+      "notes": "Often discouraged."
+    },
+    {
+      "key": "do-not-reuse-addresses",
+      "term": "Do Not Reuse Addresses",
+      "explanation": "Recommendation to generate new addresses regularly.",
+      "notes": ""
+    },
+    {
+      "key": "tor",
+      "term": "Tor",
+      "explanation": "A privacy network used to hide internet activity.",
+      "notes": ""
+    },
+    {
+      "key": "vpn",
+      "term": "VPN",
+      "explanation": "A service that hides internet traffic from local observers.",
+      "notes": ""
+    },
+    {
+      "key": "sovereignty",
+      "term": "Sovereignty",
+      "explanation": "Independent control over money and digital systems.",
+      "notes": "Core concept."
+    },
+    {
+      "key": "financial-freedom",
+      "term": "Financial Freedom",
+      "explanation": "Ability to transact without unnecessary restrictions.",
+      "notes": ""
+    },
+    {
+      "key": "permissionless-access",
+      "term": "Permissionless Access",
+      "explanation": "Access without requiring approval from authorities.",
+      "notes": ""
+    },
+    {
+      "key": "open-network",
+      "term": "Open Network",
+      "explanation": "A network anyone can participate in.",
+      "notes": ""
+    },
+    {
+      "key": "self-reliance",
+      "term": "Self-Reliance",
+      "explanation": "Managing assets independently.",
+      "notes": ""
+    }
+  ],
+  "markets": [
+    {
+      "key": "exchange",
+      "term": "Exchange",
+      "explanation": "A platform for buying or selling cryptocurrency.",
+      "notes": ""
+    },
+    {
+      "key": "centralized-exchange-cex",
+      "term": "Centralized Exchange (CEX)",
+      "explanation": "An exchange operated by a company controlling user funds.",
+      "notes": ""
+    },
+    {
+      "key": "decentralized-exchange-dex",
+      "term": "Decentralized Exchange (DEX)",
+      "explanation": "A trading platform operating without centralized custody.",
+      "notes": ""
+    },
+    {
+      "key": "buy-bitcoin",
+      "term": "Buy Bitcoin",
+      "explanation": "Purchase bitcoin using another currency.",
+      "notes": ""
+    },
+    {
+      "key": "sell-bitcoin",
+      "term": "Sell Bitcoin",
+      "explanation": "Exchange bitcoin for another currency.",
+      "notes": ""
+    },
+    {
+      "key": "trade",
+      "term": "Trade",
+      "explanation": "Exchange one asset for another.",
+      "notes": ""
+    },
+    {
+      "key": "fiat-currency",
+      "term": "Fiat Currency",
+      "explanation": "Government-issued money like USD or KES.",
+      "notes": ""
+    },
+    {
+      "key": "local-currency",
+      "term": "Local Currency",
+      "explanation": "National or regional government-issued money.",
+      "notes": ""
+    },
+    {
+      "key": "exchange-rate",
+      "term": "Exchange Rate",
+      "explanation": "The value relationship between two currencies.",
+      "notes": ""
+    },
+    {
+      "key": "market-price",
+      "term": "Market Price",
+      "explanation": "Current trading value of an asset.",
+      "notes": ""
+    },
+    {
+      "key": "volatility",
+      "term": "Volatility",
+      "explanation": "Rapid price changes over time.",
+      "notes": ""
+    },
+    {
+      "key": "stablecoin",
+      "term": "Stablecoin",
+      "explanation": "A cryptocurrency designed to maintain stable value.",
+      "notes": ""
+    },
+    {
+      "key": "usdt",
+      "term": "USDT",
+      "explanation": "Tether stablecoin pegged to the US dollar.",
+      "notes": "Product-specific."
+    },
+    {
+      "key": "usdc",
+      "term": "USDC",
+      "explanation": "USD Coin stablecoin pegged to the US dollar.",
+      "notes": ""
+    },
+    {
+      "key": "liquidity",
+      "term": "Liquidity",
+      "explanation": "Availability of assets for buying and selling.",
+      "notes": ""
+    },
+    {
+      "key": "spread",
+      "term": "Spread",
+      "explanation": "Difference between buy and sell prices.",
+      "notes": ""
+    },
+    {
+      "key": "slippage",
+      "term": "Slippage",
+      "explanation": "Price movement during order execution.",
+      "notes": ""
+    },
+    {
+      "key": "order-book",
+      "term": "Order Book",
+      "explanation": "A list of active buy and sell offers.",
+      "notes": ""
+    },
+    {
+      "key": "market-order",
+      "term": "Market Order",
+      "explanation": "An order executed immediately at current prices.",
+      "notes": ""
+    },
+    {
+      "key": "limit-order",
+      "term": "Limit Order",
+      "explanation": "An order executed only at a selected price.",
+      "notes": ""
+    },
+    {
+      "key": "deposit",
+      "term": "Deposit",
+      "explanation": "Add funds to a platform or wallet.",
+      "notes": ""
+    },
+    {
+      "key": "withdraw",
+      "term": "Withdraw",
+      "explanation": "Remove funds from a platform or wallet.",
+      "notes": ""
+    },
+    {
+      "key": "remittance",
+      "term": "Remittance",
+      "explanation": "Sending money across distances or borders.",
+      "notes": "Important regional use case."
+    },
+    {
+      "key": "cash-out",
+      "term": "Cash Out",
+      "explanation": "Convert digital assets into local currency or cash.",
+      "notes": ""
+    },
+    {
+      "key": "on-ramp",
+      "term": "On-Ramp",
+      "explanation": "A service converting fiat money into cryptocurrency.",
+      "notes": ""
+    },
+    {
+      "key": "off-ramp",
+      "term": "Off-Ramp",
+      "explanation": "A service converting cryptocurrency into fiat money.",
+      "notes": ""
+    }
+  ],
+  "mobile-money": [
+    {
+      "key": "mobile-money",
+      "term": "Mobile Money",
+      "explanation": "A phone-based financial service used without a bank account.",
+      "notes": "Regional relevance."
+    },
+    {
+      "key": "airtime",
+      "term": "Airtime",
+      "explanation": "Prepaid mobile phone credit.",
+      "notes": ""
+    },
+    {
+      "key": "ussd",
+      "term": "USSD",
+      "explanation": "A text-based mobile communication protocol used without internet.",
+      "notes": "Important for Machankura."
+    },
+    {
+      "key": "feature-phone",
+      "term": "Feature Phone",
+      "explanation": "A basic mobile phone without advanced smartphone features.",
+      "notes": ""
+    },
+    {
+      "key": "sim-card",
+      "term": "SIM Card",
+      "explanation": "A chip used to connect a phone to a mobile network.",
+      "notes": ""
+    },
+    {
+      "key": "phone-number",
+      "term": "Phone Number",
+      "explanation": "A number used for mobile communication and services.",
+      "notes": ""
+    },
+    {
+      "key": "paybill",
+      "term": "Paybill",
+      "explanation": "A payment code used in some mobile money systems.",
+      "notes": "East Africa relevance."
+    },
+    {
+      "key": "agent",
+      "term": "Agent",
+      "explanation": "A local representative providing financial services.",
+      "notes": ""
+    },
+    {
+      "key": "cash-agent",
+      "term": "Cash Agent",
+      "explanation": "A person enabling deposits and withdrawals for mobile money.",
+      "notes": ""
+    },
+    {
+      "key": "send-money",
+      "term": "Send Money",
+      "explanation": "Transfer funds to another user.",
+      "notes": "Common UI string."
+    },
+    {
+      "key": "receive-money",
+      "term": "Receive Money",
+      "explanation": "Accept incoming funds.",
+      "notes": ""
+    },
+    {
+      "key": "balance-inquiry",
+      "term": "Balance Inquiry",
+      "explanation": "Checking available funds.",
+      "notes": ""
+    },
+    {
+      "key": "withdrawal-code",
+      "term": "Withdrawal Code",
+      "explanation": "A code used to collect funds.",
+      "notes": ""
+    },
+    {
+      "key": "transfer-failed",
+      "term": "Transfer Failed",
+      "explanation": "A transfer that could not be completed.",
+      "notes": ""
+    },
+    {
+      "key": "insufficient-balance",
+      "term": "Insufficient Balance",
+      "explanation": "Not enough funds available.",
+      "notes": "High-frequency error string."
+    }
+  ],
+  "seedsigner": [
+    {
+      "key": "psbt",
+      "term": "PSBT",
+      "explanation": "Partially Signed Bitcoin Transaction; a format for signing transactions securely.",
+      "notes": "Advanced and high-value."
+    },
+    {
+      "key": "signer",
+      "term": "Signer",
+      "explanation": "A device or application used to approve transactions.",
+      "notes": ""
+    },
+    {
+      "key": "offline-signing",
+      "term": "Offline Signing",
+      "explanation": "Signing transactions without internet access.",
+      "notes": ""
+    },
+    {
+      "key": "qr-transfer",
+      "term": "QR Transfer",
+      "explanation": "Passing transaction data using QR codes.",
+      "notes": ""
+    },
+    {
+      "key": "entropy",
+      "term": "Entropy",
+      "explanation": "Randomness used to generate secure keys.",
+      "notes": ""
+    },
+    {
+      "key": "dice-roll-entropy",
+      "term": "Dice Roll Entropy",
+      "explanation": "Randomness generated using physical dice.",
+      "notes": ""
+    },
+    {
+      "key": "camera-scan",
+      "term": "Camera Scan",
+      "explanation": "Using a camera to scan QR codes or data.",
+      "notes": ""
+    },
+    {
+      "key": "microsd-card",
+      "term": "MicroSD Card",
+      "explanation": "Small storage card used for transferring files or backups.",
+      "notes": ""
+    },
+    {
+      "key": "unsigned-transaction",
+      "term": "Unsigned Transaction",
+      "explanation": "A transaction awaiting authorization.",
+      "notes": ""
+    },
+    {
+      "key": "signed-transaction",
+      "term": "Signed Transaction",
+      "explanation": "A transaction already approved with keys.",
+      "notes": ""
+    },
+    {
+      "key": "verify-address",
+      "term": "Verify Address",
+      "explanation": "Confirm that an address matches the intended recipient.",
+      "notes": "Safety-critical."
+    },
+    {
+      "key": "verify-amount",
+      "term": "Verify Amount",
+      "explanation": "Confirm that the payment amount is correct.",
+      "notes": "Safety-critical."
+    },
+    {
+      "key": "tamper-check",
+      "term": "Tamper Check",
+      "explanation": "A process to verify device integrity.",
+      "notes": ""
+    },
+    {
+      "key": "stateless-device",
+      "term": "Stateless Device",
+      "explanation": "A hardware unit designed to entirely erase all cryptographic data and keys from its memory the moment power is cut.",
+      "notes": ""
+    },
+    {
+      "key": "calculate-checksum",
+      "term": "Calculate Checksum",
+      "explanation": "The final mathematical validation step required to compute the definitive word of a recovery phrase.",
+      "notes": ""
+    },
+    {
+      "key": "brightness",
+      "term": "Brightness",
+      "explanation": "A setting configuration used to modify light sensitivity so the device lens can accurately capture target images.",
+      "notes": "Relevant since SeedSigner communicates exclusively via visual QR code data transfers."
+    },
+    {
+      "key": "unsigned-psbt",
+      "term": "Unsigned PSBT",
+      "explanation": "A Partially Signed Bitcoin Transaction data file awaiting offline authorization from the master private keys.",
+      "notes": ""
+    }
+  ],
+  "crypto-ecosystem": [
+    {
+      "key": "cryptocurrency",
+      "term": "Cryptocurrency",
+      "explanation": "Digital money secured using cryptography.",
+      "notes": ""
+    },
+    {
+      "key": "altcoin",
+      "term": "Altcoin",
+      "explanation": "Any cryptocurrency other than Bitcoin. Examples include Ethereum, Litecoin, and thousands of others.",
+      "notes": ""
+    },
+    {
+      "key": "token",
+      "term": "Token",
+      "explanation": "A digital asset issued on a blockchain platform.",
+      "notes": ""
+    },
+    {
+      "key": "all-time-high-ath",
+      "term": "All-Time High (ATH)",
+      "explanation": "The highest price a specific cryptocurrency has ever reached in its history.",
+      "notes": ""
+    },
+    {
+      "key": "all-time-low-atl",
+      "term": "All-Time Low (ATL)",
+      "explanation": "The lowest price a specific cryptocurrency has ever dropped to in its history.",
+      "notes": ""
+    },
+    {
+      "key": "smart-contract",
+      "term": "Smart Contract",
+      "explanation": "Self-executing blockchain code.",
+      "notes": ""
+    },
+    {
+      "key": "rug-pull",
+      "term": "Rug Pull",
+      "explanation": "A scam where project creators disappear with user funds.",
+      "notes": "Important safety term."
+    },
+    {
+      "key": "fomo",
+      "term": "FOMO",
+      "explanation": "Fear Of Missing Out - leading to impulsive investing.",
+      "notes": "Common slang."
+    },
+    {
+      "key": "hodl",
+      "term": "HODL",
+      "explanation": "Hold On for Dear Life: Slang meaning to hold bitcoin long-term.",
+      "notes": "Community term."
+    },
+    {
+      "key": "whale",
+      "term": "Whale",
+      "explanation": "A person or entity holding very large amounts of cryptocurrency.",
+      "notes": ""
+    },
+    {
+      "key": "bear-market",
+      "term": "Bear Market",
+      "explanation": "A period of falling prices.",
+      "notes": ""
+    },
+    {
+      "key": "bull-market",
+      "term": "Bull Market",
+      "explanation": "A period of rising prices.",
+      "notes": ""
+    },
+    {
+      "key": "portfolio",
+      "term": "Portfolio",
+      "explanation": "A collection of owned assets.",
+      "notes": ""
+    },
+    {
+      "key": "diversification",
+      "term": "Diversification",
+      "explanation": "Spreading investments across multiple assets.",
+      "notes": ""
+    },
+    {
+      "key": "market-capitalization",
+      "term": "Market Capitalization",
+      "explanation": "Total market value of an asset supply.",
+      "notes": ""
+    },
+    {
+      "key": "liquidity-pool",
+      "term": "Liquidity Pool",
+      "explanation": "Shared funds used for decentralized trading.",
+      "notes": ""
+    },
+    {
+      "key": "governance-token",
+      "term": "Governance Token",
+      "explanation": "A token used for voting within a project.",
+      "notes": ""
+    }
+  ],
+  "ui": [
+    {
+      "key": "continue",
+      "term": "Continue",
+      "explanation": "Proceed to the next step.",
+      "notes": "Common button."
+    },
+    {
+      "key": "confirm",
+      "term": "Confirm",
+      "explanation": "Approve or verify an action.",
+      "notes": ""
+    },
+    {
+      "key": "cancel",
+      "term": "Cancel",
+      "explanation": "Stop or exit an action.",
+      "notes": ""
+    },
+    {
+      "key": "back",
+      "term": "Back",
+      "explanation": "Return to the previous screen.",
+      "notes": ""
+    },
+    {
+      "key": "next",
+      "term": "Next",
+      "explanation": "Move forward to the next screen.",
+      "notes": ""
+    },
+    {
+      "key": "finish",
+      "term": "Finish",
+      "explanation": "Complete a process.",
+      "notes": ""
+    },
+    {
+      "key": "save",
+      "term": "Save",
+      "explanation": "Store information.",
+      "notes": ""
+    },
+    {
+      "key": "delete",
+      "term": "Delete",
+      "explanation": "Permanently remove information.",
+      "notes": "High-risk action."
+    },
+    {
+      "key": "edit",
+      "term": "Edit",
+      "explanation": "Modify existing information.",
+      "notes": ""
+    },
+    {
+      "key": "retry",
+      "term": "Retry",
+      "explanation": "Attempt the action again.",
+      "notes": ""
+    },
+    {
+      "key": "refresh",
+      "term": "Refresh",
+      "explanation": "Update displayed information.",
+      "notes": ""
+    },
+    {
+      "key": "enable",
+      "term": "Enable",
+      "explanation": "Turn a feature on.",
+      "notes": ""
+    },
+    {
+      "key": "disable",
+      "term": "Disable",
+      "explanation": "Turn a feature off.",
+      "notes": ""
+    },
+    {
+      "key": "connect",
+      "term": "Connect",
+      "explanation": "Establish a connection.",
+      "notes": ""
+    },
+    {
+      "key": "disconnect",
+      "term": "Disconnect",
+      "explanation": "End a connection.",
+      "notes": ""
+    },
+    {
+      "key": "sync",
+      "term": "Sync",
+      "explanation": "Synchronize data.",
+      "notes": ""
+    },
+    {
+      "key": "loading",
+      "term": "Loading",
+      "explanation": "Content is being processed or retrieved.",
+      "notes": ""
+    },
+    {
+      "key": "processing",
+      "term": "Processing",
+      "explanation": "The system is completing an operation.",
+      "notes": ""
+    },
+    {
+      "key": "success",
+      "term": "Success",
+      "explanation": "Action completed successfully.",
+      "notes": ""
+    },
+    {
+      "key": "error",
+      "term": "Error",
+      "explanation": "A problem occurred.",
+      "notes": ""
+    },
+    {
+      "key": "warning",
+      "term": "Warning",
+      "explanation": "An alert about possible risk or caution.",
+      "notes": ""
+    },
+    {
+      "key": "information",
+      "term": "Information",
+      "explanation": "General informational message.",
+      "notes": ""
+    },
+    {
+      "key": "settings",
+      "term": "Settings",
+      "explanation": "Configuration options for the application.",
+      "notes": ""
+    },
+    {
+      "key": "advanced-settings",
+      "term": "Advanced Settings",
+      "explanation": "Additional configuration options for experienced users.",
+      "notes": ""
+    },
+    {
+      "key": "security-settings",
+      "term": "Security Settings",
+      "explanation": "Options related to account or wallet protection.",
+      "notes": ""
+    },
+    {
+      "key": "language",
+      "term": "Language",
+      "explanation": "Interface language selection.",
+      "notes": ""
+    },
+    {
+      "key": "currency",
+      "term": "Currency",
+      "explanation": "Selected monetary unit.",
+      "notes": ""
+    },
+    {
+      "key": "search",
+      "term": "Search",
+      "explanation": "Find information within the application.",
+      "notes": ""
+    },
+    {
+      "key": "filter",
+      "term": "Filter",
+      "explanation": "Narrow displayed results.",
+      "notes": ""
+    },
+    {
+      "key": "scan",
+      "term": "Scan",
+      "explanation": "Use camera or reader to capture information.",
+      "notes": ""
+    },
+    {
+      "key": "upload",
+      "term": "Upload",
+      "explanation": "Send a file or image to the application.",
+      "notes": ""
+    },
+    {
+      "key": "download",
+      "term": "Download",
+      "explanation": "Save information from the application to the device.",
+      "notes": ""
+    },
+    {
+      "key": "share",
+      "term": "Share",
+      "explanation": "Send information to another person or app.",
+      "notes": ""
+    },
+    {
+      "key": "clipboard",
+      "term": "Clipboard",
+      "explanation": "Temporary storage for copied information.",
+      "notes": ""
+    },
+    {
+      "key": "copied",
+      "term": "Copied",
+      "explanation": "Information successfully copied.",
+      "notes": ""
+    },
+    {
+      "key": "invalid-input",
+      "term": "Invalid Input",
+      "explanation": "Entered information is not accepted.",
+      "notes": ""
+    },
+    {
+      "key": "try-again",
+      "term": "Try Again",
+      "explanation": "Repeat the previous action.",
+      "notes": ""
+    },
+    {
+      "key": "required-field",
+      "term": "Required Field",
+      "explanation": "Information that must be entered before continuing.",
+      "notes": ""
+    },
+    {
+      "key": "session-timeout",
+      "term": "Session Timeout",
+      "explanation": "An automatic disconnect that occurs when a user takes too long to respond to a USSD menu prompt.",
+      "notes": "Critical for feature phones; the translation must be very brief so the alert fits on basic screens."
+    },
+    {
+      "key": "dial-code-shortcode",
+      "term": "Dial code / Shortcode",
+      "explanation": "The unique combination of numbers and symbols dialed on a keypad to launch the wallet menu (e.g., *384#).",
+      "notes": "Essential string for printed onboarding flyers and basic instructions."
+    },
+    {
+      "key": "main-menu",
+      "term": "Main Menu",
+      "explanation": "The primary landing screen or home directory of the application's navigation layout.",
+      "notes": ""
+    }
+  ],
+  "wallet-ui": [
+    {
+      "key": "create-wallet",
+      "term": "Create Wallet",
+      "explanation": "Generate a new wallet.",
+      "notes": "Common onboarding string."
+    },
+    {
+      "key": "restore-existing-wallet",
+      "term": "Restore Existing Wallet",
+      "explanation": "Recover an existing wallet using backup information.",
+      "notes": ""
+    },
+    {
+      "key": "create-backup",
+      "term": "Create Backup",
+      "explanation": "Save recovery information securely.",
+      "notes": ""
+    },
+    {
+      "key": "verify-backup",
+      "term": "Verify Backup",
+      "explanation": "Confirm backup information is correct.",
+      "notes": ""
+    },
+    {
+      "key": "wallet-created-successfully",
+      "term": "Wallet Created Successfully",
+      "explanation": "Confirmation that wallet setup completed.",
+      "notes": ""
+    },
+    {
+      "key": "enter-seed-phrase",
+      "term": "Enter Seed Phrase",
+      "explanation": "Input recovery words to restore access.",
+      "notes": "High-risk UI string."
+    },
+    {
+      "key": "invalid-pin",
+      "term": "Invalid PIN",
+      "explanation": "An error message displaying that the entered numeric identity code is incorrect.",
+      "notes": ""
+    },
+    {
+      "key": "incorrect-seed-phrase",
+      "term": "Incorrect Seed Phrase",
+      "explanation": "Recovery words entered incorrectly.",
+      "notes": ""
+    },
+    {
+      "key": "invalid-word",
+      "term": "Invalid Word",
+      "explanation": "A word not recognized in the seed phrase list.",
+      "notes": ""
+    },
+    {
+      "key": "wrong-passphrase",
+      "term": "Wrong Passphrase",
+      "explanation": "Incorrect additional secret entered.",
+      "notes": ""
+    },
+    {
+      "key": "wallet-locked",
+      "term": "Wallet Locked",
+      "explanation": "Wallet access temporarily restricted.",
+      "notes": ""
+    },
+    {
+      "key": "unlock-wallet",
+      "term": "Unlock Wallet",
+      "explanation": "Restore wallet access.",
+      "notes": ""
+    },
+    {
+      "key": "confirm-transaction",
+      "term": "Confirm Transaction",
+      "explanation": "Review and approve a transaction.",
+      "notes": ""
+    },
+    {
+      "key": "review-details",
+      "term": "Review Details",
+      "explanation": "Check transaction or wallet information carefully.",
+      "notes": ""
+    },
+    {
+      "key": "recipient-address",
+      "term": "Recipient Address",
+      "explanation": "Address receiving the payment.",
+      "notes": ""
+    },
+    {
+      "key": "sending-amount",
+      "term": "Sending Amount",
+      "explanation": "Amount being transferred.",
+      "notes": ""
+    },
+    {
+      "key": "remaining-balance",
+      "term": "Remaining Balance",
+      "explanation": "Funds left after transaction completion.",
+      "notes": ""
+    },
+    {
+      "key": "transaction-successful",
+      "term": "Transaction Successful",
+      "explanation": "Transaction completed successfully.",
+      "notes": ""
+    },
+    {
+      "key": "transaction-failed",
+      "term": "Transaction Failed",
+      "explanation": "Transaction could not be completed.",
+      "notes": ""
+    },
+    {
+      "key": "network-unavailable",
+      "term": "Network Unavailable",
+      "explanation": "Internet or network access unavailable.",
+      "notes": ""
+    },
+    {
+      "key": "syncing-wallet",
+      "term": "Syncing Wallet",
+      "explanation": "Wallet updating blockchain information.",
+      "notes": ""
+    },
+    {
+      "key": "generating-address",
+      "term": "Generating Address",
+      "explanation": "Creating a new receiving address.",
+      "notes": ""
+    },
+    {
+      "key": "address-copied",
+      "term": "Address Copied",
+      "explanation": "Wallet address copied successfully.",
+      "notes": ""
+    },
+    {
+      "key": "qr-code-detected",
+      "term": "QR Code Detected",
+      "explanation": "QR code successfully scanned.",
+      "notes": ""
+    },
+    {
+      "key": "camera-permission-required",
+      "term": "Camera Permission Required",
+      "explanation": "Application requires camera access.",
+      "notes": ""
+    },
+    {
+      "key": "enable-notifications",
+      "term": "Enable Notifications",
+      "explanation": "Turn on alerts and notifications.",
+      "notes": ""
+    },
+    {
+      "key": "backup-reminder",
+      "term": "Backup Reminder",
+      "explanation": "Reminder to save recovery information.",
+      "notes": ""
+    },
+    {
+      "key": "low-balance",
+      "term": "Low Balance",
+      "explanation": "Wallet balance may be insufficient.",
+      "notes": ""
+    },
+    {
+      "key": "fee-estimate",
+      "term": "Fee Estimate",
+      "explanation": "Estimated transaction fee.",
+      "notes": ""
+    },
+    {
+      "key": "recommended-fee",
+      "term": "Recommended Fee",
+      "explanation": "Suggested transaction fee level.",
+      "notes": ""
+    },
+    {
+      "key": "export-backup",
+      "term": "Export Backup",
+      "explanation": "Save backup information externally.",
+      "notes": ""
+    },
+    {
+      "key": "import-backup",
+      "term": "Import Backup",
+      "explanation": "Load backup information into wallet.",
+      "notes": ""
+    },
+    {
+      "key": "connect-hardware-wallet",
+      "term": "Connect Hardware Wallet",
+      "explanation": "Pair a hardware wallet device.",
+      "notes": ""
+    },
+    {
+      "key": "device-connected",
+      "term": "Device Connected",
+      "explanation": "Hardware device successfully connected.",
+      "notes": ""
+    },
+    {
+      "key": "device-disconnected",
+      "term": "Device Disconnected",
+      "explanation": "Hardware device connection lost.",
+      "notes": ""
+    },
+    {
+      "key": "firmware-update",
+      "term": "Firmware Update",
+      "explanation": "Update for device operating software.",
+      "notes": ""
+    },
+    {
+      "key": "verify-on-device",
+      "term": "Verify on Device",
+      "explanation": "Confirm details directly on hardware device.",
+      "notes": "Important security flow."
+    }
+  ],
+  "advanced-bitcoin": [
+    {
+      "key": "soft-fork",
+      "term": "Soft Fork",
+      "explanation": "A backward-compatible Bitcoin protocol upgrade.",
+      "notes": ""
+    },
+    {
+      "key": "hard-fork",
+      "term": "Hard Fork",
+      "explanation": "A protocol change incompatible with previous versions.",
+      "notes": ""
+    },
+    {
+      "key": "taproot",
+      "term": "Taproot",
+      "explanation": "A Bitcoin upgrade improving privacy and flexibility.",
+      "notes": "High-priority modern term."
+    },
+    {
+      "key": "segwit",
+      "term": "SegWit",
+      "explanation": "A Bitcoin upgrade improving transaction efficiency.",
+      "notes": "Very common wallet term."
+    },
+    {
+      "key": "bech32-address",
+      "term": "Bech32 Address",
+      "explanation": "A modern Bitcoin address format often beginning with bc1.",
+      "notes": ""
+    },
+    {
+      "key": "legacy-address",
+      "term": "Legacy Address",
+      "explanation": "An older Bitcoin address format.",
+      "notes": ""
+    },
+    {
+      "key": "script",
+      "term": "Script",
+      "explanation": "Programmable conditions controlling Bitcoin spending.",
+      "notes": ""
+    },
+    {
+      "key": "witness-data",
+      "term": "Witness Data",
+      "explanation": "Transaction data introduced with SegWit.",
+      "notes": ""
+    },
+    {
+      "key": "block-reward",
+      "term": "Block Reward",
+      "explanation": "Newly issued bitcoin plus transaction fees paid to miners.",
+      "notes": ""
+    },
+    {
+      "key": "coinbase-transaction",
+      "term": "Coinbase Transaction",
+      "explanation": "The first transaction in a mined block paying the miner reward.",
+      "notes": ""
+    },
+    {
+      "key": "dust",
+      "term": "Dust",
+      "explanation": "A tiny bitcoin amount that costs more to spend than its value.",
+      "notes": ""
+    },
+    {
+      "key": "dust-limit",
+      "term": "Dust Limit",
+      "explanation": "Minimum useful transaction amount.",
+      "notes": ""
+    },
+    {
+      "key": "time-lock",
+      "term": "Time Lock",
+      "explanation": "A restriction delaying when funds can be spent.",
+      "notes": ""
+    },
+    {
+      "key": "multi-path-payment",
+      "term": "Multi-Path Payment",
+      "explanation": "A Lightning payment split into multiple smaller payments.",
+      "notes": ""
+    },
+    {
+      "key": "fee-bumping",
+      "term": "Fee Bumping",
+      "explanation": "Increasing transaction fees after broadcast.",
+      "notes": ""
+    },
+    {
+      "key": "replaceable-transaction",
+      "term": "Replaceable Transaction",
+      "explanation": "A transaction marked for possible fee replacement.",
+      "notes": ""
+    },
+    {
+      "key": "confirmation-target",
+      "term": "Confirmation Target",
+      "explanation": "Desired speed for transaction confirmation.",
+      "notes": ""
+    },
+    {
+      "key": "blockchain-explorer",
+      "term": "Blockchain Explorer",
+      "explanation": "A website or tool for viewing blockchain data.",
+      "notes": ""
+    },
+    {
+      "key": "merkle-tree",
+      "term": "Merkle Tree",
+      "explanation": "A cryptographic structure organizing transactions in blocks.",
+      "notes": ""
+    },
+    {
+      "key": "timestamp",
+      "term": "Timestamp",
+      "explanation": "Recorded time associated with blockchain data.",
+      "notes": ""
+    },
+    {
+      "key": "reorg",
+      "term": "Reorg",
+      "explanation": "A temporary blockchain history adjustment.",
+      "notes": ""
+    },
+    {
+      "key": "final-settlement",
+      "term": "Final Settlement",
+      "explanation": "A payment considered permanently completed.",
+      "notes": ""
+    }
+  ]
+}

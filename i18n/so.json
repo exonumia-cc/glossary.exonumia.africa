@@ -1,0 +1,2184 @@
+{
+  "concepts": [
+    {
+      "key": "bitcoin",
+      "term": "Bitcoin",
+      "explanation": "Shabakad lacag dhijitaal ah oo dhexe taas oo shaqaysa banki iyo dowlad la'aan.",
+      "notes": ""
+    },
+    {
+      "key": "bitcoin-btc",
+      "term": "Bitcon(BTC)",
+      "explanation": "Halbeega lacagta ee loo isticmaalo shabakadda Bitcoin.",
+      "notes": ""
+    },
+    {
+      "key": "satoshi-sat",
+      "term": "Satoshi (sat)",
+      "explanation": "Halbeega ugu yar ee bitcoin. Halkii bitcoin wuxuu u dhigmaa 100,000,000 oo satoshi.",
+      "notes": ""
+    },
+    {
+      "key": "bit",
+      "term": "Jajab",
+      "explanation": "Qayb yar oo ka mid ah bitcoin taas oo u dhiganta 100 satoshi.",
+      "notes": ""
+    },
+    {
+      "key": "blockchain",
+      "term": "Blockchain",
+      "explanation": "Diiwaan guud oo furan oo kaydiya dhammaan wax-iswaydaarsiga lacagta Bitcoin.",
+      "notes": ""
+    },
+    {
+      "key": "block",
+      "term": "Block",
+      "explanation": "Lambarka aqoonsiga ee block kasta laga siiyo blockchain.ka.",
+      "notes": ""
+    },
+    {
+      "key": "block-height",
+      "term": "Tirada Block-ga",
+      "explanation": "Lambarka taxanaha Block-ga ee ku dhex jira silsiladda blockchain-ka.",
+      "notes": ""
+    },
+    {
+      "key": "node",
+      "term": "Node",
+      "explanation": "Kombuyuutar xaqiijiya isla markaana la wadaaga dadka kale xogaha lacag-gudbinta iyo blocks-ka Bitcoin.",
+      "notes": ""
+    },
+    {
+      "key": "longest-chain",
+      "term": "Silsilaada u dheer",
+      "explanation": "Nooc ka mid ah taariikhda macaamilada ee uu ku baxay dhibkii iyo shaqadii ugu badneyd, kaas oo ay nodes-ku had iyo jeer u aqoonsadaan silsiladda rasmiga ah ee saxda ah iyo diwaanka saxda ah ee waxa dhacay.",
+      "notes": ""
+    },
+    {
+      "key": "full-node",
+      "term": "Nod-ka Diiwaanka Dhammaystiran",
+      "explanation": "Nod-ka si madax-bannaan u xaqiijiya dhammaan xeerarka Bitcoin, isla markaana kaydiya silsiladda blockchain-ka oo dhammaystiran.",
+      "notes": ""
+    },
+    {
+      "key": "peer-to-peer-p2p",
+      "term": "Qof-ka-Qof",
+      "explanation": "Nidaam ay isticmaalayaashu si toos ah u wada xiriiraan (ama u ganacsadaan) iyadoo aan loo baahnayn dhex-dhexaadiye.",
+      "notes": ""
+    },
+    {
+      "key": "decentralized",
+      "term": "Nidaam aan hal meel laga xukumin",
+      "explanation": "Aanay maamulin hal hay'ad ama hal urur oo gooni ah.",
+      "notes": ""
+    },
+    {
+      "key": "consensus",
+      "term": "Heshiis guud",
+      "explanation": "Heshiis ka dhexeeya ka qaybqaadayaasha shabakadda ee ku saabsan xaalada rasmiga ah ee blockchain-ka.",
+      "notes": ""
+    },
+    {
+      "key": "mining",
+      "term": "Qodista Bitcoin",
+      "explanation": "Habka lagu sugo ammaanka Bitcoin, laguna abuuro blocks-ka ayadoo la isticmaalayo awoodda kombuyuutarka.",
+      "notes": ""
+    },
+    {
+      "key": "miner",
+      "term": "Bitcon-qodhe",
+      "explanation": "Qofka ama mashiinka fuliya qodista Bitcoin.",
+      "notes": ""
+    },
+    {
+      "key": "proof-of-work",
+      "term": "Sugidda amniga",
+      "explanation": "Nidaamka amniga ee ay Bitcoin isticmaasho, kaas oo u baahan dadaal iyo awood xisaabeed oo kombuyuutar.",
+      "notes": ""
+    },
+    {
+      "key": "hash",
+      "term": "Hash-ka",
+      "explanation": "Aqoonsashada gaarka ah ee cryptographic-ga ah ee xogta.",
+      "notes": ""
+    },
+    {
+      "key": "hash-rate",
+      "term": "Heerka xisaabinta hash-ka",
+      "explanation": "Wadarta guud ee awoodda kumbuyuutarada lagu sugo ammaanka shabakadda Bitcoin.",
+      "notes": ""
+    },
+    {
+      "key": "difficulty",
+      "term": "Adkaanta",
+      "explanation": "Heerka adkaanta bitcoin qodista.",
+      "notes": ""
+    },
+    {
+      "key": "transaction",
+      "term": "Wax kala iibsi",
+      "explanation": "U xifdinta ama u wareejinta Bitcoin ee hal ciwaan loogu raddo ciwaan kale.",
+      "notes": ""
+    },
+    {
+      "key": "transaction-id-txid",
+      "term": "Aqoonsiga wax kala iibsiga (TXID)",
+      "explanation": "Aqoonsi gaar ah oo loo isticmaalo xaqiijinta wax kala iibsiga Bitcoin.",
+      "notes": ""
+    },
+    {
+      "key": "transaction-fee",
+      "term": "Khidmada wax kala iibsiga",
+      "explanation": "Lacagta la siiyo macdan-qorayaasha (miners) si ay u socodsiiyaan macaamilka.",
+      "notes": ""
+    },
+    {
+      "key": "confirmation",
+      "term": "Xaqiijin",
+      "explanation": "Caddeynta muujineysa in macaamil (transaction) lagu daray block dhexdiisa.",
+      "notes": ""
+    },
+    {
+      "key": "unconfirmed-transaction",
+      "term": "Wax Kala Iibsi Aan La Xaqiijinin.",
+      "explanation": "Wax kala iibsi aan weli lagu darin block-ga.",
+      "notes": ""
+    },
+    {
+      "key": "double-spend",
+      "term": "Labalaabidda kharash-garaynta.",
+      "explanation": "Isku-day la doonayo in hal Bitcoin lagu kharash-gareeyo labo jeer.",
+      "notes": ""
+    },
+    {
+      "key": "utxo",
+      "term": "UTXO",
+      "explanation": "Hadhaaga lacagta aan la kharashgarayn; waa qayb ka mid ah lacagta dhijitaalka ah oo ka soo hartay wax kala iibsi hore.",
+      "notes": ""
+    },
+    {
+      "key": "mempool",
+      "term": "Hool Sugitaan oo Dhijitaala ah",
+      "explanation": "Hoolka sugitaanka dhijitaalka ah oo ay wax kala iibsiyadu ku dhex jiraan ka hor inta aan la xaqiijin.",
+      "notes": ""
+    },
+    {
+      "key": "chain-reorganization",
+      "term": "Dib-u-habaynta Silsiladda",
+      "explanation": "Isbeddel ku-meel-gaar ah oo ku dhaca sooyaalka blockchain-ka, kaas oo ay sababeen blocks tartamaya.",
+      "notes": ""
+    },
+    {
+      "key": "genesis-block",
+      "term": "Balooga asaaska ahaa",
+      "explanation": "Block-gii ugu horreeyay ee silsiladda blockchain-ka Bitcoin.\".",
+      "notes": ""
+    },
+    {
+      "key": "halving",
+      "term": "Kala-baridda",
+      "explanation": "Dhacdo kala badha (hoos u dhigta) abaal-marinta qodista Bitcoin qiyaastii afartii dhacaba mar.",
+      "notes": ""
+    },
+    {
+      "key": "supply-cap",
+      "term": "Tiirada ugu badan ee la soo saari karo",
+      "explanation": "Cadadka ugu badan ee Bitcoin ee jiri kara: waa 21 milyan.",
+      "notes": ""
+    },
+    {
+      "key": "open-source",
+      "term": "Koodh furan",
+      "explanation": "Barnaamij koodkiisa uu qof kasta baari karo isla markaana wax ka beddeli karo.",
+      "notes": ""
+    },
+    {
+      "key": "permissionless",
+      "term": "Aan ogolaansho u baahnayn",
+      "explanation": "Nidaam uu qof kasta isticmaali karo isaga oo aan oggolaansho u baahnayn.",
+      "notes": ""
+    },
+    {
+      "key": "censorship-resistance",
+      "term": "Fikradaha Qiimaha Sarreeya leh",
+      "explanation": "Awoodda lagaga hortago in la xannibo ama la xaddido wax kala iibsiyada.",
+      "notes": ""
+    },
+    {
+      "key": "incentive-mining-rewards",
+      "term": "Dhiirrigelin",
+      "explanation": "Abaal-marin la siiyo sameeyaha block-ga cusub si dadka loogu dhiirrigeliyo inay taageeraan shabakadda. Abaal-marintan waxay ka kooban tahay lacago cusub oo la sameeyay iyo ''khidmadaha wax kala iibsiga'' oo ay bixiyaan isticmaalayaashu.",
+      "notes": ""
+    }
+  ],
+  "wallets": [
+    {
+      "key": "wallet",
+      "term": "Boorso dhijitaal ah",
+      "explanation": "Software ama hardware loo isticmaalo in lagu maamulo bitcoin laguna saxiixo wax-iswaydaarsiga lacagta.",
+      "notes": ""
+    },
+    {
+      "key": "bitcoin-wallet",
+      "term": "Boorsada Bitcoin",
+      "explanation": "Boorso dhijitaal ah oo si gaar ah loogu talagalay kala iibsiga Bitcoin.",
+      "notes": ""
+    },
+    {
+      "key": "lightning-wallet",
+      "term": "Boorsada Lightning",
+      "explanation": "Boorso taageerta lacag bixinada Shabakadda Lightning.",
+      "notes": ""
+    },
+    {
+      "key": "custodial-wallet",
+      "term": "Borsada ay cid kale kuu hayso furyaashaada",
+      "explanation": "Boorso ay qolo kale maamusho furayaasha isticmaalaha.",
+      "notes": ""
+    },
+    {
+      "key": "non-custodial-wallet",
+      "term": "Boorso adigu aad u madaxbannaan tahay",
+      "explanation": "Boorsada lacagta dhijitaalka ah oo uu isticmaalahu isagu maamulo furayaashiisa gaarka ah.",
+      "notes": ""
+    },
+    {
+      "key": "self-custody",
+      "term": "Maamulidda Bitcoin-kaaga",
+      "explanation": "Inaad adigu haysato oo aad maamusho Bitcoin-kaaga iyada oo aadan cid kale ku tiirsanayn.",
+      "notes": ""
+    },
+    {
+      "key": "hardware-wallet",
+      "term": "Boorsada hardware-ka ah",
+      "explanation": "Qalab la taaban karo oo loo isticmaalo in si ammaan ah loogu kaydiyo furayaasha gelitaanka.",
+      "notes": ""
+    },
+    {
+      "key": "hot-wallet",
+      "term": "Boorso onlayn ah",
+      "explanation": "Boorso ku xiran internet-ka.",
+      "notes": ""
+    },
+    {
+      "key": "cold-wallet",
+      "term": "Boorso offleen ah",
+      "explanation": "Boorso aan internet-ka ku xirnayn ammaan ahaan darteed.",
+      "notes": ""
+    },
+    {
+      "key": "watch-only-wallet",
+      "term": "Boorso Akhris-Keliya ah",
+      "explanation": "Boorso eegis kaliya ah hantida taala laakiin aan wax lacag ah laga bixin karin.",
+      "notes": ""
+    },
+    {
+      "key": "multisig-wallet",
+      "term": "Boorso Saxiixyo Badan",
+      "explanation": "Boorso u baahan saxiixyo badan si lacag looga bixiyo.",
+      "notes": ""
+    },
+    {
+      "key": "vault",
+      "term": "Khasnadda Bitcoin",
+      "explanation": "Nidaam boorso oo horumarsan oo wata xayiraado amni oo dheeri ah.",
+      "notes": ""
+    },
+    {
+      "key": "airgapped",
+      "term": "Qala aan internet ku xirnayn",
+      "explanation": "Gebi ahaanba ka go'an aaladaha ku xiran internet-ka.",
+      "notes": ""
+    },
+    {
+      "key": "seedsigner",
+      "term": "Saxiixaha Bitcoin",
+      "explanation": "Aalad saxiix oo Bitcoin ah, oo furan isla markaana internet-ka ka go'an.",
+      "notes": ""
+    },
+    {
+      "key": "sign-transaction",
+      "term": "Saxiixida wareejinta Bitcoin",
+      "explanation": "Inaad ku ansixiso wareejinta bitcoiin-ta furayaasha sirta ah.",
+      "notes": ""
+    },
+    {
+      "key": "broadcast-transaction",
+      "term": "Baahinta Wareejinta",
+      "explanation": "Inaad u baahiso wareejintaadii la ansixiyay dhanka shabakadda guud.",
+      "notes": ""
+    },
+    {
+      "key": "receive-bitcoin",
+      "term": "Hel Bitcoin",
+      "explanation": "Inaad Bitcoin ku qaabisho boorsadaada.",
+      "notes": ""
+    },
+    {
+      "key": "send-bitcoin",
+      "term": "Dir Bitcoin",
+      "explanation": "Inaad Bitcoin u wareejiso ciwaan kale.",
+      "notes": ""
+    },
+    {
+      "key": "wallet-balance",
+      "term": "Baaqiga Boorsada",
+      "explanation": "Cadadka Bitcoin ee laga heli karo boorsada.",
+      "notes": ""
+    },
+    {
+      "key": "available-balance",
+      "term": "Baaqiga soo hadhay",
+      "explanation": "Bitcoin-ka hadda la kharash gareeyn karo.",
+      "notes": ""
+    },
+    {
+      "key": "pending-balance",
+      "term": "Haraaga sugitaanka",
+      "explanation": "Lacagta sugayso xaqiijin.",
+      "notes": ""
+    },
+    {
+      "key": "address-book",
+      "term": "Diiwanka Ciwaannada",
+      "explanation": "Liiska la kaydiyay ee ciwaannada dadka lacagta loo diro.",
+      "notes": ""
+    },
+    {
+      "key": "wallet-backup",
+      "term": "Nuqul-kaydka Boorsada",
+      "explanation": "Nuqul badbaado oo loogu talagalay macluumaadka gelitaanka boorsada ama erayada sirta ah.",
+      "notes": ""
+    },
+    {
+      "key": "restore-wallet",
+      "term": "Soo ceshada Boorsada",
+      "explanation": "Inaad dib u soo ceshato gelitaanka boorsadaada adigoo isticmaalaya xogta keydka.",
+      "notes": ""
+    },
+    {
+      "key": "import-wallet",
+      "term": "Ku shubista boorsada",
+      "explanation": "Inaad boorso horay u jirtay ku darto app-ka.",
+      "notes": ""
+    },
+    {
+      "key": "export-wallet",
+      "term": "Dhoofi boorsada",
+      "explanation": "Inaad xogta boorsada u wareejiso meel ka baxsan app-ka.",
+      "notes": ""
+    },
+    {
+      "key": "wallet-descriptor",
+      "term": "Qeexaha boorsada",
+      "explanation": "Qaab dhismeedka qeexaya qaabka ay u samaysan tahay boorsada iyo furayaasheeda.",
+      "notes": ""
+    },
+    {
+      "key": "wallet-recovery",
+      "term": "Dib u soo ceshashada boorsada.",
+      "explanation": "Dib u soo ceshashada gelitaanka boorsada ka dib marka aaladdu kaa lunro ama fashilanto.",
+      "notes": ""
+    }
+  ],
+  "security": [
+    {
+      "key": "private-key",
+      "term": "Fura sir ah",
+      "explanation": "Fura sir qaris eh oo logu tiligalay ogoloshada isticmilka bitcoin.",
+      "notes": ""
+    },
+    {
+      "key": "public-key",
+      "term": "Fura sir eheen",
+      "explanation": "Fura sir qaris eh oo loogu tiligalay sameynta ciwan iyo lagu xaqijiyo saxiixyada.",
+      "notes": ""
+    },
+    {
+      "key": "seed-phrase",
+      "term": "Seed phrase",
+      "explanation": "Liis erayo oo loogu tiligalay dib usoocelinta boorsada digitaalka.",
+      "notes": ""
+    },
+    {
+      "key": "recovery-phrase",
+      "term": "Erey dib usooceli",
+      "explanation": "Liis erayo oo loogu tiligalay dib usoocelinta boorsada digitaalka.",
+      "notes": ""
+    },
+    {
+      "key": "backup-phrase",
+      "term": "Erey keydin",
+      "explanation": "Eray loogu talagalay dib u soo celinta gelitaanka boorsada digitaalka.",
+      "notes": ""
+    },
+    {
+      "key": "secret-words",
+      "term": "Erey sir ah",
+      "explanation": "Waa magac kale oo loistacmala seed phrase.",
+      "notes": ""
+    },
+    {
+      "key": "mnemonic-phrase",
+      "term": "Erayada Soo-ceshada",
+      "explanation": "Eray farsama oo heerka uu garsiisanyahay seed phraseka tilmaamayo.",
+      "notes": ""
+    },
+    {
+      "key": "recovery-words",
+      "term": "Erey dib usoocelin",
+      "explanation": "Ereyadha kujiro seed phrase.",
+      "notes": ""
+    },
+    {
+      "key": "passphrase",
+      "term": "Erey dib usoocelin",
+      "explanation": "Eray khaas oo sir ah oo deraad eh oo lagu daray erayadadha 12/24 sida loo hela amni dheraad ah.",
+      "notes": ""
+    },
+    {
+      "key": "password",
+      "term": "Furaha sirta ah",
+      "explanation": "Erayo sir ah oo loo isticmala ilaalinta applicationka mise qalabka.",
+      "notes": ""
+    },
+    {
+      "key": "pin",
+      "term": "Pin-ka",
+      "explanation": "Nambar kooban oo sir ku ah.",
+      "notes": ""
+    },
+    {
+      "key": "encryption",
+      "term": "Qaab sir ah",
+      "explanation": "Badalka datadha oo logu badalay hab loo akhrinkarin sida loo ilaaliyo.",
+      "notes": ""
+    },
+    {
+      "key": "decryption",
+      "term": "Qaab sir eheen",
+      "explanation": "Dib ubadalka xogta sireysan qaab loo akhrin kara.",
+      "notes": ""
+    },
+    {
+      "key": "digital-signature",
+      "term": "Saxiix digitaal",
+      "explanation": "Cadeyn sir qaris ah oo logu talagalay ogoolashada maacamil.",
+      "notes": ""
+    },
+    {
+      "key": "verify-signature",
+      "term": "Xaqiji saxiixa",
+      "explanation": "Hubinta saxiixa in uu sax yahay.",
+      "notes": ""
+    },
+    {
+      "key": "authentication",
+      "term": "Xaqijinta",
+      "explanation": "Hubinta aqoonsiga isticmalaha.",
+      "notes": ""
+    },
+    {
+      "key": "two-factor-authentication-2fa",
+      "term": "Labo goor xaqijin",
+      "explanation": "Talaabo amni oo dheeraad ah oo ubaahan hab labaad ah xaqijiin.",
+      "notes": ""
+    },
+    {
+      "key": "biometric-authentication",
+      "term": "Xaqijin biometric ah",
+      "explanation": "Hubinta aqoonsi oo laistacmalaya faraha ,wajiga ama habyaala kale.",
+      "notes": ""
+    },
+    {
+      "key": "backup",
+      "term": "Nuqul kayd",
+      "explanation": "Nuqul amni ah oo keydinaaya xoogta muhimka oo laguu ilaaliyo boorsada digitaalka.",
+      "notes": ""
+    },
+    {
+      "key": "restore",
+      "term": "Dib usoocelin",
+      "explanation": "Dib usoo kabsiga gelitanka qalabka oo la dumiyay iyado la adegsanaya xogta nuqul keydinta.",
+      "notes": ""
+    },
+    {
+      "key": "recovery",
+      "term": "Soo kabsasha",
+      "explanation": "Habka dib usookabsashada gelitanka boorsada digitaalka.",
+      "notes": ""
+    },
+    {
+      "key": "secure-storage",
+      "term": "Kayd ammaan ah",
+      "explanation": "Ilaalinta xoogta xasaasiga sida oo loo xadin ama loo duminin.",
+      "notes": ""
+    },
+    {
+      "key": "offline-storage",
+      "term": "Kaydka khadka adeegsanenin",
+      "explanation": "Keydiinta xogta xasaasiga iyadho khadka la adegsanenin.",
+      "notes": ""
+    },
+    {
+      "key": "tamper-resistant",
+      "term": "Ka hortaga wax kabadalka",
+      "explanation": "Loogu talagaley in uu muujiyo ama ka hortago wax kabeddel aan aan la oggolayn.",
+      "notes": ""
+    },
+    {
+      "key": "secure-element",
+      "term": "Qeybta amniga ee chipka",
+      "explanation": "Kayb electronik ah oo gaar ahh oo loogu talagaley ilaalinta furaayaasha sir qarista.",
+      "notes": ""
+    },
+    {
+      "key": "phishing",
+      "term": "Khayaanada maaliyadeed ee khadka",
+      "explanation": "Isku dayo khiyaano ah oo lagu xado xog xasaasi ah.",
+      "notes": ""
+    },
+    {
+      "key": "scam",
+      "term": "khiyaano",
+      "explanation": "Khiyaano lagu doonayo in lagu xado lacag ama xog.",
+      "notes": ""
+    },
+    {
+      "key": "malware",
+      "term": "Softweyar wax yeelo leh",
+      "explanation": "Barnaamij oo loogu talagaley inuu wax yeello ama lagu xadha xog.",
+      "notes": ""
+    },
+    {
+      "key": "spyware",
+      "term": "Softweyar oo qarsoon",
+      "explanation": "Softweyar oo siqarson uu aruuriso xogta qalabka.",
+      "notes": ""
+    },
+    {
+      "key": "social-engineering",
+      "term": "Khiyanada cilmi nafsiga",
+      "explanation": "Waa hab dadka lagu khaldo si ay ubixiyan xogta xasaasiga ah.",
+      "notes": ""
+    },
+    {
+      "key": "compromised-device",
+      "term": "Qalab amaan eheen",
+      "explanation": "Qalab oo amnigisa fashilmay.",
+      "notes": ""
+    },
+    {
+      "key": "device-lock",
+      "term": "Qufulka qalabka",
+      "explanation": "Qufulka shaashada oo ilaalinaya gelitanka qalabka.",
+      "notes": ""
+    },
+    {
+      "key": "screenshot-risk",
+      "term": "Khataarta sawir qaadista shaashada",
+      "explanation": "Khatarta soo bandigida xogta xasaasiga iyado laistacmalaya sawirka shaashada.",
+      "notes": ""
+    },
+    {
+      "key": "never-share-your-seed-phrase",
+      "term": "Waligaa halawadagin erayada sirta eh",
+      "explanation": "Waano oo erayadha dib usoo celinta in ee sir noqdan.",
+      "notes": ""
+    },
+    {
+      "key": "write-it-down-offline",
+      "term": "Qoraalka iyadho khadka la adegsaneenin",
+      "explanation": "In la keydiyo eryadha dib usoocelinta iyadho la adegsanenin khadhka.",
+      "notes": ""
+    },
+    {
+      "key": "verify-recovery-phrase",
+      "term": "Xaqiiji erayadha soo kabsashada",
+      "explanation": "Hubinta erayadha dib usoo kabsashada boorsada in oo si sax ah loo diwangiliye.",
+      "notes": ""
+    }
+  ],
+  "safety": [
+    {
+      "key": "never-share-your-private-key",
+      "term": "Waliga cid halawadagin furaha sirka ah",
+      "explanation": "Waano in oo furaha sirka in uu qarsoonadha.",
+      "notes": ""
+    },
+    {
+      "key": "anyone-with-these-words-can-steal-your-funds",
+      "term": "Qofkasta oo ereyadhan heysta wuxuu xadhi karaa lacagtadha",
+      "explanation": "Waano oo qof kaasto oo ereyadan haysta wuxuu xadikaraa lacagtaada.",
+      "notes": ""
+    },
+    {
+      "key": "verify-before-sending",
+      "term": "Hubi inta aadhan dhirin kahor",
+      "explanation": "Hubinta qaabka lacagta lagu bixinayo intadhan ogolashada bixinin.",
+      "notes": ""
+    },
+    {
+      "key": "irreversible-transaction",
+      "term": "Xawaalad oon dib loo celin karin",
+      "explanation": "Wareejinta lacagta oo dib loosocelin karin marka ey dhacdho kadib.",
+      "notes": ""
+    },
+    {
+      "key": "backup-required",
+      "term": "Nuqul keydin loo bahanyahay",
+      "explanation": "Xogta dib ukabsashada boorsadha digitaalka waa in loo keydiya si amni ah.",
+      "notes": ""
+    },
+    {
+      "key": "this-action-cannot-be-undone",
+      "term": "Falkan oo dib loo celin karin",
+      "explanation": "Waano oo falkan in dib loo celin karin.",
+      "notes": ""
+    },
+    {
+      "key": "untrusted-source",
+      "term": "Ilo aan la amini karin",
+      "explanation": "Ilo aan la amini karin mise laxigijin karin.",
+      "notes": ""
+    },
+    {
+      "key": "suspicious-activity",
+      "term": "Dhaqdhaqaaq shaki leh",
+      "explanation": "Waa dabeeced ama ficil muujinaya khayaano suurtagal ah aama in nidaamka wax u dhimeen.",
+      "notes": ""
+    },
+    {
+      "key": "security-check",
+      "term": "Hubinta amniga",
+      "explanation": "Hab oo lagu hubiyo amniga.",
+      "notes": ""
+    },
+    {
+      "key": "device-not-secure",
+      "term": "Qalabka amni maaha",
+      "explanation": "Waano in uu qalabka khatarka kujira.",
+      "notes": ""
+    },
+    {
+      "key": "low-battery",
+      "term": "Batariga oo hoseya",
+      "explanation": "Heerka batariga uu garsisanyahay ayaa hoseya, wuxuu na dib ukeeni karaa ama dhexdha kagoyn kara hawlaha muhiimka.",
+      "notes": ""
+    },
+    {
+      "key": "update-available",
+      "term": "Cuusboonaysiin diyar ah",
+      "explanation": "Waa softweyar ka cusub midka horay loo istacmalay oo diyar eh badhanaa na kafican softweyarki hore.",
+      "notes": ""
+    },
+    {
+      "key": "verify-download",
+      "term": "Xaqiji soo dajinta",
+      "explanation": "Hubi mise xaqiji in softweyarka aa soodagsatay uu yahay kii saxdha eh.",
+      "notes": ""
+    }
+  ],
+  "lightning-network": [
+    {
+      "key": "lightning-network",
+      "term": "Shabakada Lightning",
+      "explanation": "Shabakad lacag-bixin oo ku dhisan Bitcoin, kana dhakhso badan kana jaban macaamillada caadiga ah ee Bitcoin.",
+      "notes": ""
+    },
+    {
+      "key": "lightning-payment",
+      "term": "Lacag-bixin Lightning",
+      "explanation": "Lacag lagu bixinayo shabakada Lightning.",
+      "notes": ""
+    },
+    {
+      "key": "lightning-invoice",
+      "term": "Qansheega Lightning",
+      "explanation": "Codsi Lacag-bixin oo dalbanayo Lightning.",
+      "notes": ""
+    },
+    {
+      "key": "invoice",
+      "term": "Qansheeg",
+      "explanation": "Codsi Lacag-bixin.",
+      "notes": ""
+    },
+    {
+      "key": "pay-invoice",
+      "term": "Bixi Qansheeg",
+      "explanation": "Dir lacag adigoo adeegsanaya qaansheegad Lightning.",
+      "notes": ""
+    },
+    {
+      "key": "payment-request",
+      "term": "Codsi Lacag-bixin",
+      "explanation": "Codsi hay'ad ku dalbanayso lacag-bixin.",
+      "notes": ""
+    },
+    {
+      "key": "payment-channel",
+      "term": "Kanaalka Lacag-bixinta",
+      "explanation": "Xiriir u dhexeeya isticmaalayaasha Lightning si ay u sameeyaan lacag-bixino degdeg ah.",
+      "notes": ""
+    },
+    {
+      "key": "open-channel",
+      "term": "Kanaal Fuur",
+      "explanation": "Samee kanaal cusub oo Lightning ah.",
+      "notes": ""
+    },
+    {
+      "key": "close-channel",
+      "term": "Kanaal Xir",
+      "explanation": "Xir kanaal lacag-bixineed oo Lightning ah.",
+      "notes": ""
+    },
+    {
+      "key": "routing",
+      "term": "Gudbinta Lacag-bixinta",
+      "explanation": "Gudbinta lacag-bixinnada Lightning iyadoo loo sii marayo node-yo isku xiran.",
+      "notes": ""
+    },
+    {
+      "key": "routing-fee",
+      "term": "Karashka Gudbinta",
+      "explanation": "Qarashka laga rabo gudbinta lacag-bixinta Lightning.",
+      "notes": ""
+    },
+    {
+      "key": "lightning-address",
+      "term": "Ciwaanka Lightning",
+      "explanation": "Aqoonsi fudud loogu talagalay lacag-bixinnada Lightning.",
+      "notes": ""
+    },
+    {
+      "key": "lnurl",
+      "term": "LNURL",
+      "explanation": "Heer farsamo oo fududeeya isticmaalka iyo isdhexgalka Lightning.",
+      "notes": ""
+    },
+    {
+      "key": "instant-payment",
+      "term": "Lacag-bixinta deg deg ah",
+      "explanation": "Lacag-bixin si isla markiiba ah u dhacda.",
+      "notes": ""
+    },
+    {
+      "key": "micropayment",
+      "term": "Lacag-Yar",
+      "explanation": "Qaddar lacag ah oo aad u yar.",
+      "notes": ""
+    },
+    {
+      "key": "payment-failed",
+      "term": "Lacag-bixinta oo fashilantay",
+      "explanation": "Lacag-bixin aan dhammeeynin.",
+      "notes": ""
+    },
+    {
+      "key": "route-not-found",
+      "term": "Jid Lama Helin",
+      "explanation": "Jiid sax ah Lightning lagu bixiyo la ma heelin.",
+      "notes": ""
+    },
+    {
+      "key": "channel-capacity",
+      "term": "Awooda Kanaalka",
+      "explanation": "Qaddarka lacagta ee kanaalka Lightning qaadi karo.",
+      "notes": ""
+    },
+    {
+      "key": "inbound-liquidity",
+      "term": "Dareereynta Soo-gasha",
+      "explanation": "Awoodda kanaalka u leeyahay inuu helo lacag-bixin Lightning.",
+      "notes": ""
+    },
+    {
+      "key": "outbound-liquidity",
+      "term": "Dareereynta Soo-Baxaysa",
+      "explanation": "Awoodda kanaalka u leeyahay diriintanka lacag-bixin Lightning.",
+      "notes": ""
+    },
+    {
+      "key": "rebalance",
+      "term": "Dib-u-dheellitirid",
+      "explanation": "Isku dheellitiridda dareereynta u dhexeysa kanaallada Lightning.",
+      "notes": ""
+    },
+    {
+      "key": "keysend",
+      "term": "Diritanka Toos ah",
+      "explanation": "Diritanka Qarashka qansheed laantiis.",
+      "notes": ""
+    },
+    {
+      "key": "bolt11-invoice",
+      "term": "Qansheegada Bolt11",
+      "explanation": "Qaabka caadiga ah ee qaansheegadaha Lightning loo qoro.",
+      "notes": ""
+    },
+    {
+      "key": "expired-invoice",
+      "term": "Qaansheegad Dhacday",
+      "explanation": "Qaansheegad waqtigeedii la dhafay oo aan mar dambe la bixin karin.",
+      "notes": ""
+    },
+    {
+      "key": "hold-invoice",
+      "term": "Qaansheegad Sugitaan ah",
+      "explanation": "Qaansheegad oo dib loo digay ila la fasaxo.",
+      "notes": ""
+    }
+  ],
+  "payments": [
+    {
+      "key": "bitcoin-address",
+      "term": "Cinwaanka Bitcoin",
+      "explanation": "Cinwaan loo isticmaalo helitaanka bitcoin.",
+      "notes": ""
+    },
+    {
+      "key": "wallet-address",
+      "term": "Cinwaanka Boorsada",
+      "explanation": "Cinwaan loo isticmaalo helitaanka lacagaha dijitaalka ah.",
+      "notes": ""
+    },
+    {
+      "key": "receive-address",
+      "term": "Cinwaanka Helitaanka",
+      "explanation": "Cinwaan loo talagalay lacagta soo galeyso.",
+      "notes": ""
+    },
+    {
+      "key": "qr-code",
+      "term": "Koodhka QR",
+      "explanation": "Sawiir la iskaan gareen karo oo mataleyso lacag-bixinta.",
+      "notes": ""
+    },
+    {
+      "key": "scan-qr-code",
+      "term": "Iskaan Koodhka QR",
+      "explanation": "Isticmaal kamaradda si aad u akhrido xogta lacag-bixinta.",
+      "notes": ""
+    },
+    {
+      "key": "copy-address",
+      "term": "Nuqul Ciwaanka",
+      "explanation": "Koobiyee Cinwaanka borsada.",
+      "notes": ""
+    },
+    {
+      "key": "paste-address",
+      "term": "Ku deji Ciwaanka",
+      "explanation": "Geeli Cinwaanka Borsada.",
+      "notes": ""
+    },
+    {
+      "key": "invalid-address",
+      "term": "Cinwaan Aan Sax Ahayn",
+      "explanation": "Cinwaan oo nidhaam lehen.",
+      "notes": ""
+    },
+    {
+      "key": "amount",
+      "term": "Qaddarka",
+      "explanation": "Tirada bitcoin ama lacagta la dirayo.",
+      "notes": ""
+    },
+    {
+      "key": "amount-too-low",
+      "term": "Qaddarka aad u yaar ah",
+      "explanation": "Qaddarka lacag-bixintu wuxuu ka hooseeyaa xadka ugu yar ee la oggol yahay.",
+      "notes": ""
+    },
+    {
+      "key": "amount-too-high",
+      "term": "Qaddarka aad u badan",
+      "explanation": "Qaddarka lacag-bixintu wuxuu ka badan yahay hadhaaga ama xadka la oggol yahay.",
+      "notes": ""
+    },
+    {
+      "key": "recipient",
+      "term": "Qaataha",
+      "explanation": "Qofka heelayo lacagta.",
+      "notes": ""
+    },
+    {
+      "key": "sender",
+      "term": "Diraha",
+      "explanation": "Qofka diirayo lacagta.",
+      "notes": ""
+    },
+    {
+      "key": "payment-sent",
+      "term": "Lacagta la bixiyey",
+      "explanation": "Lacaag-bixinta oo si guul aah loo dhameeyay.",
+      "notes": ""
+    },
+    {
+      "key": "payment-received",
+      "term": "Lacagta la heelay",
+      "explanation": "Lacaag-bixinta oo si guul aah loo heelay.",
+      "notes": ""
+    },
+    {
+      "key": "pending-payment",
+      "term": "Lacag-bixin Sugaysa",
+      "explanation": "Lacaag-bixinta oo la sugaayo xaqiijin.",
+      "notes": ""
+    },
+    {
+      "key": "failed-payment",
+      "term": "Lacag-bixin Fashilantay",
+      "explanation": "Lacaag-bixinta oo la dameystiri karin.",
+      "notes": ""
+    },
+    {
+      "key": "payment-history",
+      "term": "Taariikhda Lacag-bixinnada",
+      "explanation": "Diiwaanka lacag-bixinnadii hore.",
+      "notes": ""
+    },
+    {
+      "key": "memo",
+      "term": "Xusuus qor gaaban",
+      "explanation": "Qoraal ikhtiyaari ah oo lagu lifaaqo macaamil.",
+      "notes": ""
+    },
+    {
+      "key": "description",
+      "term": "Sharaxaad",
+      "explanation": "Xog dheeraad ah oo ku saabsan lacag-bixinta.",
+      "notes": ""
+    },
+    {
+      "key": "network-fee",
+      "term": "Kharashka Shabakadda",
+      "explanation": "Kharashka lagu qaado farsamaynta lacag-bixinta.",
+      "notes": ""
+    },
+    {
+      "key": "provider-fee-service-fee",
+      "term": "Kharashka Adeegga",
+      "explanation": "Kharashka ay qaaddo madal ama wakiil si uu u farsameeyo is-weydaarsiga lacagta.",
+      "notes": ""
+    },
+    {
+      "key": "miner-fee",
+      "term": "Kharashka Macdanta",
+      "explanation": "Kharashka lagu siiyo macdaneeyayaasha Bitcoin si ay u xaqiijiyaan macaamilka.",
+      "notes": ""
+    },
+    {
+      "key": "fee-rate",
+      "term": "Heerka Kharashka",
+      "explanation": "Heerka kharashka loo doortay macaamilka.",
+      "notes": ""
+    },
+    {
+      "key": "priority-fee",
+      "term": "Kharashka Mudnaanta",
+      "explanation": "Kharash dheeraad ah si macaamilku u helo xaqiijin degdeg ah.",
+      "notes": ""
+    },
+    {
+      "key": "slow",
+      "term": "Gaabis",
+      "explanation": "Xaqiijin mudnaan hoose leh oo gaabis ah.",
+      "notes": ""
+    },
+    {
+      "key": "fast",
+      "term": "Degdeg",
+      "explanation": "Xaqiijin mudnaan sare leh oo degdeg ah.",
+      "notes": ""
+    },
+    {
+      "key": "estimated-confirmation-time",
+      "term": "Waqtiga uu qaadan Xaqiijin",
+      "explanation": "Waqtiga la filayo in macaamilka lagu xaqiijiyo.",
+      "notes": ""
+    },
+    {
+      "key": "broadcast",
+      "term": "Baahi Macamilka",
+      "explanation": "U dir xogta macaamilka shabakadda Bitcoin.",
+      "notes": ""
+    },
+    {
+      "key": "replace-by-fee-rbf",
+      "term": "Ku Bedelo Khidmad",
+      "explanation": "Astaamo kuu oggolaanaya inaad kordhiso kharashka macaamil aan wali la xaqiijin.",
+      "notes": ""
+    },
+    {
+      "key": "child-pays-for-parent-cpfp",
+      "term": "Ilmuhu Wuxuu Bixiyaa Kharashka Waalidka",
+      "explanation": "Hab lagu dedejiyo xaqiijinta macaamillada hakaday.",
+      "notes": ""
+    }
+  ],
+  "privacy": [
+    {
+      "key": "privacy",
+      "term": "Asturnaanta",
+      "explanation": "Awooda lagu Xakameyo helitaanka Maclumanta khaska.",
+      "notes": ""
+    },
+    {
+      "key": "financial-privacy",
+      "term": "Sir dhaqaale",
+      "explanation": "Ilalinta amniga macamillada iyo xogta maaliyadeed.",
+      "notes": ""
+    },
+    {
+      "key": "pseudonymous",
+      "term": "Magac Maldahan ku sheqeynaya",
+      "explanation": "Waa in qof ama xog lagu aqoonsado magac kale oo aan ahayn magaca dhabta ah, iyaado aqoonsiga dhabta ah la qariqarinayo.",
+      "notes": ""
+    },
+    {
+      "key": "surveillance",
+      "term": "La socod joogto ah",
+      "explanation": "Korjoogteyntu waa la socodka iyo kormeerka joogtada ah ee qof, goob ama hawl si macluumad loo helo ama amni loo sugo.",
+      "notes": ""
+    },
+    {
+      "key": "metadata",
+      "term": "Macluumaad sharaxaya xog kale",
+      "explanation": "Macluumaad ku saabsan maamillada ama isgaarsiinta, balse aan ahayn nuxurka dhabta ah ee fariinta ama macaamilka.",
+      "notes": ""
+    },
+    {
+      "key": "coin-control",
+      "term": "Xulashada UTXO-yada laisticmalayo",
+      "explanation": "Awooda kuu ogalaneso inad doorato UTXO- yada gaarka ah ee la isticmalayo markad sameyneso macamil Bitcoin. UTXO: wa qeeb Bitcoin eh oo lagugu soo direy lakini aanad wali isticmalin.",
+      "notes": ""
+    },
+    {
+      "key": "coinjoin",
+      "term": "Isku-darka Lacagaha",
+      "explanation": "Hab Lagu Qariyo Raadadka macaamilada bitcoin si loo kordhiyo asturanta.",
+      "notes": ""
+    },
+    {
+      "key": "address-reuse",
+      "term": "Dib u isticmalka Ciwanka",
+      "explanation": "Istimalka isla ciwanka bitcoin marar Badan.",
+      "notes": ""
+    },
+    {
+      "key": "do-not-reuse-addresses",
+      "term": "Dib Ha U Isticmalin Ciwaannada",
+      "explanation": "Isticmalka Cinwaan Cusub mar kasta sii aad u ilaaliso asturnaantaada.",
+      "notes": ""
+    },
+    {
+      "key": "tor",
+      "term": "Shabakadda Tor",
+      "explanation": "Shabakad qarisa dhaqdhaqaaqaaga internetka.",
+      "notes": ""
+    },
+    {
+      "key": "vpn",
+      "term": "VPN",
+      "explanation": "Addega qarriya istacmaalka internetka.",
+      "notes": ""
+    },
+    {
+      "key": "sovereignty",
+      "term": "Madaxbannaani Maaliyadeed",
+      "explanation": "Inaad si buuxda u maamusho lacagtaada.",
+      "notes": ""
+    },
+    {
+      "key": "financial-freedom",
+      "term": "Xorriyadda Maaliyadeed",
+      "explanation": "Inaad lacagtaada isticmaali karto adigoon xannibaad badan la kulmin.",
+      "notes": ""
+    },
+    {
+      "key": "permissionless-access",
+      "term": "Helitaan Aan Oggolaansho loo Baahnayn",
+      "explanation": "Isticmaal adeeg adigoon cidna fasax ka sugin.",
+      "notes": ""
+    },
+    {
+      "key": "open-network",
+      "term": "Shabakad furan",
+      "explanation": "Shabakad qof walba istimcaali karo.",
+      "notes": ""
+    },
+    {
+      "key": "self-reliance",
+      "term": "Isku filnaasho",
+      "explanation": "Maamulidda lacagtaada adigoon ku tiirsanayn cid kale.",
+      "notes": ""
+    }
+  ],
+  "markets": [
+    {
+      "key": "exchange",
+      "term": "Sarif",
+      "explanation": "Meel Lago iibsado ama lagu iibiyo Bitcoin iyo lacagahaaga hayn karto.",
+      "notes": ""
+    },
+    {
+      "key": "centralized-exchange-cex",
+      "term": "Sarif Dexe",
+      "explanation": "Sarif aan lahayn shirkad maamusha lacagaha isticmaalayaasha.",
+      "notes": ""
+    },
+    {
+      "key": "decentralized-exchange-dex",
+      "term": "Sarif Aan dhexe lahayn",
+      "explanation": "Sarif aan lahayn shirkad maamusha lacagaha isticmaalayasha.",
+      "notes": ""
+    },
+    {
+      "key": "buy-bitcoin",
+      "term": "Libso Bitcoin",
+      "explanation": "Ku iibso Bitcoin lacag kale.",
+      "notes": ""
+    },
+    {
+      "key": "sell-bitcoin",
+      "term": "Iibi bitcoin",
+      "explanation": "Ku beddel bitcoin lacag kale.",
+      "notes": ""
+    },
+    {
+      "key": "trade",
+      "term": "Ganacsi",
+      "explanation": "Is weydaarsiga hal hanti mid kale.",
+      "notes": ""
+    },
+    {
+      "key": "fiat-currency",
+      "term": "Lacag Dawladeed",
+      "explanation": "Lacag ay dowlad soo saarto sida USD ama KES.",
+      "notes": ""
+    },
+    {
+      "key": "local-currency",
+      "term": "Lacagta Maxaliha ah",
+      "explanation": "Lacagta rasmiga ah ee waddanka.",
+      "notes": ""
+    },
+    {
+      "key": "exchange-rate",
+      "term": "Heerka Sarifika",
+      "explanation": "Qiimaha hal lacag marka loo eego lacag kale.",
+      "notes": ""
+    },
+    {
+      "key": "market-price",
+      "term": "Qimaha Suuqa",
+      "explanation": "Qiimaha hadda lagu iibsanayo ama lagu iibinayo hanti.",
+      "notes": ""
+    },
+    {
+      "key": "volatility",
+      "term": "Isbeddel Qiime",
+      "explanation": "Koror ama hoos u dhac degdeg ah o qiimaha ku yimaada.",
+      "notes": ""
+    },
+    {
+      "key": "stablecoin",
+      "term": "Lacag Dijitaal Deggan",
+      "explanation": "Lacag dijitaal ah oo qimaheedu deggan yahay.",
+      "notes": ""
+    },
+    {
+      "key": "usdt",
+      "term": "USDT",
+      "explanation": "Stablecoin ku xiran Doollarka Maraykanka.",
+      "notes": ""
+    },
+    {
+      "key": "usdc",
+      "term": "USDC",
+      "explanation": "Stablecoin ku xiran Doollarka Maraykanka.",
+      "notes": ""
+    },
+    {
+      "key": "liquidity",
+      "term": "Dareereyn",
+      "explanation": "Sida ay u fududahay in hanti la iibsado ama la iibiyo.",
+      "notes": ""
+    },
+    {
+      "key": "spread",
+      "term": "Farqiga Qiimaha",
+      "explanation": "Farqiga u dhexeeya qiimaha iibsiga iyo iibinta.",
+      "notes": ""
+    },
+    {
+      "key": "slippage",
+      "term": "Leexashada Qiimaha",
+      "explanation": "Isbeddel yar oo qiimaha ku yimaada inta macaamilku.",
+      "notes": ""
+    },
+    {
+      "key": "order-book",
+      "term": "Diwaanka Amarada",
+      "explanation": "Liiska amarada iibsiga iyo iibinta ee suuqa.",
+      "notes": ""
+    },
+    {
+      "key": "market-order",
+      "term": "Amar Suuqeed",
+      "explanation": "Amar lagu fuliyo qimaha hadda ee suuqa.",
+      "notes": ""
+    },
+    {
+      "key": "limit-order",
+      "term": "Amar Xaddidan",
+      "explanation": "Amar la fuliyo marka qiimuhu gaaro heer aad dooratay.",
+      "notes": ""
+    },
+    {
+      "key": "deposit",
+      "term": "Dhigasho",
+      "explanation": "Gelinta lacag ama hanti akoon ama boorso.",
+      "notes": ""
+    },
+    {
+      "key": "withdraw",
+      "term": "La bax",
+      "explanation": "Ka saarista lacag ama hanti akoon ama waddan kale.",
+      "notes": ""
+    },
+    {
+      "key": "remittance",
+      "term": "Xawaalad",
+      "explanation": "Dirista Lacag meel ama waddam kale.",
+      "notes": ""
+    },
+    {
+      "key": "cash-out",
+      "term": "Lacag Kala Bax",
+      "explanation": "U beddelidda Bitcoin ama hanti digitaalah lacag caddan ah.",
+      "notes": ""
+    },
+    {
+      "key": "on-ramp",
+      "term": "Gelinta Lacagta",
+      "explanation": "Adeeg lagu iibsado Bitcoin adigoo.",
+      "notes": ""
+    },
+    {
+      "key": "off-ramp",
+      "term": "Ka bixinta Lacagta",
+      "explanation": "Adeeg lagu iibiyo Bitcoin si loo helo lacag dawladeed.",
+      "notes": ""
+    }
+  ],
+  "mobile-money": [
+    {
+      "key": "mobile-money",
+      "term": "Lacagaha taleefonka",
+      "explanation": "Waa lacagaha lagu keydiyo taleefonka gacanta iyada oo aan la isticmaaleynin akoon bangi.",
+      "notes": ""
+    },
+    {
+      "key": "airtime",
+      "term": "Lacagta ku hadalka",
+      "explanation": "Lacagta lagu shubo taleefonka si loogu hadlo.",
+      "notes": ""
+    },
+    {
+      "key": "ussd",
+      "term": "Qoraalka USSD",
+      "explanation": "Waa qoraal lambar oo la isticmaalo marka macaamiilka uu door bidayo inuusan adeega ku helin qaab internet ah. ( USSD ma lahan erey afsoomali oo rasmi ah).",
+      "notes": ""
+    },
+    {
+      "key": "feature-phone",
+      "term": "Taleefon aan casri ahayn",
+      "explanation": "Waa taleefoon aan lahayn astaamo ama awoodaha taleefonka casriga ah.",
+      "notes": ""
+    },
+    {
+      "key": "sim-card",
+      "term": "Simi-Kaar",
+      "explanation": "Waa qolofta ama lafta la geliyo talefonka gacanta si uu u shaqeeyo ama wicitaan.",
+      "notes": ""
+    },
+    {
+      "key": "phone-number",
+      "term": "Lambarka taleefoonka",
+      "explanation": "Waa lambar loo adeegsado taleefoonka gacanta si adeegyada isgaarsiinta u shaqeeyaan.",
+      "notes": ""
+    },
+    {
+      "key": "paybill",
+      "term": "Paybill",
+      "explanation": "Waa adeeg lagu bixiyo lacagaha iyada oo la adeegsanayo akoonada bangiga ama taleefonka.",
+      "notes": ""
+    },
+    {
+      "key": "agent",
+      "term": "Wakiil",
+      "explanation": "Waa xaruun maxali ah oo laga helo karo lacag bixinta iyo lacag dirida.",
+      "notes": ""
+    },
+    {
+      "key": "cash-agent",
+      "term": "Wakiilka lacagaha",
+      "explanation": "Waa qofka fududeeya ama ka shaqeeya adeega lacag bixinta iyo lacag dirida.",
+      "notes": ""
+    },
+    {
+      "key": "send-money",
+      "term": "Lacag dirid",
+      "explanation": "Lacag u dirida qof kale.",
+      "notes": ""
+    },
+    {
+      "key": "receive-money",
+      "term": "Lacag helid",
+      "explanation": "Lacag ka helida qof kale.",
+      "notes": ""
+    },
+    {
+      "key": "balance-inquiry",
+      "term": "Ogaanshiyaha baaqiqa",
+      "explanation": "Waa fiirinta ama hubinta haraadiga akoonkaaga.",
+      "notes": ""
+    },
+    {
+      "key": "withdrawal-code",
+      "term": "Fariinta lacag bixinta",
+      "explanation": "Waa fariin gaaban oo la adeegsado xiliga lacag bixinta.",
+      "notes": ""
+    },
+    {
+      "key": "transfer-failed",
+      "term": "Waad ku fashilantay",
+      "explanation": "Waa xiliga ay guul-darreysato dirida lacagha.",
+      "notes": ""
+    },
+    {
+      "key": "insufficient-balance",
+      "term": "Baaqiga kuguma filno",
+      "explanation": "Waa xiliga aysan kuugu jirin lacag ama baaqi kugu filan.",
+      "notes": ""
+    }
+  ],
+  "seedsigner": [
+    {
+      "key": "psbt",
+      "term": "PSBT",
+      "explanation": "Waa macamiil Bitcoin oo qeyb ahaan la ansixiyay, welibo si amaan ah.",
+      "notes": ""
+    },
+    {
+      "key": "signer",
+      "term": "App-ka Signer",
+      "explanation": "Waa application loo adeegsado ansixinta ama oggolanshiyaha lacag dirida.",
+      "notes": ""
+    },
+    {
+      "key": "offline-signing",
+      "term": "Saxiixa offline-ka",
+      "explanation": "Waa hab lagu saxiixo macamiil ama lacag bixin iyadoo internet ku xirneyn.",
+      "notes": ""
+    },
+    {
+      "key": "qr-transfer",
+      "term": "Wareejinta QR-ka",
+      "explanation": "Waa lacag ama xog wareejin lagu sameeyo iyadoo la isticmaalayo koodka QR.",
+      "notes": ""
+    },
+    {
+      "key": "entropy",
+      "term": "Aan la saadalin karin",
+      "explanation": "Heerka aan la saadaalin karin ee xogta macamiilka ama ay adagtahay in la qiyaaso furaha akoonka.",
+      "notes": ""
+    },
+    {
+      "key": "dice-roll-entropy",
+      "term": "Dice Roll Entrophy",
+      "explanation": "Waa hab ama nooc lagu abuuro saadalin la'an iyadoo la isticmaalayo Dice.",
+      "notes": ""
+    },
+    {
+      "key": "camera-scan",
+      "term": "Sawir ka qaadid",
+      "explanation": "Isticmaalka camera-da si aad sawir uga qaadid xogta ama kood-ka.",
+      "notes": ""
+    },
+    {
+      "key": "microsd-card",
+      "term": "Kaarka kaydinta",
+      "explanation": "Waa kaar loo adeegsado in lagu wareejiyo laguna keediyo xogta.",
+      "notes": ""
+    },
+    {
+      "key": "unsigned-transaction",
+      "term": "Lacag aan la fasixin",
+      "explanation": "Waa lacag aan weli la fasixin ama la oggolaanin.",
+      "notes": ""
+    },
+    {
+      "key": "signed-transaction",
+      "term": "Lacag la fasaxay",
+      "explanation": "Waa lacag la fasaxay ama la oggolaaday in lala baxo.",
+      "notes": ""
+    },
+    {
+      "key": "verify-address",
+      "term": "Xaqiiji cinwanka",
+      "explanation": "Waa in la hubiyo ama la xaqiijiyo cinwaanka qofka aad lacagta u dirayso.",
+      "notes": ""
+    },
+    {
+      "key": "verify-amount",
+      "term": "Xaqiiji tirada",
+      "explanation": "Waa in la hubiyo ama la xaqiijiyo tirada lacagta ee aad dirayso.",
+      "notes": ""
+    },
+    {
+      "key": "tamper-check",
+      "term": "Xaqiijin",
+      "explanation": "Waa hab lagu xaqiijiyo in shay ama xog aan la furin ama la bedelin si aanan sharci ahayn.",
+      "notes": ""
+    },
+    {
+      "key": "stateless-device",
+      "term": "Stateless Device",
+      "explanation": "Waa qalab ama xaalad aan xasuus lahayn ama si joogta ah wax u keydinin.",
+      "notes": ""
+    },
+    {
+      "key": "calculate-checksum",
+      "term": "Xisaabi checksum-ka",
+      "explanation": "Tallabada ugu danbeysa ee xaqiijinta xisaabeed ee loo baahan yahay si loo sameeyo ereyga saxda ah ee ku jira wwedha soo kabashada.",
+      "notes": ""
+    },
+    {
+      "key": "brightness",
+      "term": "Iftiinka",
+      "explanation": "Waa hab lagu hagaajiyo iftiinka si kamerada si sax ugu qabato sawirada la doonayo.",
+      "notes": ""
+    },
+    {
+      "key": "unsigned-psbt",
+      "term": "PSBT aan la ansixin",
+      "explanation": "Fayl qeyb ahaan loo saxiixay kaas oo sugaya oggolansho offline ah oo laga helo furayasha gaarka ah.",
+      "notes": ""
+    }
+  ],
+  "crypto-ecosystem": [
+    {
+      "key": "cryptocurrency",
+      "term": "Cryptocurrency",
+      "explanation": "Lacag dijitaal ah oo amnigeeda lagu ilaaliyo farsamada cryptocurrency.",
+      "notes": ""
+    },
+    {
+      "key": "altcoin",
+      "term": "Altcoin",
+      "explanation": "Barnaamij kale oo cryptocurrency ah balse aan ahayn Bitcoin sida Ethereum, Litecoin iyo kumanan kale.",
+      "notes": ""
+    },
+    {
+      "key": "token",
+      "term": "Token",
+      "explanation": "Hanti dijitaal ah oo ku jira madasha blockchain-ka.",
+      "notes": ""
+    },
+    {
+      "key": "all-time-high-ath",
+      "term": "Qiimaha ugu sarreya",
+      "explanation": "Qiimaha ugu sarreya ee abid uu gaaray Cryptocurrency.",
+      "notes": ""
+    },
+    {
+      "key": "all-time-low-atl",
+      "term": "Qiimaha ugu hooseya",
+      "explanation": "Qiimaha ugu hooseya ee abid uu gaaray Cryptocurrency.",
+      "notes": ""
+    },
+    {
+      "key": "smart-contract",
+      "term": "Qanadaras wanaagsan",
+      "explanation": "Code block-chain ah oo si iskiis ah u shaqeeya.",
+      "notes": ""
+    },
+    {
+      "key": "rug-pull",
+      "term": "Rug Pull",
+      "explanation": "Khiyaano ay mulkiilayasha mashruuca ku sameyaan lacaga macamiisha.",
+      "notes": ""
+    },
+    {
+      "key": "fomo",
+      "term": "FOMO",
+      "explanation": "Xaalad cabsi laga qabo in fursad la seego, keentana maalgashi aan laga fiirsan.",
+      "notes": ""
+    },
+    {
+      "key": "hodl",
+      "term": "HODL",
+      "explanation": "Xaalad lacagta Bitcoin-ka la haysto muddo dheer iyada oo aan lala bixin.",
+      "notes": ""
+    },
+    {
+      "key": "whale",
+      "term": "Whale",
+      "explanation": "Shaqsi ama hay'ad haysata tiro badan oo Bitcoin ah.",
+      "notes": ""
+    },
+    {
+      "key": "bear-market",
+      "term": "Hoos u dhac suuq",
+      "explanation": "Waa xiliga uu jiro hoos u dhaca suuqa.",
+      "notes": ""
+    },
+    {
+      "key": "bull-market",
+      "term": "Kor u kac suuq",
+      "explanation": "Waa xiliga uu jiro koror ama sare u kaca suuqa.",
+      "notes": ""
+    },
+    {
+      "key": "portfolio",
+      "term": "Galka maalgashiga",
+      "explanation": "Waa galka maalgashiga ee hal meel la isugu geeyo lacagaha iyo hantida kale.",
+      "notes": ""
+    },
+    {
+      "key": "diversification",
+      "term": "Kala-duwanasho",
+      "explanation": "In lacagta maalgashiga la kala geliyo hantiyo badan ama meelo kala duwan.",
+      "notes": ""
+    },
+    {
+      "key": "market-capitalization",
+      "term": "Qiimaha Guud",
+      "explanation": "Waa wadarta qiimaha shirkada ama cryptocurrency ee suuqa.",
+      "notes": ""
+    },
+    {
+      "key": "liquidity-pool",
+      "term": "Liquidity Pool",
+      "explanation": "Lacago la isu geeyay oo ganacsi baahsan lagu fuliyo.",
+      "notes": ""
+    },
+    {
+      "key": "governance-token",
+      "term": "Maamulka Token-ka",
+      "explanation": "Waa token loo isticmaalo in loogu codeeyo barnaamij ama go'aamada mashruuca blockchain-ka.",
+      "notes": ""
+    }
+  ],
+  "ui": [
+    {
+      "key": "continue",
+      "term": "Kusiwad",
+      "explanation": "Kusoco tilawada kuhegto.",
+      "notes": ""
+    },
+    {
+      "key": "confirm",
+      "term": "Haqiiji",
+      "explanation": "Hubso tilawada aad qadhatay.",
+      "notes": ""
+    },
+    {
+      "key": "cancel",
+      "term": "Jooji",
+      "explanation": "Joji tilawada aad qadhatay.",
+      "notes": ""
+    },
+    {
+      "key": "back",
+      "term": "Ka laaboo",
+      "explanation": "Kusocoo screenka dambe.",
+      "notes": ""
+    },
+    {
+      "key": "next",
+      "term": "Kuxigaa",
+      "explanation": "Kusoco screenka kuxigaa.",
+      "notes": ""
+    },
+    {
+      "key": "finish",
+      "term": "Dhamee",
+      "explanation": "Dameyso Tilaba.",
+      "notes": ""
+    },
+    {
+      "key": "save",
+      "term": "Keydi",
+      "explanation": "Keydi Maclumadka.",
+      "notes": ""
+    },
+    {
+      "key": "delete",
+      "term": "Tirtir",
+      "explanation": "Tirtir Maclumaadka daamantedha.",
+      "notes": ""
+    },
+    {
+      "key": "edit",
+      "term": "Wax Ka bedel",
+      "explanation": "Wax Kabedel Macloomadhka.",
+      "notes": ""
+    },
+    {
+      "key": "retry",
+      "term": "Markale Iskuday",
+      "explanation": "Markale isku dey Tilaabadha.",
+      "notes": ""
+    },
+    {
+      "key": "refresh",
+      "term": "Cusboonaysii",
+      "explanation": "Soo celi Xogti.",
+      "notes": ""
+    },
+    {
+      "key": "enable",
+      "term": "Daar",
+      "explanation": "Daar astaanta.",
+      "notes": ""
+    },
+    {
+      "key": "disable",
+      "term": "Ka saar",
+      "explanation": "Dami astaanta.",
+      "notes": ""
+    },
+    {
+      "key": "connect",
+      "term": "Ku xiriri",
+      "explanation": "Samee xirir.",
+      "notes": ""
+    },
+    {
+      "key": "disconnect",
+      "term": "Ka goo",
+      "explanation": "Jooji xirir.",
+      "notes": ""
+    },
+    {
+      "key": "sync",
+      "term": "Iswaafaji",
+      "explanation": "Iswaafaji xogta.",
+      "notes": ""
+    },
+    {
+      "key": "loading",
+      "term": "wuu socdaa",
+      "explanation": "Xogta waa la so gelinaya.",
+      "notes": ""
+    },
+    {
+      "key": "processing",
+      "term": "Wuu sameysmayaa",
+      "explanation": "Hawushu wey socota.",
+      "notes": ""
+    },
+    {
+      "key": "success",
+      "term": "Guul",
+      "explanation": "Hawshu wa guul.",
+      "notes": ""
+    },
+    {
+      "key": "error",
+      "term": "Khalad",
+      "explanation": "Diib badacay.",
+      "notes": ""
+    },
+    {
+      "key": "warning",
+      "term": "Digniin",
+      "explanation": "Kataxadir ariintan",
+      "notes": ""
+    },
+    {
+      "key": "information",
+      "term": "Macluumad",
+      "explanation": "Xog guud.",
+      "notes": ""
+    },
+    {
+      "key": "settings",
+      "term": "Habaynada",
+      "explanation": "Doorshayoyinka Habeynada.",
+      "notes": ""
+    },
+    {
+      "key": "advanced-settings",
+      "term": "Habaynada horumarsan",
+      "explanation": "Habaynada dheradka ah.",
+      "notes": ""
+    },
+    {
+      "key": "security-settings",
+      "term": "Habaynada Amniga",
+      "explanation": "Habaynada illalinta accounka.",
+      "notes": ""
+    },
+    {
+      "key": "language",
+      "term": "Luuqad",
+      "explanation": "Doora luqadda.",
+      "notes": ""
+    },
+    {
+      "key": "currency",
+      "term": "Lacag",
+      "explanation": "Dooro Nooca Lacagta.",
+      "notes": ""
+    },
+    {
+      "key": "search",
+      "term": "Raadi",
+      "explanation": "Raadhi Xogta Lacagta.",
+      "notes": ""
+    },
+    {
+      "key": "filter",
+      "term": "Kala Saar",
+      "explanation": "Sefi Najitadhana.",
+      "notes": ""
+    },
+    {
+      "key": "scan",
+      "term": "Iskaan garee",
+      "explanation": "Iskaan Gateey Xogta adhigu adhegsanayo Cameradha.",
+      "notes": ""
+    },
+    {
+      "key": "upload",
+      "term": "Soo gali",
+      "explanation": "Soo gali xogta.",
+      "notes": ""
+    },
+    {
+      "key": "download",
+      "term": "Soo Degso",
+      "explanation": "Ku kaydi qalabka.",
+      "notes": ""
+    },
+    {
+      "key": "share",
+      "term": "Wadaag",
+      "explanation": "U dir qof kale ama app kale.",
+      "notes": ""
+    },
+    {
+      "key": "clipboard",
+      "term": "Clipboard",
+      "explanation": "Meesha ku meel gaarka ah ee xogta la koobiyey.",
+      "notes": ""
+    },
+    {
+      "key": "copied",
+      "term": "Waa la koobiyeeyay",
+      "explanation": "Xogta waa la so koobiyey.",
+      "notes": ""
+    },
+    {
+      "key": "invalid-input",
+      "term": "Xog aan sax ahayn",
+      "explanation": "Xogta la geliyey ma saxna.",
+      "notes": ""
+    },
+    {
+      "key": "try-again",
+      "term": "Mar Kale Isku Day",
+      "explanation": "Hawshu dib u samee.",
+      "notes": ""
+    },
+    {
+      "key": "required-field",
+      "term": "Qasab in la buxiyo",
+      "explanation": "Qaybtaan waa in la buxiya.",
+      "notes": ""
+    },
+    {
+      "key": "session-timeout",
+      "term": "Waqtigaa Wuu dhammaday",
+      "explanation": "Waqti hawusha waadamatey.",
+      "notes": ""
+    },
+    {
+      "key": "dial-code-shortcode",
+      "term": "Lambarka Galintaka",
+      "explanation": "Lambarka laga furo addegga sida *544#.",
+      "notes": ""
+    },
+    {
+      "key": "main-menu",
+      "term": "Liiska guud",
+      "explanation": "Bogga ugu weyn ee adeegga.",
+      "notes": ""
+    }
+  ],
+  "wallet-ui": [
+    {
+      "key": "create-wallet",
+      "term": "Borso hagaaji",
+      "explanation": "Borsoo cusub hagaaji.",
+      "notes": ""
+    },
+    {
+      "key": "restore-existing-wallet",
+      "term": "Soceeli borso aad hore ulehed",
+      "explanation": "Dib uso ceeli borso horey adigu lahayd.",
+      "notes": ""
+    },
+    {
+      "key": "create-backup",
+      "term": "Hagaaji kayd",
+      "explanation": "Kaydi xogta soo kabashada.",
+      "notes": ""
+    },
+    {
+      "key": "verify-backup",
+      "term": "Xaqiiji kayd",
+      "explanation": "Xaqiiji kaydi inuu saxan yahay.",
+      "notes": ""
+    },
+    {
+      "key": "wallet-created-successfully",
+      "term": "Boorsada Waa La Sameeyay",
+      "explanation": "Xaqiijin boorsada si guul leh ayaa loo sameeyay.",
+      "notes": ""
+    },
+    {
+      "key": "enter-seed-phrase",
+      "term": "Geli Seed-Phrase",
+      "explanation": "Geli ereyada soo kabashada si aad u furto boorsada.",
+      "notes": ""
+    },
+    {
+      "key": "invalid-pin",
+      "term": "PIN Qaldan",
+      "explanation": "Farin kusaabsan nambarka kodka inuu qaldan yahay.",
+      "notes": ""
+    },
+    {
+      "key": "incorrect-seed-phrase",
+      "term": "Seed Phrase khaldan",
+      "explanation": "Ereyada kabashada sii qaldan aa loo geeliyey.",
+      "notes": ""
+    },
+    {
+      "key": "invalid-word",
+      "term": "Eray aan sax ahayn",
+      "explanation": "Eraygan kuma jiro liiska ereyada la aqoonsan yahay.",
+      "notes": ""
+    },
+    {
+      "key": "wrong-passphrase",
+      "term": "Passphrase Khaldan",
+      "explanation": "Passphrase-ka la geliyay waa khalad.",
+      "notes": ""
+    },
+    {
+      "key": "wallet-locked",
+      "term": "Borso xiraan.",
+      "explanation": "Gelitaanka boorsada si ku meel gaar ah ayaa loo xannibay.",
+      "notes": ""
+    },
+    {
+      "key": "unlock-wallet",
+      "term": "Borsoda fur.",
+      "explanation": "Soo celi Kaydinta.",
+      "notes": ""
+    },
+    {
+      "key": "confirm-transaction",
+      "term": "Xaqiiji Macaamil.",
+      "explanation": "Hubi iyo oggolow macaamil.,",
+      "notes": ""
+    },
+    {
+      "key": "review-details",
+      "term": "Eeg Faahfaahinta.",
+      "explanation": "Dib u eeg Faahfaahinta.",
+      "notes": ""
+    },
+    {
+      "key": "recipient-address",
+      "term": "Ciiwanka Qaataha.",
+      "explanation": "Cinwaanka heelayo lacagta.",
+      "notes": ""
+    },
+    {
+      "key": "sending-amount",
+      "term": "Qaddarka La Dirayo",
+      "explanation": "Lacagta la wareyjinayo.",
+      "notes": ""
+    },
+    {
+      "key": "remaining-balance",
+      "term": "Baaqiga/Haadhaga soo harey.",
+      "explanation": "Lacagta kuu so haray.",
+      "notes": ""
+    },
+    {
+      "key": "transaction-successful",
+      "term": "Maacamilku lagu guleyste.",
+      "explanation": "Macaamilka si guul leh ayaa loo dhammeeyey.",
+      "notes": ""
+    },
+    {
+      "key": "transaction-failed",
+      "term": "Maacamilku lagu faashilmay.",
+      "explanation": "Macaamilka lama dhammeyn karin.",
+      "notes": ""
+    },
+    {
+      "key": "network-unavailable",
+      "term": "Shabakad Lama Heli Karo",
+      "explanation": "Shabakad lama heli karo.",
+      "notes": ""
+    },
+    {
+      "key": "syncing-wallet",
+      "term": "Borso iswaafajinaya",
+      "explanation": "Boorsadu xogta way cusboonaysiinaysaa.",
+      "notes": ""
+    },
+    {
+      "key": "generating-address",
+      "term": "Cinwaanka waa la samaynayaa",
+      "explanation": "Cinwaan cusub ayaa la abuurayaa.",
+      "notes": ""
+    },
+    {
+      "key": "address-copied",
+      "term": "Cinwaanka waa la koobiyey",
+      "explanation": "Borsada si guul aan la koobiyey.",
+      "notes": ""
+    },
+    {
+      "key": "qr-code-detected",
+      "term": "QR Code waa la helay",
+      "explanation": "QR Code-ka si guul leh ayaa loo iskaan garay.",
+      "notes": ""
+    },
+    {
+      "key": "camera-permission-required",
+      "term": "Ogolaanshaha kamaradda ayaa loo bahan yahay.",
+      "explanation": "Qalabka wuxu ubahanyahay ogalashaha camerada.",
+      "notes": ""
+    },
+    {
+      "key": "enable-notifications",
+      "term": "Daar Ogeysiisyada",
+      "explanation": "Daaro ogeysiinta.",
+      "notes": ""
+    },
+    {
+      "key": "backup-reminder",
+      "term": "Xusuusin Kaydi",
+      "explanation": "Xusuusin inaad kaydiso xogta.",
+      "notes": ""
+    },
+    {
+      "key": "low-balance",
+      "term": "Baaqig/Haadhag yar",
+      "explanation": "Lacagta boorsada way yaran karta.",
+      "notes": ""
+    },
+    {
+      "key": "fee-estimate",
+      "term": "Qayasta Kharashka",
+      "explanation": "Qayastin ka kharashka.",
+      "notes": ""
+    },
+    {
+      "key": "recommended-fee",
+      "term": "Kharashka lagu taaliyey",
+      "explanation": "Talada matalka kharashka.",
+      "notes": ""
+    },
+    {
+      "key": "export-backup",
+      "term": "Kaydi la dhoofinaya",
+      "explanation": "Ka bixi kaydka boorsada.",
+      "notes": ""
+    },
+    {
+      "key": "import-backup",
+      "term": "Soo geli Kaydi",
+      "explanation": "Ku soo celi kaydka boorsada.",
+      "notes": ""
+    },
+    {
+      "key": "connect-hardware-wallet",
+      "term": "Ku xir boorso qalab",
+      "explanation": "Ku xir qalab boorso Bitcoin ah.",
+      "notes": ""
+    },
+    {
+      "key": "device-connected",
+      "term": "Qalabku wuu xiriran yahay.",
+      "explanation": "Qalabka si guul leh ayuu u xiriiray.",
+      "notes": ""
+    },
+    {
+      "key": "device-disconnected",
+      "term": "Qalabku oo go'ay",
+      "explanation": "Xidhiidhkii qalabka wuu go'ay.",
+      "notes": ""
+    },
+    {
+      "key": "firmware-update",
+      "term": "Cusboonaysiinta Firmware",
+      "explanation": "Cusboonaysii software-ka qalabka.",
+      "notes": ""
+    },
+    {
+      "key": "verify-on-device",
+      "term": "Qalabka ku xaqiiji",
+      "explanation": "Xogta ka hubi qalabka laftiisa.",
+      "notes": ""
+    }
+  ],
+  "advanced-bitcoin": [
+    {
+      "key": "soft-fork",
+      "term": "Casriyayn-Dabacsan",
+      "explanation": "Cusboonaysiin borotokoolka Bitcoin ah oo la jaanqaadi karta nidaamkii hore.",
+      "notes": ""
+    },
+    {
+      "key": "hard-fork",
+      "term": "Casriyayn-Adag",
+      "explanation": "Isbeddel borotokool oo aan la jaanqaadi karin nidaamyadii hore.",
+      "notes": ""
+    },
+    {
+      "key": "taproot",
+      "term": "Taproot",
+      "explanation": "Casriyaynta Bitcoin ah oo kor u qaadaysa qarsoodiga iyo dabacsanaanta shaqada.",
+      "notes": ""
+    },
+    {
+      "key": "segwit",
+      "term": "Casriyaynta SegWit",
+      "explanation": "Casriyaynta Bitcoin ah oo kor u qaadaysa hufnaanta iyo xawaaraha wareejinta bitcoin-ta.",
+      "notes": ""
+    },
+    {
+      "key": "bech32-address",
+      "term": "Cinwaanka Bech32",
+      "explanation": "Qaab ciwaandeed casri ah oo Bitcoin ah, kaas oo inta badan ka bilaawda bc1.",
+      "notes": ""
+    },
+    {
+      "key": "legacy-address",
+      "term": "Qaabka Ciwaankii hore",
+      "explanation": "Qaab ciwaandeed hore oo Bitcoin ah.",
+      "notes": ""
+    },
+    {
+      "key": "script",
+      "term": "Script",
+      "explanation": "Shuruudo barnaamijaysan oo xakameeya kharashgaraynta Bitcoin.",
+      "notes": ""
+    },
+    {
+      "key": "witness-data",
+      "term": "Xogta cadeynta",
+      "explanation": "Xogta wareejinta ee lagu bilaabay SegWit.",
+      "notes": ""
+    },
+    {
+      "key": "block-reward",
+      "term": "Abalguudka Block-ga",
+      "explanation": "Bitcoin plus-ta cusub ee khidmadaha wax kala iibsiga ee la siiyo bitcoin-qodoyasha.",
+      "notes": ""
+    },
+    {
+      "key": "coinbase-transaction",
+      "term": "Wax kala iibsiga Coinbase",
+      "explanation": "Wax kala iibsiga koowaad ee balooga macdanta ee lagu bixiyo abaalmarinta qodaha",
+      "notes": ""
+    },
+    {
+      "key": "dust",
+      "term": "Dust",
+      "explanation": "Cadad aad u yar oo Bitcoin ah, oo khidmadda bixintiisu ay ka qaalisan tahay qiimihiisa.",
+      "notes": ""
+    },
+    {
+      "key": "dust-limit",
+      "term": "Dust Limit",
+      "explanation": "Cadadka ugu yaar ee waxtarka leh ee macaamil maaliyadeed lagu samayn karo.",
+      "notes": ""
+    },
+    {
+      "key": "time-lock",
+      "term": "Qufulka waqtiga",
+      "explanation": "Waa xayiraad dib u dhigta waqtiga rasmiga ah ee lacagta la isticmaali karo ama la bixin karo.",
+      "notes": ""
+    },
+    {
+      "key": "multi-path-payment",
+      "term": "Laacag bixinta wadooyinka badan",
+      "explanation": "Waa lacag bixin ka tirsan shabakadda lightning network oo loo qaybiyey dhowr qaybood oo ka yaryar.",
+      "notes": ""
+    },
+    {
+      "key": "fee-bumping",
+      "term": "Kordhinta khidmadda",
+      "explanation": "Waa kor u qaadista khidamadda macaamilka marka la baafiyo kadib.",
+      "notes": ""
+    },
+    {
+      "key": "replaceable-transaction",
+      "term": "Macaamil labadalikaro",
+      "explanation": "Waa macaamii loo calaamadeeyey in suurtogal ay tahay in khidmaddiisa wax laga beddelo.",
+      "notes": ""
+    },
+    {
+      "key": "confirmation-target",
+      "term": "Hadafka hubintiisa ama ansaxinta",
+      "explanation": "Waqtiga aad rabto in macaamilkaaga lagu ansixiyo.",
+      "notes": ""
+    },
+    {
+      "key": "blockchain-explorer",
+      "term": "Baaraha blockchain",
+      "explanation": "Qalab loo isticmaalo in lagu arko xogta rasmiga ahh eh ka jirta xogta blockchain.",
+      "notes": ""
+    },
+    {
+      "key": "merkle-tree",
+      "term": "Merkle Tree",
+      "explanation": "Waa qaab dhismeed sir guriyeed oo loo isticmaalo habaynta iyo abaabulka macaamilada ku dhex jirta block yada.",
+      "notes": ""
+    },
+    {
+      "key": "timestamp",
+      "term": "Astaanta waqtiga",
+      "explanation": "Waa waqtiga rasmiga ah eeh la diwaangeliyey oo la xiriita xogta ku dhex jirta block ka.",
+      "notes": ""
+    },
+    {
+      "key": "reorg",
+      "term": "Dib u qaabaynta blockchain",
+      "explanation": "Waa isbadal kumelgaar ah oo kudacdha tarikhdha silsilada blockchain.",
+      "notes": ""
+    },
+    {
+      "key": "final-settlement",
+      "term": "Dhammaystirkii u dambeeyey",
+      "explanation": "Waa lacag bixin lo arko in ay dhamatay oo dib loo soo celin karin.",
+      "notes": ""
+    }
+  ]
+}

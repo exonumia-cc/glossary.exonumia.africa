@@ -434,7 +434,7 @@ p{margin:0}
       </dl>
     </div>
 
-    <!-- showcase entry — real data from glossary.json -->
+    <!-- showcase entry — real data from i18n/*.json -->
     <article class="card entry" id="entry">
       <div class="entry__inner">
         <div class="entry__top">
@@ -897,7 +897,7 @@ p{margin:0}
 
   /* --------------------------------------------------- showcase entry card */
   /* The wallet entry, in each language. Terms and definitions come straight
-     from glossary.json; the usage notes are written for this page. */
+     from the i18n/*.json files; the usage notes are written for this page. */
   var SHOWCASE = {
     en: {
       term: 'Wallet',
@@ -1129,10 +1129,25 @@ p{margin:0}
 
   /* The markup already ships the two showcase results, so a failed fetch —
      opening the page over file://, say — still leaves something useful. */
-  fetch('glossary.json')
+  fetch('i18n/manifest.json')
     .then(function (response) {
       if (!response.ok) throw new Error('HTTP ' + response.status);
       return response.json();
+    })
+    .then(function (codes) {
+      return Promise.all(codes.map(function (code) {
+        return fetch('i18n/' + code + '.json').then(function (response) {
+          if (!response.ok) throw new Error('HTTP ' + response.status);
+          return response.json();
+        }).then(function (langData) {
+          return { code: code, data: langData };
+        });
+      }));
+    })
+    .then(function (parts) {
+      var data = {};
+      parts.forEach(function (part) { data[part.code] = part.data; });
+      return data;
     })
     .then(function (data) {
       entries = build(data);
