@@ -33,9 +33,8 @@ static host.
 | `i18n/manifest.json` | Lists the language codes, in column order |
 | `i18n/<code>.json` | One file per language — the data that changes when a translation lands |
 | `conversion-script.py` | Turns the translators' CSV exports into the `i18n/` files |
-| `scripts/glossary.py` | Stdlib-only helper for using the glossary as a termbase — lookup, text scan, reverse lookup |
 | `tests/` | Unittest suite asserting the documented data claims and helper behavior |
-| `.claude/skills/glossary-localization/SKILL.md` | Agent skill teaching LLM coding agents to localize with this glossary |
+| `.claude/skills/glossary-localization/` | Self-contained agent skill teaching LLM coding agents to localize with this glossary — `SKILL.md`, the termbase helper in `scripts/glossary.py` (lookup, text scan, reverse lookup), and `references/eval-plan.md` |
 
 ## The data
 
@@ -144,7 +143,8 @@ python3 -m unittest discover -s tests
 Stdlib `unittest`, no dependencies. `tests/test_glossary_data.py` asserts the factual claims
 this README and the agent skill make about the data (term count, category slugs, language
 alignment, entry shape) and tracks data hygiene — multi-variant (`/`) and trailing-period
-term fields may only ever shrink. `tests/test_glossary.py` unit-tests `scripts/glossary.py`
+term fields may only ever shrink. `tests/test_glossary.py` unit-tests the skill's helper
+(`.claude/skills/glossary-localization/scripts/glossary.py`)
 against a synthetic fixture that includes a deliberately untranslated entry, a gap the real
 data does not currently exercise.
 

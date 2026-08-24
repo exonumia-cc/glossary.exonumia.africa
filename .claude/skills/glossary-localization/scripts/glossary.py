@@ -173,6 +173,8 @@ class Glossary:
 if __name__ == "__main__":
     import sys
 
-    glossary = Glossary.load(sys.argv[1] if len(sys.argv) > 1 else "i18n")
+    # Default to a repo-local i18n/ when present, else the published site.
+    default = "i18n" if Path("i18n").is_dir() else BASE_URL
+    glossary = Glossary.load(sys.argv[1] if len(sys.argv) > 1 else default)
     for query in sys.argv[2:] or ["seed phrase"]:
         print(json.dumps(glossary.lookup(query), ensure_ascii=False, indent=2))
