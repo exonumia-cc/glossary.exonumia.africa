@@ -16,6 +16,8 @@ or scan free text for covered terms::
     g.reverse_any("Baaqiga")                # ...when you do not know the language
 
 Everything is stdlib-only; no dependencies to install. Python 3.9+.
+
+The glossary itself lives at https://github.com/exonumia-cc/glossary.exonumia.africa.
 """
 
 from __future__ import annotations

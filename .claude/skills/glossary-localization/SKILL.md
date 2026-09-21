@@ -35,7 +35,7 @@ Three rules override everything else in this skill:
 
 ## Getting the data
 
-**Local checkout** (the glossary repo): the data lives in `i18n/`.
+**Local checkout** (the glossary repo, https://github.com/exonumia-cc/glossary.exonumia.africa): the data lives in `i18n/`.
 
 **Remote** (any other project): the same files are served over HTTP, CORS-open —
 
@@ -222,8 +222,9 @@ User says: "Review my `strings.sw.json` against the glossary."
   `Block` stay English in Kiswahili).
 - Translations are community contributions and a work in progress. If the user is a
   glossary contributor, suggest feeding genuinely new coinages back via the CSV →
-  `conversion-script.py` pipeline described in the repo's `README.md` rather than letting
-  app copies drift from the glossary.
+  `conversion-script.py` pipeline described in the repo's `README.md`
+  (https://github.com/exonumia-cc/glossary.exonumia.africa) rather than letting app
+  copies drift from the glossary.
 
 ## Testing this skill
 

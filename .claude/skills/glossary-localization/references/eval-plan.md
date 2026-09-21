@@ -6,6 +6,7 @@ comparison against baseline. Manual runs in Claude Code or Claude.ai are fine; t
 skill-creator skill can help review results ("Review this skill and suggest improvements").
 
 The helper's own behavior is covered mechanically by `tests/` in the glossary repo
+(https://github.com/exonumia-cc/glossary.exonumia.africa)
 (`python3 -m unittest discover -s tests`). Run that first — a failure there explains a
 functional failure here without needing a transcript.
 
