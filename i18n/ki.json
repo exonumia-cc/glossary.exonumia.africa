@@ -1,0 +1,2184 @@
+{
+  "concepts": [
+    {
+      "key": "bitcoin",
+      "term": "Bitcoin",
+      "explanation": "Ni Muthemba wa rurenda rwa ukunyaniria rwa mbeca ruria rurtaga wira hatari gutongorio ni thirikari kana bengi",
+      "notes": "Guthitukania nenda na mbeca"
+    },
+    {
+      "key": "bitcoin-btc",
+      "term": "bitcoin",
+      "explanation": "Ni gicuji kimwe kia mbeca iria ihuthagirwo nendaini ya Bitcoin",
+      "notes": "demwa nini cirugamagirira mbece cio nyene"
+    },
+    {
+      "key": "satoshi-sat",
+      "term": "Satoshi (sat)",
+      "explanation": "Ni gicuji kiria kinini biu kia Bitcoin. Bitcoin imwe iganiaine na satoshi millioni igana rimwe",
+      "notes": "Ihuthagirwo maingi modo-ini ihotithagia marihi rurendainirwa ruheni"
+    },
+    {
+      "key": "bit",
+      "term": "Bit",
+      "explanation": "Ni tucuji tunini twa Bitcoin kiiganaine na satoshis igana rimwe",
+      "notes": "Ni ritwa ria kwiendera kuringana na icigo"
+    },
+    {
+      "key": "blockchain",
+      "term": "Burokicheini",
+      "explanation": "Ni rekodi ya mwingi ya kuonania ucenjania wa Bitcoin",
+      "notes": ""
+    },
+    {
+      "key": "block",
+      "term": "Buroku",
+      "explanation": "Ni gikundi kia ucenjania wa Bitcoin thinini wa burokicheini",
+      "notes": ""
+    },
+    {
+      "key": "block-height",
+      "term": "Uraihu wa Buroku",
+      "explanation": "Muigana wa buroku thi-ini wa burokicheini",
+      "notes": ""
+    },
+    {
+      "key": "node",
+      "term": "Nodu / Nditimi",
+      "explanation": "Ni kompyuta ikagira mukode na ikagairana ucenjania wa Bitcoin na buroku",
+      "notes": ""
+    },
+    {
+      "key": "longest-chain",
+      "term": "Munyororo uria Muraihu muno",
+      "explanation": "Ni muhiano wa historia ya ucejania uria urutiirwo wira muingi makiria. Nodu hindi ciothe cihokaga munyororo uria muraihu biu uri wama na uria wagiriiire.",
+      "notes": ""
+    },
+    {
+      "key": "full-node",
+      "term": "Nodu kamili/ jiganiru/jagiriru/ jihuru/ nginyaniru",
+      "explanation": "Nodu iria Ithuthuria na igetiriria mawatho mothe ma Bitcoin na ikahiithia burokichaini yothe aika",
+      "notes": ""
+    },
+    {
+      "key": "peer-to-peer-p2p",
+      "term": "Mundu kuri Mundu / muruna kwi muruna/ mandu na uria ungi",
+      "explanation": "mutaratara uria ahuthiri macemanagia gutumira njira ya nenda kana imwe kwa imwe gutari na mundu wa gatagati",
+      "notes": ""
+    },
+    {
+      "key": "decentralized",
+      "term": "Wathani wigayanite",
+      "explanation": "Itegutongorio ni hinya kana ithodeka oriethe rimwe",
+      "notes": ""
+    },
+    {
+      "key": "consensus",
+      "term": "Wiiguano",
+      "explanation": "Aria maranyitanira rurendaini kuiguithania uhoro wiigii muhano uria witikirikite kana wagiriire wa burokicheini",
+      "notes": ""
+    },
+    {
+      "key": "mining",
+      "term": "Kweja Bitcoin",
+      "explanation": "Mutaratara wa kugitira Bitcoin na guthoka buroku kuhuthira hinya wa kompyuta",
+      "notes": ""
+    },
+    {
+      "key": "miner",
+      "term": "Mweji wa Bitcoin / Muburia wa nditimi cia Bitcoin/Muthuthaniri wa Bitcoin",
+      "explanation": "Kompyuta / Macini iria irutaga wira wa kweja Bitcoin",
+      "notes": ""
+    },
+    {
+      "key": "proof-of-work",
+      "term": "Uira wa wira",
+      "explanation": "Mutaratara wa ugitiri uria uhuthagirwo ni Bitcoin na ubataraga hinya wa computer",
+      "notes": "ritwa ria bata"
+    },
+    {
+      "key": "hash",
+      "term": "Hashi",
+      "explanation": "Muhuri wa kihitho wa mwanya",
+      "notes": ""
+    },
+    {
+      "key": "hash-rate",
+      "term": "Thimo ya hashi",
+      "explanation": "Hinya wothe wa kompyuta uria ugitagira nenda ya Bitcoin",
+      "notes": ""
+    },
+    {
+      "key": "difficulty",
+      "term": "Uritu wa kweja Bitcoin",
+      "explanation": "Ni githimi kia uritu wa kweja buroku",
+      "notes": ""
+    },
+    {
+      "key": "transaction",
+      "term": "Gucujana",
+      "explanation": "Ni gutuma na kwamukira kwa Bitcoin kuma adiresi imwe ya Bitcoin nginya riria ingi",
+      "notes": ""
+    },
+    {
+      "key": "transaction-id-txid",
+      "term": "Namba ya ucujani",
+      "explanation": "Kimenyithania kia mwanya kia ucujani wa Bitcoin",
+      "notes": ""
+    },
+    {
+      "key": "transaction-fee",
+      "term": "Marihi ma ucijani",
+      "explanation": "Mbeca iria irihagwo enji a Bitcoin mahotithia gucujana",
+      "notes": ""
+    },
+    {
+      "key": "confirmation",
+      "term": "uuma",
+      "explanation": "wiira ati ucujani niwekirwo burokuini",
+      "notes": ""
+    },
+    {
+      "key": "unconfirmed-transaction",
+      "term": "Ucujani utarikite",
+      "explanation": "Ucujani utekiritwo burokuini",
+      "notes": ""
+    },
+    {
+      "key": "double-spend",
+      "term": "Kuhuthira maita meeri",
+      "explanation": "Kugeria kuhuthira Bitcoin imwe maita meeri",
+      "notes": ""
+    },
+    {
+      "key": "utxo",
+      "term": "Muhurwo wa mbeca itahuthiritwo",
+      "explanation": "gicuji kia mbeca cia nenda gitahuthikite kumana na ucejania wa thuthaini",
+      "notes": ""
+    },
+    {
+      "key": "mempool",
+      "term": "Mempool",
+      "explanation": "karumu ka nendaini ka gweterera ucujani utari uhetukieo",
+      "notes": ""
+    },
+    {
+      "key": "chain-reorganization",
+      "term": "Ubangi wa nyororo ringi",
+      "explanation": "ngurani ya ihinda inini ya uhoro wa tene wa wa bukokicheini niundu wa buroku irashidana",
+      "notes": ""
+    },
+    {
+      "key": "genesis-block",
+      "term": "Buroku ya kiambiriria",
+      "explanation": "buroku ya mbeere biu",
+      "notes": ""
+    },
+    {
+      "key": "halving",
+      "term": "Gutinia na gatagati",
+      "explanation": "ni undu wa kunyihia kiheo kia wenji wa Bitcoin na nuthu othutha wa miaka ina",
+      "notes": ""
+    },
+    {
+      "key": "supply-cap",
+      "term": "Muigana / githimi kia mwisho",
+      "explanation": "Ni namba itangikira muigana wa Bitcoin makiria ya mirioni mirongo iri na imwe",
+      "notes": ""
+    },
+    {
+      "key": "open-source",
+      "term": "Kihumo kihingurire andu othe",
+      "explanation": "Programu iria kihumo kiayo no kirorwo kana gicenjio ni mundu wothe",
+      "notes": ""
+    },
+    {
+      "key": "permissionless",
+      "term": "Utarabatarania rutha",
+      "explanation": "ni mutaratara uria mundu wothe angihuthira gutari na rutha",
+      "notes": ""
+    },
+    {
+      "key": "censorship-resistance",
+      "term": "Gwitiria kugiriririo",
+      "explanation": "uhoti wa kuregana na kuhingiririo kwa ucujani",
+      "notes": ""
+    },
+    {
+      "key": "incentive-mining-rewards",
+      "term": "kiheo kia mweji wa Bitcoin",
+      "explanation": "Ni kiheo gitugagwo muumbi wa buroku njeru kuguciriria andu guteithiriria mutambo. Kiheo giki kiumanite na Bitcoin njeru na marihi ma ucujani marihitwo ni ahuthiri.",
+      "notes": ""
+    }
+  ],
+  "wallets": [
+    {
+      "key": "wallet",
+      "term": "mondo",
+      "explanation": "Mitaratara kana macini ihuthagirwo kumenyerera Bitcoin na gwikira kirore ucujani",
+      "notes": ""
+    },
+    {
+      "key": "bitcoin-wallet",
+      "term": "Mondo ya Bitcoin",
+      "explanation": "mondo uria uhuthagirwo gucujana bitcoin theri",
+      "notes": ""
+    },
+    {
+      "key": "lightning-wallet",
+      "term": "mondo ya ruheni",
+      "explanation": "mondo uria uhotithagia marihi kuhuthira nenda ya ruheni",
+      "notes": ""
+    },
+    {
+      "key": "custodial-wallet",
+      "term": "mondo ya mbeca irugamirirwo cabi cia thiri ni kambuni kana mundu",
+      "explanation": "Ni mondo iria mundu ungi kana kambuni arugamiriirre cabi cia thiri tiga mwene",
+      "notes": ""
+    },
+    {
+      "key": "non-custodial-wallet",
+      "term": "mondo ya mbeca irugamirirwo cabi cia thiri ni mwene",
+      "explanation": "Ni mondo iria mwene yo arugamiriirre cabi cia thiri",
+      "notes": ""
+    },
+    {
+      "key": "self-custody",
+      "term": "Kwiigira Bitcoin we mwene",
+      "explanation": "Kwiigira na kugitira Bitcoin ciaku wee mwene utekwihoka kambuni kana mundu ungi",
+      "notes": ""
+    },
+    {
+      "key": "hardware-wallet",
+      "term": "Mondo ya macini",
+      "explanation": "Mondo inginginyitika kana ya mugwatio ihuthikaga kuiga cabi cia thiri cia kuhura muhuri",
+      "notes": ""
+    },
+    {
+      "key": "hot-wallet",
+      "term": "Mondo ya nendaini",
+      "explanation": "ni mondo iria inyitithanitio na nenda",
+      "notes": ""
+    },
+    {
+      "key": "cold-wallet",
+      "term": "Mondo itari nendaini",
+      "explanation": "ni mondo itari mitamboini niundu wa kuongerera ugitiri",
+      "notes": ""
+    },
+    {
+      "key": "watch-only-wallet",
+      "term": "Mondo ya kurora tu",
+      "explanation": "Ni mondo iria ihotithagia kurora mbeca iria itigarite hatari gucihuthira",
+      "notes": ""
+    },
+    {
+      "key": "multisig-wallet",
+      "term": "Mondo wa mbeca iria ibataraga gwitikirio ni andu kuri igiri",
+      "explanation": "mondo iria ibataraga gwitikirio ni andu ngurani kuri igiri kana makiria mbere ya kuhuthira mbeca",
+      "notes": ""
+    },
+    {
+      "key": "vault",
+      "term": "Kirindo",
+      "explanation": "Mondo ina ugitiri makiria",
+      "notes": ""
+    },
+    {
+      "key": "airgapped",
+      "term": "Yamuranitio biu na nendaini",
+      "explanation": "macini iria yeheranitio biu na nenda",
+      "notes": ""
+    },
+    {
+      "key": "seedsigner",
+      "term": "Sidisigna",
+      "explanation": "macini itari nendaini ya guikira mihuri iria kihumo kiayo kihingurirwo andu othe",
+      "notes": ""
+    },
+    {
+      "key": "sign-transaction",
+      "term": "Gwikira muhuri ucujani",
+      "explanation": "Gwikira muhuri ucujani kuhuthira cabi cia hitho",
+      "notes": ""
+    },
+    {
+      "key": "broadcast-transaction",
+      "term": "Kumemerekia ucujani",
+      "explanation": "Ni gutuma ndumiriri ya ucujani muhetukie nendaini ya mwingi",
+      "notes": ""
+    },
+    {
+      "key": "receive-bitcoin",
+      "term": "Kwamukira Bitcoin",
+      "explanation": "kwamukira Bitcoin modoini ya bitcoin kuhetukira adiresi ya mondo iyo",
+      "notes": ""
+    },
+    {
+      "key": "send-bitcoin",
+      "term": "Gutuma Bitcoin",
+      "explanation": "Gutuma Bitcoin kuri mondo ingi ya Bitcoin kuhuthira adiresi ya mondo iyo",
+      "notes": ""
+    },
+    {
+      "key": "wallet-balance",
+      "term": "muigana wa Bitcoin mondoini",
+      "explanation": "muigana wa Bitcoin ciothe iria iri thiini wa mondo",
+      "notes": ""
+    },
+    {
+      "key": "available-balance",
+      "term": "Muigana ungihuthika",
+      "explanation": "Muigana wa mbeca iria ingihuthirwo riu",
+      "notes": ""
+    },
+    {
+      "key": "pending-balance",
+      "term": "Mbeca cietereire gwitikirika",
+      "explanation": "muigana mbeca iria cingionwo cii mondoini no itingihuthika",
+      "notes": ""
+    },
+    {
+      "key": "address-book",
+      "term": "Ibuku ria adiresi",
+      "explanation": "ni rekodi jige ya adiresi cia amukiri a Bitcoin",
+      "notes": ""
+    },
+    {
+      "key": "wallet-backup",
+      "term": "Kobi ya kuhonokia mondo",
+      "explanation": "Ni kobi ya cabi cia thiri iria ingihuthirwo gwicokeria mondo",
+      "notes": ""
+    },
+    {
+      "key": "restore-wallet",
+      "term": "Gwicokeria mondo",
+      "explanation": "kuhuthira uhoro uria wiigite wa hitho niguo uhote kuingira mondo-ini thutha wa kuriganirwo",
+      "notes": ""
+    },
+    {
+      "key": "import-wallet",
+      "term": "Kurehe mondo ya tene",
+      "explanation": "kutonyia mondo yari ho thi-ni wa apu njeru",
+      "notes": ""
+    },
+    {
+      "key": "export-wallet",
+      "term": "Kuruta mondo",
+      "explanation": "Kuruta uhoro wamondo kuma apuini imwe nginya ingi",
+      "notes": ""
+    },
+    {
+      "key": "wallet-descriptor",
+      "term": "Mutaaririe wa mondo",
+      "explanation": "uhoro wa gikiro kia iguru uria utaragiria uria mondo ithodeketwo na cabi ciayo",
+      "notes": ""
+    },
+    {
+      "key": "wallet-recovery",
+      "term": "Kuhonokia mondo",
+      "explanation": "gucokia uhoti wa kuingira mondoini yaku thutha wa kuura kana guthuka kwa thimu kana kompyuta kana kuremwo ni kuhingura.",
+      "notes": ""
+    }
+  ],
+  "security": [
+    {
+      "key": "private-key",
+      "term": "cabi ya hitho",
+      "explanation": "cabi cia hitho iria ihuthiragwo gwitikiria gutumira Bitcoin ibatii kwiigwo hitho-ini biu",
+      "notes": "ibatii kuigwo hithoini biu"
+    },
+    {
+      "key": "public-key",
+      "term": "cabi ya muingi",
+      "explanation": "cabi iria ihuthagirwo kuumba adiresi na gwikira mukonde irore",
+      "notes": ""
+    },
+    {
+      "key": "seed-phrase",
+      "term": "ciugo cia hitho cia kuhonokia mondo",
+      "explanation": "ciugo ithodeketwo guteithia gucokia mondo ya tene ringi",
+      "notes": ""
+    },
+    {
+      "key": "recovery-phrase",
+      "term": "ciugo cia hitho cia gucokia mondo",
+      "explanation": "kiugo gia guteithiriria ciugo cia hitho cia kuhonokia mondo",
+      "notes": ""
+    },
+    {
+      "key": "backup-phrase",
+      "term": "kobi ya ciugo cia kuhonokia mondo",
+      "explanation": "ciugo iria ciigitwo kuhotithia gucokia mondo thuthaini",
+      "notes": ""
+    },
+    {
+      "key": "secret-words",
+      "term": "ciugo cia thiri",
+      "explanation": "ritwa rihuthagirwo kaingi(no rititikirikite guothe) kwaria uhoro wa ciugo cia hitho cia kuhonokia mondo",
+      "notes": ""
+    },
+    {
+      "key": "mnemonic-phrase",
+      "term": "ritwa ria uteithanirio ria ciugo cia hitho cia gucokia mondo",
+      "explanation": "kiugo gitikiriki kana gia kimutambo gia ciugo cia kuhonokia mondo",
+      "notes": ""
+    },
+    {
+      "key": "recovery-words",
+      "term": "ritwa oriothe thi-ini wa ciugo cia hitho cia gucokia mondo",
+      "explanation": "kiugo kimwe gwa kimwa gia ciugo iria ikoragwo thi-ini wa ciugo cia hitho cia kuhonokia mondo",
+      "notes": ""
+    },
+    {
+      "key": "passphrase",
+      "term": "kiugo kiongerere kia hitho",
+      "explanation": "Kiugo kĩngĩ kĩa hitho kĩrĩa ũngĩongerera harĩ ciugo cia kuhonokia mondo nĩ ũndũ wa ugitiri makĩria",
+      "notes": ""
+    },
+    {
+      "key": "password",
+      "term": "kiugo kia hitho",
+      "explanation": "murongo wa ndemwa cia hitho cia kugitira apu thini wa thimu kana kompyuta",
+      "notes": ""
+    },
+    {
+      "key": "pin",
+      "term": "Namba ya hitho",
+      "explanation": "namba nguhi ya hitho ihuthagirwo kuhingura apu",
+      "notes": ""
+    },
+    {
+      "key": "encryption",
+      "term": "Kuhitha uhoro kimutambo",
+      "explanation": "kugarura uhoro na njira itangithomeka niguo kuugitira kugerera tekinoloji",
+      "notes": ""
+    },
+    {
+      "key": "decryption",
+      "term": "Kuguuria uhoro wa hitho",
+      "explanation": "kucokia uhoro uria uhithitwo niguo uthomeke ringi",
+      "notes": ""
+    },
+    {
+      "key": "digital-signature",
+      "term": "Kirore kia nenda",
+      "explanation": "uira wa kimutambo kuonania ati niwetikiria ucujani",
+      "notes": ""
+    },
+    {
+      "key": "verify-signature",
+      "term": "Gwikira mukonde kirore",
+      "explanation": "kuhetukia ati muhuri nimwitikiriku",
+      "notes": ""
+    },
+    {
+      "key": "authentication",
+      "term": "Gutitirithia",
+      "explanation": "gutitirithia wega kana mundu ni we mwene",
+      "notes": ""
+    },
+    {
+      "key": "two-factor-authentication-2fa",
+      "term": "gutitirithia na njira igiri",
+      "explanation": "ikinya ringi ria kuongerera ugitiri kuhetukira wiira wa keeri",
+      "notes": ""
+    },
+    {
+      "key": "biometric-authentication",
+      "term": "Gutitirithia kuhetukira biometriki",
+      "explanation": "gutitirithia mũndũ ukihũthĩra ciara, ũthiũ, kana indo ingĩ cia mwĩrĩ",
+      "notes": ""
+    },
+    {
+      "key": "backup",
+      "term": "Kobi njige",
+      "explanation": "kobi ngitire ina uhoro wa bata wa mondo",
+      "notes": ""
+    },
+    {
+      "key": "restore",
+      "term": "Gucokia",
+      "explanation": "gucokia uhoti uurite wa kuhuthira mondo gutumira ciugo cia hitho cia kuhonokia mondo",
+      "notes": ""
+    },
+    {
+      "key": "recovery",
+      "term": "Kuhonokia",
+      "explanation": "mubango wa gucokia uhoti wa kuingira mondo-ini riria waremwo",
+      "notes": ""
+    },
+    {
+      "key": "secure-storage",
+      "term": "Kuiga na ugitiri",
+      "explanation": "kuiga uhoro wa hitho ugitiritwo kuma kwi wici kana kuura",
+      "notes": ""
+    },
+    {
+      "key": "offline-storage",
+      "term": "kuiga gutari nendaini",
+      "explanation": "kuiga uhoro wa hitho handu hatanyitanite na nenda",
+      "notes": ""
+    },
+    {
+      "key": "tamper-resistant",
+      "term": "Ingitiria gucejeka",
+      "explanation": "ithodeketwo na njira ya gwitiria gucenjio gutari kumenyeka",
+      "notes": ""
+    },
+    {
+      "key": "secure-element",
+      "term": "Gacuma kanini ka ugitiri",
+      "explanation": "gacuma kanini thini wa macini gathodeketwo niundu wa kugitira cabi cia hitho",
+      "notes": ""
+    },
+    {
+      "key": "phishing",
+      "term": "Maheeni ma nenda-ini",
+      "explanation": "Njĩra cia kũheenania kuhuthira marua kana ndumiriri cia maheeni nĩguo gũtunya mbeca kana ũhoro wa hitho",
+      "notes": ""
+    },
+    {
+      "key": "scam",
+      "term": "Wara wa kuhithia",
+      "explanation": "Njama ya wara na maheeni ya kuiya mbeca kana uhoro wa andu",
+      "notes": ""
+    },
+    {
+      "key": "malware",
+      "term": "Purogiramu ya wara",
+      "explanation": "purogiramu ya ũũru ĩrĩa ithondekwo guthukia kana kuiya ũhoro",
+      "notes": ""
+    },
+    {
+      "key": "spyware",
+      "term": "programu ya guthigana",
+      "explanation": "progiramu iingiritie hitho-ini thiini wa thimu ya guthigana na kuiya uhoro",
+      "notes": ""
+    },
+    {
+      "key": "social-engineering",
+      "term": "Uhinga wa kwongereria andu / uheeni wa kugucia andu",
+      "explanation": "kuhingica andu niguo moige ukoro wa hitho",
+      "notes": ""
+    },
+    {
+      "key": "compromised-device",
+      "term": "Mashini iri ugwati-ini",
+      "explanation": "Thimu kana Kompyuta iria itari na ugitiri",
+      "notes": ""
+    },
+    {
+      "key": "device-lock",
+      "term": "Kihingo kia gicini (ithimu/mashini)",
+      "explanation": "kindu gia kurigiriria ndikahuthike ni mundu ungi harati na rutha rwaku",
+      "notes": ""
+    },
+    {
+      "key": "screenshot-risk",
+      "term": "Ugwati wa sikirinishoti",
+      "explanation": "ugwati wa kuonania uhoro wa hitho kuhetukira sikirinishoti",
+      "notes": ""
+    },
+    {
+      "key": "never-share-your-seed-phrase",
+      "term": "Ndukananeane ciugo ciaku cia hitho!",
+      "explanation": "mukana ati ciugo cia thiri no muhaka cikoro iri cia thiri",
+      "notes": ""
+    },
+    {
+      "key": "write-it-down-offline",
+      "term": "Andĩka ciugo ici karatathi-inĩ(hatari nenda-ini)",
+      "explanation": "mwerekera wa kuiga ciugo cia kuhonokia mondo iratathi-ini kana hatari nendaini",
+      "notes": ""
+    },
+    {
+      "key": "verify-recovery-phrase",
+      "term": "Thibitiriria ciugo cia gũcookia mondo",
+      "explanation": "guthuthuria na gutitirithia ati niwandika ciugo cia hitho wega na utakuhitia",
+      "notes": ""
+    }
+  ],
+  "safety": [
+    {
+      "key": "never-share-your-private-key",
+      "term": "Ndũkanahe mũndũ o na ũrĩkũ cabi ya hitho",
+      "explanation": "makuna ati cabi cia thiri ibatia guikara iri cia hitho",
+      "notes": ""
+    },
+    {
+      "key": "anyone-with-these-words-can-steal-your-funds",
+      "term": "Mundu wothe wina ciugo ici cia thiri no aie mbeca ciaku",
+      "explanation": "mukana wigii uhoteku wa cabi cia thiri kubuka",
+      "notes": ""
+    },
+    {
+      "key": "verify-before-sending",
+      "term": "Thibitĩria ũhoro wa marihi mbere ya gwĩtĩkĩria",
+      "explanation": "kurorania uhorowa marihi kamwiiria guitikiria",
+      "notes": ""
+    },
+    {
+      "key": "irreversible-transaction",
+      "term": "Gucujana bitcoin gutingigaruruka",
+      "explanation": "Ucujani Bitcoin gutiri hindi ungigaruruka",
+      "notes": ""
+    },
+    {
+      "key": "backup-required",
+      "term": "kuhonokia mondo nikubatairio",
+      "explanation": "uhoro wa gucokia mondo no muhaka wiigwo wega",
+      "notes": ""
+    },
+    {
+      "key": "this-action-cannot-be-undone",
+      "term": "Ũndũ ũyũndungigaruruka",
+      "explanation": "mukana wa ciiko itangicejeka",
+      "notes": ""
+    },
+    {
+      "key": "untrusted-source",
+      "term": "kihumo gitari gia kwihokeka",
+      "explanation": "Kihumo kingikorwo gitari na ugitiri kana githibitirie",
+      "notes": ""
+    },
+    {
+      "key": "suspicious-activity",
+      "term": "Undu wina ucuke",
+      "explanation": "mutugo uronania ucuke maheni kana kwaga ugitiri",
+      "notes": ""
+    },
+    {
+      "key": "security-check",
+      "term": "kurora ugitiri",
+      "explanation": "mutaratara wa guthibitira ugitiri na ukinyaniru",
+      "notes": ""
+    },
+    {
+      "key": "device-not-secure",
+      "term": "Gicini gukorwo gtarĩ na ũgitiri mwiganu",
+      "explanation": "mukana at gicini no gikorwo gitari kigitiriku",
+      "notes": ""
+    },
+    {
+      "key": "low-battery",
+      "term": "Ndiri Mwaki",
+      "explanation": "mwaki wa ihiga no uingirire maundu ma bata",
+      "notes": ""
+    },
+    {
+      "key": "update-available",
+      "term": "Wagiriri wi ho",
+      "explanation": "progiramu njagagirie iho",
+      "notes": ""
+    },
+    {
+      "key": "verify-download",
+      "term": "Thibitĩria gucururia",
+      "explanation": "guikira wiira progiramu jururie kana niyo yama",
+      "notes": ""
+    }
+  ],
+  "lightning-network": [
+    {
+      "key": "lightning-network",
+      "term": "Nenda ya ruheni",
+      "explanation": "Nenda ya marihi ya naihenya na raidhi ithodeketwo iguru ria Bitcoin",
+      "notes": ""
+    },
+    {
+      "key": "lightning-payment",
+      "term": "marihi ma ruheni",
+      "explanation": "marihi marihikite kuhetukira nendaini cia ruheni",
+      "notes": ""
+    },
+    {
+      "key": "lightning-invoice",
+      "term": "ihoya ria marihi ma ruheni",
+      "explanation": "ihoya ria marihi ihuthikana nendaini cia ruheni",
+      "notes": ""
+    },
+    {
+      "key": "invoice",
+      "term": "ihoya ria marihi",
+      "explanation": "ihoya ria marihi",
+      "notes": ""
+    },
+    {
+      "key": "pay-invoice",
+      "term": "kuriha ihoya",
+      "explanation": "gutuma marihi ma mbeca ihoetwo kugerera ihoya ria marihi ma ruheni",
+      "notes": ""
+    },
+    {
+      "key": "payment-request",
+      "term": "Guitia marihi",
+      "explanation": "ihoya ria guitia mbeca",
+      "notes": ""
+    },
+    {
+      "key": "payment-channel",
+      "term": "Njira ya kuriha",
+      "explanation": "njira ya kunyitithania ahuthiri a nenda ya ruheni niguo gutumanira marihi hauhau",
+      "notes": ""
+    },
+    {
+      "key": "open-channel",
+      "term": "Hingura njira",
+      "explanation": "guthodeka njira ya gutumanira marihi ma ruheni",
+      "notes": ""
+    },
+    {
+      "key": "close-channel",
+      "term": "Hinga njira",
+      "explanation": "kurikia na kuhinga njira ya gutuma marihi ma ruheni",
+      "notes": ""
+    },
+    {
+      "key": "routing",
+      "term": "Kugereria mbeca",
+      "explanation": "kuhetukia marihi ma ruheni kuhetukira nodu nyitithanie",
+      "notes": ""
+    },
+    {
+      "key": "routing-fee",
+      "term": "marihi ma kugereria",
+      "explanation": "mbeca iria irihagio nigetha kuhetukia na gutuma marihi ma ruheni",
+      "notes": ""
+    },
+    {
+      "key": "lightning-address",
+      "term": "adiresi ya ruheni",
+      "explanation": "kimenyithia kingithomeka ni mundu gia kuhotithia marihi ma ruheni",
+      "notes": ""
+    },
+    {
+      "key": "lnurl",
+      "term": "LNURL",
+      "explanation": "mutaratara uhuthagirwo guthathaura na kunyihia uritu wa nenda ya ruheni",
+      "notes": ""
+    },
+    {
+      "key": "instant-payment",
+      "term": "marihi ma hau hau",
+      "explanation": "marihi maririkaga o hindi iyo",
+      "notes": ""
+    },
+    {
+      "key": "micropayment",
+      "term": "irihi inini muno",
+      "explanation": "Irihi inini muno ria kirihwo",
+      "notes": ""
+    },
+    {
+      "key": "payment-failed",
+      "term": "irihi ni riarema",
+      "explanation": "Marihi maria matanahingio",
+      "notes": ""
+    },
+    {
+      "key": "route-not-found",
+      "term": "Njira ya kugereria ni yaga",
+      "explanation": "Gutiri njira njitikiriku ikoragwo kuo ya marihi ma ruheni",
+      "notes": ""
+    },
+    {
+      "key": "channel-capacity",
+      "term": "muigana wa Njira",
+      "explanation": "Muigana uria njira ya ruheni ingikua",
+      "notes": ""
+    },
+    {
+      "key": "inbound-liquidity",
+      "term": "uhoti wa kwamukira",
+      "explanation": "muigana wa mbeca iria ungihota kwamuki kuhitukira njira yaku nenda-ini ya ruheni",
+      "notes": ""
+    },
+    {
+      "key": "outbound-liquidity",
+      "term": "Uhoti wa gutuma",
+      "explanation": "Muigana wa mbeca iria ungihota gutuma kuhitukira njira yaku nenda-ini ya ruheni",
+      "notes": ""
+    },
+    {
+      "key": "rebalance",
+      "term": "kuiganania",
+      "explanation": "kubanga ringi muigana wa mbeca gatagati ka njira cia ruheni niguo uhote gutuma kana kwamukira wega",
+      "notes": ""
+    },
+    {
+      "key": "keysend",
+      "term": "Gutuma hatari ihoya",
+      "explanation": "gutuma marihi ma ruheni hatari na ihoya",
+      "notes": ""
+    },
+    {
+      "key": "bolt11-invoice",
+      "term": "Ihoya ria Bolt 11",
+      "explanation": "mutaratara uria witikirikite wa kwandika ihoya ria marihi nendaini ya ruheni",
+      "notes": ""
+    },
+    {
+      "key": "expired-invoice",
+      "term": "Ihoya rihitukitie mahinda",
+      "explanation": "ihoya ritari na ũhoti wa kũhoya mbeca rĩngi",
+      "notes": ""
+    },
+    {
+      "key": "hold-invoice",
+      "term": "ihoya rietereirio",
+      "explanation": "ihoya riria rirugamagia marihi mbeca nginya mũndũ we mwene etikirie ũhoro wa gũtũma.",
+      "notes": ""
+    }
+  ],
+  "payments": [
+    {
+      "key": "bitcoin-address",
+      "term": "Adiresi ya Bitcoin",
+      "explanation": "ni handũ hetereirwo kwamũkĩra bitcoin",
+      "notes": ""
+    },
+    {
+      "key": "wallet-address",
+      "term": "Adiresi ya mondo",
+      "explanation": "ni mũrongo ũrĩa ũhũthagĩrwo kwamũkĩra marihi ma Bitcoin",
+      "notes": ""
+    },
+    {
+      "key": "receive-address",
+      "term": "Adiresi ya kwamukira",
+      "explanation": "ni adiresi ĩrĩaithodeketwo kwamũkĩra marihi maria maroka",
+      "notes": ""
+    },
+    {
+      "key": "qr-code",
+      "term": "Kodi ya QR",
+      "explanation": "mbica ĩngĩthomwo ni mondo ĩrĩ na ũhoro wa marihi",
+      "notes": ""
+    },
+    {
+      "key": "scan-qr-code",
+      "term": "Thoma Kodi ya QR",
+      "explanation": "kuũthĩra kamera gũthoma ũhoro wa marihi",
+      "notes": ""
+    },
+    {
+      "key": "copy-address",
+      "term": "Kobia Adiresi",
+      "explanation": "kobia adiresi ya mondo itonye kiripubodini",
+      "notes": ""
+    },
+    {
+      "key": "paste-address",
+      "term": "Ikira Adiresi",
+      "explanation": "ikira adiresi iria ikobetio i thini wa kiripubodi",
+      "notes": ""
+    },
+    {
+      "key": "invalid-address",
+      "term": "Adiresi itari ya ma",
+      "explanation": "muhianire wa adiresi uria utoikaine kana ugetikirika",
+      "notes": ""
+    },
+    {
+      "key": "amount",
+      "term": "muigana",
+      "explanation": "ni muigana wa Bitcoin kana mbeca iria iratumwo",
+      "notes": ""
+    },
+    {
+      "key": "amount-too-low",
+      "term": "muigana wi thi muno",
+      "explanation": "ni muigana wa thi gukira githimi kiria gitikirikite",
+      "notes": ""
+    },
+    {
+      "key": "amount-too-high",
+      "term": "muigana wi iguru muno",
+      "explanation": "ni muigana ukirite mbeca kana githimi ki mondoini",
+      "notes": ""
+    },
+    {
+      "key": "recipient",
+      "term": "Mwamukiri",
+      "explanation": "mundu uria uramukira marihi",
+      "notes": ""
+    },
+    {
+      "key": "sender",
+      "term": "Mutumi",
+      "explanation": "mundu uria uratuma marihi",
+      "notes": ""
+    },
+    {
+      "key": "payment-sent",
+      "term": "Marihi ni matumwo",
+      "explanation": "marihi ni marikirira wega",
+      "notes": ""
+    },
+    {
+      "key": "payment-received",
+      "term": "Marihi ni maamukirwo",
+      "explanation": "marihi ni makinya wega mondoini",
+      "notes": ""
+    },
+    {
+      "key": "pending-payment",
+      "term": "Marihi metereire",
+      "explanation": "marihi metereire kuhetukio kana kurika",
+      "notes": ""
+    },
+    {
+      "key": "failed-payment",
+      "term": "marihi marega",
+      "explanation": "marihi kwaga kuirika",
+      "notes": ""
+    },
+    {
+      "key": "payment-history",
+      "term": "Uhoro wa tene wa marihi",
+      "explanation": "rekodi ya marihi ma tene",
+      "notes": ""
+    },
+    {
+      "key": "memo",
+      "term": "Memo",
+      "explanation": "ndumiriri nguhi yongereirwo niundu wa gucujana",
+      "notes": ""
+    },
+    {
+      "key": "description",
+      "term": "Utariria",
+      "explanation": "uhoro makiria wongereirwo wiigii marihi",
+      "notes": ""
+    },
+    {
+      "key": "network-fee",
+      "term": "marihi ma nenda",
+      "explanation": "thogora wa kuhotithia marihi",
+      "notes": ""
+    },
+    {
+      "key": "provider-fee-service-fee",
+      "term": "Marihi ma muheani wa utungata",
+      "explanation": "ni mbeca iria irihagwo kambuni kana muheani wa utungata uria urahotithia gucejania mbeca",
+      "notes": ""
+    },
+    {
+      "key": "miner-fee",
+      "term": "Marihi ma mwenji",
+      "explanation": "thogora wa gucenjania Bitcoin uria urihagwo enji",
+      "notes": ""
+    },
+    {
+      "key": "fee-rate",
+      "term": "Githimi Kia marihi",
+      "explanation": "kiwango kia marihi kiria githuritwo gokorwo ki marihi ma ucujani",
+      "notes": ""
+    },
+    {
+      "key": "priority-fee",
+      "term": "Marihi ma kuheo mweke",
+      "explanation": "thogora wa iguru kuhotithia uhetukia wa naihenya wa marihi",
+      "notes": ""
+    },
+    {
+      "key": "slow",
+      "term": "kahora",
+      "explanation": "mweke wa thi wa kuhetukio",
+      "notes": ""
+    },
+    {
+      "key": "fast",
+      "term": "ihenya",
+      "explanation": "mweke wa iguru wa kuhetukio",
+      "notes": ""
+    },
+    {
+      "key": "estimated-confirmation-time",
+      "term": "Ihinda riiciririo ria gwitikirika",
+      "explanation": "ihinda rietereirwo ria gweterera kuhetukio kwa ucunjani",
+      "notes": ""
+    },
+    {
+      "key": "broadcast",
+      "term": "Kumemerekia nenda-ini",
+      "explanation": "gutuma ndumiriri ya ucjani nendaini ya muingi",
+      "notes": ""
+    },
+    {
+      "key": "replace-by-fee-rbf",
+      "term": "cenjania na irihi",
+      "explanation": "mutara wa gwitikiria kuongerera marihi ma ucujani uria utari mwitikirie niguo uhiuhe",
+      "notes": ""
+    },
+    {
+      "key": "child-pays-for-parent-cpfp",
+      "term": "mwana kurihira muciari",
+      "explanation": "njira ya kuhiuhia gwitikiria ucujani wa marihi marugamite",
+      "notes": ""
+    }
+  ],
+  "privacy": [
+    {
+      "key": "privacy",
+      "term": "ugitiri wa hitho",
+      "explanation": "uhoti wa kuramata gukinyirika kwa uhoro wa mundu",
+      "notes": ""
+    },
+    {
+      "key": "financial-privacy",
+      "term": "ugitiri wa hitho cia mbeca",
+      "explanation": "ugitiri wa uhoro wa mbeca na ucujani",
+      "notes": ""
+    },
+    {
+      "key": "pseudonymous",
+      "term": "maritwa ma kwihe",
+      "explanation": "kuhuthira maritwa maria matanyitithanitio na riitwa riaku ria ma",
+      "notes": ""
+    },
+    {
+      "key": "surveillance",
+      "term": "Guthigana/Kurangirwo",
+      "explanation": "Korora na kumenya ciiko cia ahuthiri a nenda hitho-ini",
+      "notes": ""
+    },
+    {
+      "key": "metadata",
+      "term": "uhoro wa makiria wigii ndumiriri",
+      "explanation": "uhoro wiigiie ucujani kana kwaraniria",
+      "notes": ""
+    },
+    {
+      "key": "coin-control",
+      "term": "Guthuura mbeca",
+      "explanation": "guthura ni muhurwo uriku wa mbeca itahuthiritwo wa kuhuthira thi-ini wa ucujani",
+      "notes": ""
+    },
+    {
+      "key": "coinjoin",
+      "term": "Kunyitithania mbeca",
+      "explanation": "kucujana gwa kunyitanira niguo kuongerera ugitiri wa hitho",
+      "notes": ""
+    },
+    {
+      "key": "address-reuse",
+      "term": "kuhuthira adiresi ringi",
+      "explanation": "kuhuthira adiresi imwe ya Bitcoin Maita maingi",
+      "notes": ""
+    },
+    {
+      "key": "do-not-reuse-addresses",
+      "term": "Ndukahuthire adiresi imwe ringi",
+      "explanation": "ni utaro wa guthodeka adiresi njeru hindi o yothe urabaratara gutuma kana kwamukira mbeca",
+      "notes": ""
+    },
+    {
+      "key": "tor",
+      "term": "Nenda ya hitho",
+      "explanation": "mutambgirwo kuhitha ciiko ciaku nendaini",
+      "notes": ""
+    },
+    {
+      "key": "vpn",
+      "term": "VPN",
+      "explanation": "mutaratara uhithaga ciiko ciaku nendaini kuri andu mangirora",
+      "notes": ""
+    },
+    {
+      "key": "sovereignty",
+      "term": "Wiyathi wa kwirugamirira",
+      "explanation": "kwiatha na kwirugamirira kwa mbeca na mitambo",
+      "notes": ""
+    },
+    {
+      "key": "financial-freedom",
+      "term": "wiyathi wa kimbeca",
+      "explanation": "uhoti wa gucujana mbeca hatari mihinga itari na uteithio",
+      "notes": ""
+    },
+    {
+      "key": "permissionless-access",
+      "term": "wonekeku wawitikiririki",
+      "explanation": "kuhuthira gutari na rutha kuma kuri atongoria",
+      "notes": ""
+    },
+    {
+      "key": "open-network",
+      "term": "Nenda hingurire muingi",
+      "explanation": "nenda iria mundu o wothe anginyitarira na uria ungi",
+      "notes": ""
+    },
+    {
+      "key": "self-reliance",
+      "term": "Kurugamirira",
+      "explanation": "kuramata mbeca na indo ciaku we mwene",
+      "notes": ""
+    }
+  ],
+  "markets": [
+    {
+      "key": "exchange",
+      "term": "Ceni ya gucenjania",
+      "explanation": "ni mutambo wa kwendia na kugura mbeca cia nenda",
+      "notes": ""
+    },
+    {
+      "key": "centralized-exchange-cex",
+      "term": "Ceni ya ucejania ina watho kuma iguru",
+      "explanation": "ni mutambo uria urugamiriirwo ni watho umwe uria wiigaga mbeca cia ahuthiri",
+      "notes": ""
+    },
+    {
+      "key": "decentralized-exchange-dex",
+      "term": "Ceni ya ucejania ina wiathi",
+      "explanation": "ni mutambo wa ucenjania uria utarugamiriirwo ni mundu umwe kana kambuni",
+      "notes": ""
+    },
+    {
+      "key": "buy-bitcoin",
+      "term": "Kugura Bitcoin",
+      "explanation": "ni kuhuthira mbeca ingi kana cia thirikari kugura Bitcoin",
+      "notes": ""
+    },
+    {
+      "key": "sell-bitcoin",
+      "term": "Kuendia bitcoin",
+      "explanation": "ni gucenjania Bitcoin niguo uheo mbeca muthemba ungi",
+      "notes": ""
+    },
+    {
+      "key": "trade",
+      "term": "Ucejania",
+      "explanation": "ni gucenjania kindu kimwe na kingi",
+      "notes": ""
+    },
+    {
+      "key": "fiat-currency",
+      "term": "Mbeca cia thirikari",
+      "explanation": "mbeca iria irutitwo na ikarugamirirwo ni thirikari",
+      "notes": ""
+    },
+    {
+      "key": "local-currency",
+      "term": "Mbeca cia bururi kana gicigo",
+      "explanation": "ni mbeca iria irihagwo na ihuthagirwo bururini kana gicigo kina",
+      "notes": ""
+    },
+    {
+      "key": "exchange-rate",
+      "term": "Githimi kia gucenjania",
+      "explanation": "bata wa ndugu gatagati ka mithemba iri ya mbeca",
+      "notes": ""
+    },
+    {
+      "key": "market-price",
+      "term": "Bei ya thoko",
+      "explanation": "ni thogora wa riu uria ahuthiri a riu maraiguithania wa kugira kana kwedia",
+      "notes": ""
+    },
+    {
+      "key": "volatility",
+      "term": "Ugaruruku wa mbeca",
+      "explanation": "kwambata kana kugua kwa thogora wa mbeca na ihenya kahindaini kanini",
+      "notes": ""
+    },
+    {
+      "key": "stablecoin",
+      "term": "Mbeca itaenjagia thogora",
+      "explanation": "mbeca cia nendaini ithodeketwo guturia thogora wacio urumite",
+      "notes": ""
+    },
+    {
+      "key": "usdt",
+      "term": "USDT",
+      "explanation": "mbeca itacenjagia thogora ya tetha iria ithimithanitio na dora ya amerika",
+      "notes": ""
+    },
+    {
+      "key": "usdc",
+      "term": "USDC",
+      "explanation": "mbeca itacenjagia thogora iria yohithanitio na dora ya amerika",
+      "notes": ""
+    },
+    {
+      "key": "liquidity",
+      "term": "muigana wa mbeca",
+      "explanation": "uhoti wa kuona indo cia kugurwo kana kwedio",
+      "notes": ""
+    },
+    {
+      "key": "spread",
+      "term": "ngurani ya thogora",
+      "explanation": "utigani gatagati ka thogora wa kugura na kwedia",
+      "notes": ""
+    },
+    {
+      "key": "slippage",
+      "term": "Utenderu",
+      "explanation": "gucejia kwa thogora riria uragura kana ukendia mbere ucujani gukinyanira",
+      "notes": ""
+    },
+    {
+      "key": "order-book",
+      "term": "ibuku ria oda",
+      "explanation": "rekodi iria yonanagia wendia na uguri urathii na mbeere",
+      "notes": ""
+    },
+    {
+      "key": "market-order",
+      "term": "Kugura /kwendia na thogora wa riu",
+      "explanation": "gwtikiria kugura kana kwedia o hau na thogora wariu",
+      "notes": ""
+    },
+    {
+      "key": "limit-order",
+      "term": "Kugura/Kwendia na thogora muthure",
+      "explanation": "gwitikiria kugura kana kwendi o tu riria thogora ukinyite githimi kiria uthurite",
+      "notes": ""
+    },
+    {
+      "key": "deposit",
+      "term": "guikira",
+      "explanation": "kuongerera mbeca mundoini kana mutamboini wa thoko",
+      "notes": ""
+    },
+    {
+      "key": "withdraw",
+      "term": "kuruta",
+      "explanation": "kuruta mbeca mundoini kana mutamboini wa thoko",
+      "notes": ""
+    },
+    {
+      "key": "remittance",
+      "term": "Gutuma mbeca haraya",
+      "explanation": "gutuma mbeca kundu kuraya kana nja ya bururi ukihetuka mihaka",
+      "notes": ""
+    },
+    {
+      "key": "cash-out",
+      "term": "Kuruta mbeca",
+      "explanation": "kugarura indo cia nendaini cituike mbeca cia bururi kana ingihutika na moko",
+      "notes": ""
+    },
+    {
+      "key": "on-ramp",
+      "term": "Njira ya kugarura",
+      "explanation": "ni utungata wa gucenjania mbeca cia thirikari nginya mbeca cia nendaini",
+      "notes": ""
+    },
+    {
+      "key": "off-ramp",
+      "term": "Njira ya kuruta",
+      "explanation": "ni utungata wa gucenjania mbeca cia nendaini nginya mbeca cia thirikari",
+      "notes": ""
+    }
+  ],
+  "mobile-money": [
+    {
+      "key": "mobile-money",
+      "term": "Mbeca cia thimu",
+      "explanation": "mutaratara wa kuiga na gutuma mbeca kuhuthira thimu hatari kubatara akaunti ya bengi",
+      "notes": ""
+    },
+    {
+      "key": "airtime",
+      "term": "Kirediti",
+      "explanation": "mbeca iria wikiraga thimuini niundu wa kuhura thimu na kugura intaneti",
+      "notes": ""
+    },
+    {
+      "key": "ussd",
+      "term": "USSD/ Mutaratara wa Kodi cia thimu",
+      "explanation": "mutaratara wa kuhuthira kodi na ndemwa thimuini gucunjana hatari kubatara intaneti",
+      "notes": ""
+    },
+    {
+      "key": "feature-phone",
+      "term": "Kabambe",
+      "explanation": "thimu ya tene itangihota kuhuthira apu nene cia intaneti",
+      "notes": ""
+    },
+    {
+      "key": "sim-card",
+      "term": "laini/kadi ya thimu",
+      "explanation": "Gakadi kanini gekiragwo thimu-ini gakuheana namba na gukunyitithania na mutambo",
+      "notes": ""
+    },
+    {
+      "key": "phone-number",
+      "term": "Namba ya Thimu",
+      "explanation": "Namba ya mwanya ya thimu yaku iria ihuthagirwo kwaraniria na motungata ma gutuma mbeca",
+      "notes": ""
+    },
+    {
+      "key": "paybill",
+      "term": "Namba ya paybill",
+      "explanation": "Namba ihuthagirwo kuriha kambuni kana biacara nene mutambo-ini wa mbeca cia thimu",
+      "notes": ""
+    },
+    {
+      "key": "agent",
+      "term": "Ejenti",
+      "explanation": "Mundu kana duka iria ihotithagia andu kuiga kana kuruta mbeca cia thimu",
+      "notes": ""
+    },
+    {
+      "key": "cash-agent",
+      "term": "Ejenti ya gwikira na kuruta mbeca",
+      "explanation": "Mundu uria ukuheaga mbeca na moko thutha wa kumutumira mbeca cia thimu",
+      "notes": ""
+    },
+    {
+      "key": "send-money",
+      "term": "Tuma mbeca",
+      "explanation": "Gutuma mbeca kuuma kuri thimu yaku nginya kuri mundu ungi",
+      "notes": ""
+    },
+    {
+      "key": "receive-money",
+      "term": "Amukira mbeca",
+      "explanation": "Kwamukira mbeca iria itumitwo ni mundu ungi",
+      "notes": ""
+    },
+    {
+      "key": "balance-inquiry",
+      "term": "Kurora mbeca itigarite",
+      "explanation": "Kurora mutambo kumenya muigana wa mbeca iria cii thimu-ini yaki riu",
+      "notes": ""
+    },
+    {
+      "key": "withdrawal-code",
+      "term": "Kodi ya kuruta mbeca",
+      "explanation": "Namba ya hitho iria uheaga ejenti niguo ahote gukuhe mbeca ciaku",
+      "notes": ""
+    },
+    {
+      "key": "transfer-failed",
+      "term": "Gutuma mbeca ni kwarema",
+      "explanation": "Ucujani wa mbeca uria utangirika kana utangikinyanira biu",
+      "notes": ""
+    },
+    {
+      "key": "insufficient-balance",
+      "term": "Mbeca itaiganite",
+      "explanation": "Mbeca iria iri thimu-ini yaku ni nini gukira iria urenda gutuma kana kuruta",
+      "notes": ""
+    }
+  ],
+  "seedsigner": [
+    {
+      "key": "psbt",
+      "term": "PSBT",
+      "explanation": "Mucujo wa Bitcoin utekiritwo thaini woothe, mutheba wa guikira thaini na ugitiri munene",
+      "notes": "Ya gikiro kia iguru na bata munene"
+    },
+    {
+      "key": "signer",
+      "term": "Muikiri thaini",
+      "explanation": "Apu iria ihuthiragwo gwikira thaini na gwikira ndeetiko cia mbeca",
+      "notes": ""
+    },
+    {
+      "key": "offline-signing",
+      "term": "Guikira thaini hatari mutandao",
+      "explanation": "Guikirira thaini hari ndeetiko cia mbeca hatari kuhuthira mutandao",
+      "notes": ""
+    },
+    {
+      "key": "qr-transfer",
+      "term": "Gutuma mbeca na kodi ya QR",
+      "explanation": "Gutuma kana kunyita ndeto cia ndeetiko cia mbeca kugerera kodi cia QR",
+      "notes": ""
+    },
+    {
+      "key": "entropy",
+      "term": "Utagutagu wa hitho",
+      "explanation": "Utaraniria uria uhuthiraguo guthondeka mbeu cia hitho na ugitiri munene",
+      "notes": ""
+    },
+    {
+      "key": "dice-roll-entropy",
+      "term": "Utagutagu wa kugararagara kwa dice",
+      "explanation": "Utaraniria uria unyitagwo kuhuthira dice cia moko",
+      "notes": ""
+    },
+    {
+      "key": "camera-scan",
+      "term": "Guthoma na kamera",
+      "explanation": "Kuhuthira kamera guthoma kodi ya QR kana ndeto",
+      "notes": ""
+    },
+    {
+      "key": "microsd-card",
+      "term": "Gakandi kinini ga kuiga ndeto",
+      "explanation": "kigao kiini kia moko kiria kihuthiragwo kuiga na gutuma ndeto cia kompyuta",
+      "notes": ""
+    },
+    {
+      "key": "unsigned-transaction",
+      "term": "Ndeetiko itari na thaini",
+      "explanation": "Ndeetiko ya mbeca yetereire gwikirwo thaini",
+      "notes": ""
+    },
+    {
+      "key": "signed-transaction",
+      "term": "Ndeetiko ina thaini",
+      "explanation": "Ndeetiko ya mbeca hitukie na cabi",
+      "notes": ""
+    },
+    {
+      "key": "verify-address",
+      "term": "Guikirira kirugamo",
+      "explanation": "Guikirira ati kirugamo nikiratwarana na kia munyiti uria uguiciririo",
+      "notes": "Ni ya bata muno hari ugitiri"
+    },
+    {
+      "key": "verify-amount",
+      "term": "Guikirira muigana",
+      "explanation": "Guikira muhuri ati muigana wa marihi niguo wagiriire",
+      "notes": "Ni ya bata muno hari ugitiri"
+    },
+    {
+      "key": "tamper-check",
+      "term": "Kurora kana uhoro nimugarure",
+      "explanation": "Njira ya kurugamiririra kana kurora uigiririki wa kimuri",
+      "notes": ""
+    },
+    {
+      "key": "stateless-device",
+      "term": "Kimuri gitaigaga uhoro",
+      "explanation": "Kimuri kia handiwia githondetwo gutee hitho na mbeu ciothe cia kompyta riria giatigithio mweke wa thitima",
+      "notes": ""
+    },
+    {
+      "key": "calculate-checksum",
+      "term": "Gutara Checksum",
+      "explanation": "Makinya ma kurikia na guthoma mitaaro niguo gukorwo na kiugo kia kurikia kwa ciugo cia hitho",
+      "notes": ""
+    },
+    {
+      "key": "brightness",
+      "term": "Utheri",
+      "explanation": "Muthondekere wa gucenjia utheri niguo ritho ria kompyuta riagire kuoya mbica na jira ya maa",
+      "notes": "Ni ya bata tondu muikiri wa thaini anyitaga uhoro na jira ya maitho kana kodi cia QR"
+    },
+    {
+      "key": "unsigned-psbt",
+      "term": "PSBT itari thaini",
+      "explanation": "Uhoro wa mbeca cia Bitcoin iria iratanywo thaini na iraruta watho wa kiambiriria kuma kiugoini kia hitho kiria gitaringaine na mutandao",
+      "notes": ""
+    }
+  ],
+  "crypto-ecosystem": [
+    {
+      "key": "cryptocurrency",
+      "term": "Mbeca cia Crypto",
+      "explanation": "Mbeca cia digital ciirigitire na njira nene cia hitho",
+      "notes": ""
+    },
+    {
+      "key": "altcoin",
+      "term": "Mutheba ungi wa mbeca cia Crypto",
+      "explanation": "Mutheba ooh woothe wa mbeca cia digital tiga Bitcoin , kwa muhano ni ta Ethereum , Litecoin na ingi makiri mangi",
+      "notes": ""
+    },
+    {
+      "key": "token",
+      "term": "Tookeni",
+      "explanation": "Kigiina kia digital kiria kiheanitwo thiini wa munyororo wa buroko",
+      "notes": ""
+    },
+    {
+      "key": "all-time-high-ath",
+      "term": "Thogora wa iguru muno ihinda riothe",
+      "explanation": "Thogora wa iguru muno uria mbeca cia Crypto cianakinyia thookoini kuuma tene",
+      "notes": ""
+    },
+    {
+      "key": "all-time-low-atl",
+      "term": "Thogora wa thii muno wa ihinda riothe",
+      "explanation": "Thogora wa thii muno thookoini iria mbeca cia Crypto iri yakorwo nayo kuuma tene",
+      "notes": ""
+    },
+    {
+      "key": "smart-contract",
+      "term": "Kiiraana kia kuihuria",
+      "explanation": "Ndumiriri cia kompyuta thiini wa munyororo wa buroko iria ciirugamagirira",
+      "notes": ""
+    },
+    {
+      "key": "rug-pull",
+      "term": "Gutunyana mbeca",
+      "explanation": "Uungumania uria athondeki a murandi moraga na mbeca cia ahuthiri",
+      "notes": "Ndeto ya bata ya kugwatanira ugitiri"
+    },
+    {
+      "key": "fomo",
+      "term": "Guoya wa gutigirirwo",
+      "explanation": "Guoya wa gutigirirwo ni thogora igatuma mundu aigithie mbeca na ihenya hatari guthoma",
+      "notes": "Undu wonekaga kaingi"
+    },
+    {
+      "key": "hodl",
+      "term": "Kuumia na hinya",
+      "explanation": "Kwinyitira Bitcoin kwa ihinda inene muno",
+      "notes": "Ndeto ya gikundi"
+    },
+    {
+      "key": "whale",
+      "term": "Muigithia munene",
+      "explanation": "Mundu kana gikundi kiri na kigina kinene muno kia mbeca cia Crypto",
+      "notes": ""
+    },
+    {
+      "key": "bear-market",
+      "term": "Thooko iragua",
+      "explanation": "Ihinda ria thogora wa thooko kugua",
+      "notes": ""
+    },
+    {
+      "key": "bull-market",
+      "term": "Thooko irambatira",
+      "explanation": "Ihinda ria thogora wa thooko kuambatira",
+      "notes": ""
+    },
+    {
+      "key": "portfolio",
+      "term": "Muthithu wa uigithia",
+      "explanation": "Indo cia mundu ciake icokaniriirio",
+      "notes": ""
+    },
+    {
+      "key": "diversification",
+      "term": "Kugayania uigithia",
+      "explanation": "Kugayania uigithia thiini wa indo nyingi ngurani",
+      "notes": ""
+    },
+    {
+      "key": "market-capitalization",
+      "term": "Thamani yothe ya thooko",
+      "explanation": "Thamani yoothe ya thooko hari uigithia wothe",
+      "notes": ""
+    },
+    {
+      "key": "liquidity-pool",
+      "term": "Kigina kia mbeca cia kuguatanira",
+      "explanation": "Mbeca cia kuguatanira iria ihuthiragwo kuuwania na kugurana hatari muramati wa gatagatiini",
+      "notes": ""
+    },
+    {
+      "key": "governance-token",
+      "term": "Tookeni ya wathani",
+      "explanation": "Tookeni ihuthiragwo guthurana thiini wa muradi",
+      "notes": ""
+    }
+  ],
+  "ui": [
+    {
+      "key": "continue",
+      "term": "Guthii na mbere",
+      "explanation": "Thie na mbere na gikiro kiu kingi",
+      "notes": "Itambi ria kaingi"
+    },
+    {
+      "key": "confirm",
+      "term": "Guikira muhuri",
+      "explanation": "Guitikira giiko kiu",
+      "notes": ""
+    },
+    {
+      "key": "cancel",
+      "term": "Gukaja",
+      "explanation": "Gukaja giiko kiu",
+      "notes": ""
+    },
+    {
+      "key": "back",
+      "term": "Thutha",
+      "explanation": "Gucokia thutha",
+      "notes": ""
+    },
+    {
+      "key": "next",
+      "term": "Kiria ki mbere",
+      "explanation": "Thie na mbere na gikiro kiu kingi",
+      "notes": ""
+    },
+    {
+      "key": "finish",
+      "term": "Rikia",
+      "explanation": "Rikia undu",
+      "notes": ""
+    },
+    {
+      "key": "save",
+      "term": "Kuiga",
+      "explanation": "Kuiga uhoro",
+      "notes": ""
+    },
+    {
+      "key": "delete",
+      "term": "Gutharia",
+      "explanation": "Kueheria uhoro ucio biu",
+      "notes": "Giiko kia ugwati munene"
+    },
+    {
+      "key": "edit",
+      "term": "Garura",
+      "explanation": "Garura uhoro uria uriho niguo wagire",
+      "notes": ""
+    },
+    {
+      "key": "retry",
+      "term": "Geria ringi",
+      "explanation": "Geria giiko ringi",
+      "notes": ""
+    },
+    {
+      "key": "refresh",
+      "term": "Gucokera",
+      "explanation": "Gucokeria uhoro mweru",
+      "notes": ""
+    },
+    {
+      "key": "enable",
+      "term": "Kuhotithia",
+      "explanation": "Kuhotithia undu wikike",
+      "notes": ""
+    },
+    {
+      "key": "disable",
+      "term": "Kugiria",
+      "explanation": "Kugiria undu wikike",
+      "notes": ""
+    },
+    {
+      "key": "connect",
+      "term": "Kunyitithania",
+      "explanation": "Kunyitithania nenda",
+      "notes": ""
+    },
+    {
+      "key": "disconnect",
+      "term": "Kurutania",
+      "explanation": "Kurutania munyitano wa nenda",
+      "notes": ""
+    },
+    {
+      "key": "sync",
+      "term": "Kuhuania / kuhanania uhoro",
+      "explanation": "Kuhanania uhoro niguo ukorwo uhaanite",
+      "notes": ""
+    },
+    {
+      "key": "loading",
+      "term": "Kurahura",
+      "explanation": "Guthondeka uhoro kana kuucaria",
+      "notes": ""
+    },
+    {
+      "key": "processing",
+      "term": "Guthii na mbere",
+      "explanation": "Uhoro uciu niurarikiririo",
+      "notes": ""
+    },
+    {
+      "key": "success",
+      "term": "Kuhotana",
+      "explanation": "Giiko kuriikio na uhotani",
+      "notes": ""
+    },
+    {
+      "key": "error",
+      "term": "Ihitia",
+      "explanation": "Ihitia kuhanikika / kuumira",
+      "notes": ""
+    },
+    {
+      "key": "warning",
+      "term": "Mukana",
+      "explanation": "Kumira kwa ugwati kana thina ungiuka",
+      "notes": ""
+    },
+    {
+      "key": "information",
+      "term": "Uhoro",
+      "explanation": "Uhoro wa kumenyithia mundu undu owothe",
+      "notes": ""
+    },
+    {
+      "key": "settings",
+      "term": "Mibango",
+      "explanation": "Kionereria gia kuandika",
+      "notes": ""
+    },
+    {
+      "key": "advanced-settings",
+      "term": "Mibango ya mbere/ iguru",
+      "explanation": "Mibango ya gikiro kia iguru iria ihuthagirwo ni andu kaingi",
+      "notes": ""
+    },
+    {
+      "key": "security-settings",
+      "term": "Mibango ya ugitiri",
+      "explanation": "Mibango ya ugutiri wa mondo cia mbeca",
+      "notes": ""
+    },
+    {
+      "key": "language",
+      "term": "Ruthiomi",
+      "explanation": "Ruthiomi ruria urenda kuhuthira thiini wa kimuri",
+      "notes": ""
+    },
+    {
+      "key": "currency",
+      "term": "Ruririi rwa mbeca",
+      "explanation": "Gacigo ka mbeca thuranire",
+      "notes": ""
+    },
+    {
+      "key": "search",
+      "term": "Guetha",
+      "explanation": "Caria uhoro thiine wa apu",
+      "notes": ""
+    },
+    {
+      "key": "filter",
+      "term": "Gucunga",
+      "explanation": "Gucunga mohoro maria maronia",
+      "notes": ""
+    },
+    {
+      "key": "scan",
+      "term": "Guthuthuria",
+      "explanation": "Gutumira kamera kunyita mohoro",
+      "notes": ""
+    },
+    {
+      "key": "upload",
+      "term": "Gutuma",
+      "explanation": "Gutuma uhoro kana mbica apuini",
+      "notes": ""
+    },
+    {
+      "key": "download",
+      "term": "Kugucia",
+      "explanation": "Kugucia na kuiga uhoro kuma apuini guthie kuri kimuri",
+      "notes": ""
+    },
+    {
+      "key": "share",
+      "term": "Kugaya",
+      "explanation": "Gutuma mohoro kuri mundu ungi kana apu",
+      "notes": ""
+    },
+    {
+      "key": "clipboard",
+      "term": "Kiiga gia gukobia",
+      "explanation": "Handu ha kuiga uhoro uria ukobiitwo ihinda inini",
+      "notes": ""
+    },
+    {
+      "key": "copied",
+      "term": "Gukobia",
+      "explanation": "Ukobio wa uhoro nimukinyaniru",
+      "notes": ""
+    },
+    {
+      "key": "invalid-input",
+      "term": "Mahitia ma uandiki",
+      "explanation": "Uhoro mwikire ti mwitikiriku",
+      "notes": ""
+    },
+    {
+      "key": "try-again",
+      "term": "Geria ringi",
+      "explanation": "Cokera giiko kiria kirariho",
+      "notes": ""
+    },
+    {
+      "key": "required-field",
+      "term": "Gicuji kirabatarika / Handu ha bata",
+      "explanation": "Uhoro uria wagiriire kwandikwo mbere ya guthii na mbere",
+      "notes": ""
+    },
+    {
+      "key": "session-timeout",
+      "term": "Ihinda ithiru",
+      "explanation": "Ihinda guthira thuutha wa mutumiri guikara muno atacoketie kiuria kia USSD",
+      "notes": "Kindu gia bata thimuini , utauri ukorwo wi mukuhi nigetha kimenyithia kiiganire gicicioini gia thimu cia kawaida"
+    },
+    {
+      "key": "dial-code-shortcode",
+      "term": "Namba nguhi",
+      "explanation": "Namba cia mwanya iria iguchuthwo niguo mutandao kana wira wa kuhingura mondo wambiririe [kwa muhano, *384#]",
+      "notes": "Maundu ma bata mabacabitwo maratathini ma kwonania mitaratara"
+    },
+    {
+      "key": "main-menu",
+      "term": "Menu nene",
+      "explanation": "Kionereria kinene kana handu ha mbere ha kwambiriria thiini wa apu",
+      "notes": ""
+    }
+  ],
+  "wallet-ui": [
+    {
+      "key": "create-wallet",
+      "term": "Thondeka mondo",
+      "explanation": "kwambirira mondo njeru",
+      "notes": "Ciugo cia kumaabiriria cia kawaida"
+    },
+    {
+      "key": "restore-existing-wallet",
+      "term": "Cokia mondo ya tene",
+      "explanation": "Cokia mondo iria irariho ukihuthira uhoro wa ugitiri",
+      "notes": ""
+    },
+    {
+      "key": "create-backup",
+      "term": "Thondeka ugitiri",
+      "explanation": "Iga uhoro wa kumurika mondo kundu kugitire",
+      "notes": ""
+    },
+    {
+      "key": "verify-backup",
+      "term": "Rumbuiya ugitiri",
+      "explanation": "Itikira uhoro wa ugitiri ni wa ma",
+      "notes": ""
+    },
+    {
+      "key": "wallet-created-successfully",
+      "term": "Mondo niyathondekwo wega",
+      "explanation": "Itikira mondo niyarikia guthondekwo wega",
+      "notes": ""
+    },
+    {
+      "key": "enter-seed-phrase",
+      "term": "Ikira ciugo cia ugitiri",
+      "explanation": "Andika ciugo cia ugitiri niguo uhote gucokia mondo yaku ringi",
+      "notes": "Ciugo cia ruthai cia ugwati munene"
+    },
+    {
+      "key": "invalid-pin",
+      "term": "Pini njuru",
+      "explanation": "Ndumiriri ya mahitia ironia ati namba cia ugitiri iria waandikite ti iyo",
+      "notes": ""
+    },
+    {
+      "key": "incorrect-seed-phrase",
+      "term": "Ciugo cia ugitiri ci na mahitia",
+      "explanation": "Ciugo cia gucokia mondo inyititwo na mahitia",
+      "notes": ""
+    },
+    {
+      "key": "invalid-word",
+      "term": "Kiugo gitagiriirwo",
+      "explanation": "Ritwa ritari ritikirie hari ciugo cia ugitiri",
+      "notes": ""
+    },
+    {
+      "key": "wrong-passphrase",
+      "term": "Ciugo cia hitho ci na mahatia",
+      "explanation": "Kiugo kia hitho gitetikiriitio",
+      "notes": ""
+    },
+    {
+      "key": "wallet-locked",
+      "term": "Mondo ihingitwo",
+      "explanation": "Mondo hinge kwa ihinda inini",
+      "notes": ""
+    },
+    {
+      "key": "unlock-wallet",
+      "term": "Hingura mondo",
+      "explanation": "Hingura mondo irari hinge",
+      "notes": ""
+    },
+    {
+      "key": "confirm-transaction",
+      "term": "Itikira ucujani",
+      "explanation": "Rora na witikire wira wa gutuma kana kwamukira ucujani",
+      "notes": ""
+    },
+    {
+      "key": "review-details",
+      "term": "Rora uhoro na kiyo",
+      "explanation": "Rora wega ucuji kana uhoro wa mondo",
+      "notes": ""
+    },
+    {
+      "key": "recipient-address",
+      "term": "Kirugamo kia muamukiri",
+      "explanation": "Kirugamo gia kuamukira mbeca",
+      "notes": ""
+    },
+    {
+      "key": "sending-amount",
+      "term": "Muigana wa gutuma",
+      "explanation": "Muigana wa mbeca iria iratumwo",
+      "notes": ""
+    },
+    {
+      "key": "remaining-balance",
+      "term": "Mbeca iria iratigara",
+      "explanation": "Muigana wa mbeca iria iratigara thutha wa kurikia gucujana",
+      "notes": ""
+    },
+    {
+      "key": "transaction-successful",
+      "term": "Ucujani niwahituka",
+      "explanation": "Ucujani niwarika owega",
+      "notes": ""
+    },
+    {
+      "key": "transaction-failed",
+      "term": "Ucujani niwagua",
+      "explanation": "Ucujani ndunakinyanira wega",
+      "notes": ""
+    },
+    {
+      "key": "network-unavailable",
+      "term": "Mutambo nduriho",
+      "explanation": "Nenda kana mutambo ndurakinyirika",
+      "notes": ""
+    },
+    {
+      "key": "syncing-wallet",
+      "term": "Kuhanania mondo",
+      "explanation": "Mondo ya gukinyaniria uhoro wa munyororo wa mburoko",
+      "notes": ""
+    },
+    {
+      "key": "generating-address",
+      "term": "Guthondeka kirugamo",
+      "explanation": "Guthondeka kirugamo kieru gia kwamukira",
+      "notes": ""
+    },
+    {
+      "key": "address-copied",
+      "term": "Gukobia kirugamo",
+      "explanation": "Kirugamo kia mondo gukobio nikirarikirio wega",
+      "notes": ""
+    },
+    {
+      "key": "qr-code-detected",
+      "term": "Kondi ya QR niyonekete",
+      "explanation": "Kondi ya QR nithome wega",
+      "notes": ""
+    },
+    {
+      "key": "camera-permission-required",
+      "term": "Rutha rwa kamera nirurendwo",
+      "explanation": "Apu irenda rutha rwa gutumira kamera",
+      "notes": ""
+    },
+    {
+      "key": "enable-notifications",
+      "term": "Itikiria imenyithia",
+      "explanation": "Guikira imenyithia ciuke",
+      "notes": ""
+    },
+    {
+      "key": "backup-reminder",
+      "term": "Kiririkano kia ugitiri",
+      "explanation": "Kiririkanio gia kuiga uhoro",
+      "notes": ""
+    },
+    {
+      "key": "low-balance",
+      "term": "Muigana munini",
+      "explanation": "Muigana wa mondo nimunini nduraigana ucujani",
+      "notes": ""
+    },
+    {
+      "key": "fee-estimate",
+      "term": "Marihi maria mareciririo",
+      "explanation": "Marihi ma ucujani maria meciririe",
+      "notes": ""
+    },
+    {
+      "key": "recommended-fee",
+      "term": "Marihi maria marendekana",
+      "explanation": "Marihi maria ma ucujani magiriire",
+      "notes": ""
+    },
+    {
+      "key": "export-backup",
+      "term": "Gutuma ugitiri nja",
+      "explanation": "Kuiga uhoro wa ugitiri nja",
+      "notes": ""
+    },
+    {
+      "key": "import-backup",
+      "term": "Gucokia ugitiri",
+      "explanation": "Guikira uhoro wa ugitiri mondo",
+      "notes": ""
+    },
+    {
+      "key": "connect-hardware-wallet",
+      "term": "Kunyitithania mondo",
+      "explanation": "Nyitithania mondo yaku ya handiwia",
+      "notes": ""
+    },
+    {
+      "key": "device-connected",
+      "term": "Kimuri kunyitithanio",
+      "explanation": "Kimuri kia handiwia kunyitithanio wega",
+      "notes": ""
+    },
+    {
+      "key": "device-disconnected",
+      "term": "Kimuri kurekanio",
+      "explanation": "Kunyitithanio kwa kimuri kia handiwia kura",
+      "notes": ""
+    },
+    {
+      "key": "firmware-update",
+      "term": "Famwea gucokereria",
+      "explanation": "Gucokereria utumiri wa kimuri kia macini",
+      "notes": ""
+    },
+    {
+      "key": "verify-on-device",
+      "term": "Rumbuiya kimuriini",
+      "explanation": "Kuikirira motheri ma uhoro imwe kwa imwe thiini wa kimuri kia handiwia",
+      "notes": "Mutarata wa ugitiri wa bata"
+    }
+  ],
+  "advanced-bitcoin": [
+    {
+      "key": "soft-fork",
+      "term": "Mugaruruko wa muhooreri wa mawatho ma Bitcoin",
+      "explanation": "Ugaruruki wa mawatho ma Bitcoin uria unyitanagira na mawatho ma tene",
+      "notes": ""
+    },
+    {
+      "key": "hard-fork",
+      "term": "Mugaruruko mumu wa mawatho ma Bitcoin",
+      "explanation": "Ugaruruki wa mawatho uria utarekanagira na mawatho mathiru",
+      "notes": ""
+    },
+    {
+      "key": "taproot",
+      "term": "Muri wa thiini/ Munene",
+      "explanation": "Ugaruruku wa Bitcoin uria ugiragia uhitho wa uhoro na uhoti wa mawatho",
+      "notes": "Kiugo kia kiumuthi kia goro muno"
+    },
+    {
+      "key": "segwit",
+      "term": "Uira mugayukanie",
+      "explanation": "Ugaruruko wa Bitcoin uria ukiriragia uhiuhi na uweku wa gutuma micanga",
+      "notes": "Ritwa ria mondo riitumikaga kaingi"
+    },
+    {
+      "key": "bech32-address",
+      "term": "Kirugamo kia Bech32",
+      "explanation": "Muhirigo wa umwe wa kurugamirira kirugamo kia Bitcoin iria yambagiriria na bc1",
+      "notes": ""
+    },
+    {
+      "key": "legacy-address",
+      "term": "Kirugamo kia kiunduire",
+      "explanation": "Muhirigo wa kirugamo kia tene kia Bitcoin",
+      "notes": ""
+    },
+    {
+      "key": "script",
+      "term": "Kodi ya watho",
+      "explanation": "Mawatho na maumiririo ma kompyta maria makiriragia uria Bitcoin ikuhuthirwo",
+      "notes": ""
+    },
+    {
+      "key": "witness-data",
+      "term": "Uira wa uhoro",
+      "explanation": "Uhoro wa micanga uria waheeiruo hinya ni ugaruruko wa uira mugayukanie",
+      "notes": ""
+    },
+    {
+      "key": "block-reward",
+      "term": "Kiheo kia buroko",
+      "explanation": "Bitcoin jeru iria irekeretwo hamwe na micanga iria iheaguo acibi a Bitcoin",
+      "notes": ""
+    },
+    {
+      "key": "coinbase-transaction",
+      "term": "Mucanga wa kiambiriria",
+      "explanation": "Mucanga wa mbere thiini wa buroko njeru uria urihaguo mucibi wa Bitcoin ta kiheo giake",
+      "notes": ""
+    },
+    {
+      "key": "dust",
+      "term": "Rukungu",
+      "explanation": "Gacuji kanini ka Bitcoin karia kari goro gutumira kuri thogora wako",
+      "notes": ""
+    },
+    {
+      "key": "dust-limit",
+      "term": "Rukungu ruthime/ Muthia wa rukungu",
+      "explanation": "Ruthimi runini biu rwa bata rwa micanga iria ikuhuthika",
+      "notes": ""
+    },
+    {
+      "key": "time-lock",
+      "term": "Muhingo wa ihinda",
+      "explanation": "Muhingo uria usheragiria riria mbeca cikuhuthika",
+      "notes": ""
+    },
+    {
+      "key": "multi-path-payment",
+      "term": "Njira nyingi cia kuriha",
+      "explanation": "Urihi wa ruheni ugayanitio maita maingi manini",
+      "notes": ""
+    },
+    {
+      "key": "fee-bumping",
+      "term": "Kuambatiria marihi",
+      "explanation": "Kuongerera macujo ma marihi thutha wa kumatuma",
+      "notes": ""
+    },
+    {
+      "key": "replaceable-transaction",
+      "term": "Mucanga ungicejio",
+      "explanation": "Mucanga uria ukuonania marihi no macejio",
+      "notes": ""
+    },
+    {
+      "key": "confirmation-target",
+      "term": "Muoroto mukinyu",
+      "explanation": "Ihenya riria urenda niguo mucanga waku uikiririo",
+      "notes": ""
+    },
+    {
+      "key": "blockchain-explorer",
+      "term": "Murori wa munyororo wa buroko",
+      "explanation": "Kinyiri kia mutandao kia kurora uhoro wa munyororo wa buroko",
+      "notes": ""
+    },
+    {
+      "key": "merkle-tree",
+      "term": "Muti wa Merkle",
+      "explanation": "Mutabariko wa kuramata micanga thiini wa buroko",
+      "notes": ""
+    },
+    {
+      "key": "timestamp",
+      "term": "Mwandiko wa ihinda",
+      "explanation": "Ihinda riria riandikitwo rikonainie na uhoro wa munyororo wa buroko",
+      "notes": ""
+    },
+    {
+      "key": "reorg",
+      "term": "Ugaruruku",
+      "explanation": "Uringaniri wa ihinda rinini wa muciariro wa uhoro thiini wa munyororo wa buroko",
+      "notes": ""
+    },
+    {
+      "key": "final-settlement",
+      "term": "Urikia wa marihi",
+      "explanation": "Marihi marikite kurihwo biu",
+      "notes": ""
+    }
+  ]
+}

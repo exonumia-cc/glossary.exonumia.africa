@@ -1,0 +1,2184 @@
+{
+  "concepts": [
+    {
+      "key": "bitcoin",
+      "term": "Bitcoin",
+      "explanation": "Mfumo wa pesa za kidijitali uliogatuliwa bila kutegemea mpatanishi anayeaminika wa mshirika wa tatu kama benki au serikali.",
+      "notes": ""
+    },
+    {
+      "key": "bitcoin-btc",
+      "term": "bitcoin",
+      "explanation": "Sarafu ya bitcoin inayotumika kwa mtandao wa Bitcoin",
+      "notes": ""
+    },
+    {
+      "key": "satoshi-sat",
+      "term": "satoshi",
+      "explanation": "Kitengo kidogo zaidi cha bitcoin.bitcoin moja ni sawia na satoshi 100,000,000",
+      "notes": ""
+    },
+    {
+      "key": "bit",
+      "term": "Bit",
+      "explanation": "Kitengo kidogo cha bitcoin sawia na satoshi 100",
+      "notes": ""
+    },
+    {
+      "key": "blockchain",
+      "term": "Blockchain",
+      "explanation": "Rekodi ya umma ya miamala yote ya bitcoin",
+      "notes": ""
+    },
+    {
+      "key": "block",
+      "term": "Block",
+      "explanation": "Kikundi cha miamala kinachoongezwa kwenye blockchain.",
+      "notes": ""
+    },
+    {
+      "key": "block-height",
+      "term": "Block Height",
+      "explanation": "Nambari ya bloku katika mfululizo wa Blockchain",
+      "notes": ""
+    },
+    {
+      "key": "node",
+      "term": "Nodi",
+      "explanation": "Kompyuta inayothibitisha na kushiriki miamala na bloku ya bitcoin",
+      "notes": ""
+    },
+    {
+      "key": "longest-chain",
+      "term": "Mlolongo mrefu zaidi",
+      "explanation": "Toleo la historia ya muamala ambayo ina kazi nyingi zaidi ndani yake.Nodi huamini mnyororo mrefu zaidi kuwa rasmi na rekodi sahihi ya kile kilichotokea.",
+      "notes": ""
+    },
+    {
+      "key": "full-node",
+      "term": "Nodi kamili",
+      "explanation": "Nodi inayothibitisha kwa uhuru sheria zote za Bitcoin na huhifadhi Blockchain kamili.",
+      "notes": ""
+    },
+    {
+      "key": "peer-to-peer-p2p",
+      "term": "rika-kwa-rika",
+      "explanation": "Mfumo ambao watumiaji wanashiriki moja kwa moja bila mshirika wa tatu",
+      "notes": ""
+    },
+    {
+      "key": "decentralized",
+      "term": "Iliyogatuliwa",
+      "explanation": "Haidhibitiwi na shirika lolote au mamlaka yoyote.",
+      "notes": ""
+    },
+    {
+      "key": "consensus",
+      "term": "Makubaliano",
+      "explanation": "Makubaliano baina ya washiriki wa mtandao kuhusu hali halali ya Blockchain.",
+      "notes": ""
+    },
+    {
+      "key": "mining",
+      "term": "Uchimbaji",
+      "explanation": "Mchakato wa kulinda Bitcoin na kuunda bloku kwa kutumia nguvu za kompyuta.",
+      "notes": ""
+    },
+    {
+      "key": "miner",
+      "term": "Mchimbaji",
+      "explanation": "Mshiriki au mashine inayofanya uchimbaji wa Bitcoin.",
+      "notes": ""
+    },
+    {
+      "key": "proof-of-work",
+      "term": "Udhibitisho wa kazi",
+      "explanation": "Mfumo wa usalama unaotumiwa na Bitcoin ambao unahitaji juhudi za kimahesabu.",
+      "notes": ""
+    },
+    {
+      "key": "hash",
+      "term": "Hashi",
+      "explanation": "Alama ya kipekee ya kriptografia ya data.",
+      "notes": ""
+    },
+    {
+      "key": "hash-rate",
+      "term": "Kiwango cha Hashi",
+      "explanation": "Jumla ya nguvu za kompyuta zinazolinda mtandao wa Bitcoin.",
+      "notes": ""
+    },
+    {
+      "key": "difficulty",
+      "term": "Ugumu",
+      "explanation": "Kipimo cha jinsi ilivyo ngumu kuchimba bloku.",
+      "notes": ""
+    },
+    {
+      "key": "transaction",
+      "term": "Muamala",
+      "explanation": "Uhamishaji wa Bitcoin kutoka anwani moja hadi nyingine.",
+      "notes": ""
+    },
+    {
+      "key": "transaction-id-txid",
+      "term": "Kitambulisho cha Muamala",
+      "explanation": "Kitambulisho cha kipekee cha muamala wa Bitcoin.",
+      "notes": ""
+    },
+    {
+      "key": "transaction-fee",
+      "term": "Ada ya Muamala",
+      "explanation": "Malipo ya wachimbaji kwa uchakato wa muamala",
+      "notes": ""
+    },
+    {
+      "key": "confirmation",
+      "term": "Uhakikisho",
+      "explanation": "Uthibitisho kwamba muamala umejumuishwa kwenye bloku.",
+      "notes": ""
+    },
+    {
+      "key": "unconfirmed-transaction",
+      "term": "Muamala ambao haujahakikishwa",
+      "explanation": "Muamala ambao haujajumuishwa kwenye bloku.",
+      "notes": ""
+    },
+    {
+      "key": "double-spend",
+      "term": "Kutumia mara mbili",
+      "explanation": "Jaribio la kutumia Bitcoin moja mara mbili.",
+      "notes": ""
+    },
+    {
+      "key": "utxo",
+      "term": "UTXO",
+      "explanation": "Kipande cha pesa taslimu cha kidijitali kilichosalia kutokana na muamala wa awali.",
+      "notes": ""
+    },
+    {
+      "key": "mempool",
+      "term": "Mempool",
+      "explanation": "Kikao cha kusubiri cha kidijitali ambapo miamala hukaa kabla ya kudhibitishwa.",
+      "notes": ""
+    },
+    {
+      "key": "chain-reorganization",
+      "term": "Upangaji upya wa mlolongo",
+      "explanation": "Ubadiliko wa muda wa historia ya blockchain kutokana na mashindano ya bloku.",
+      "notes": ""
+    },
+    {
+      "key": "genesis-block",
+      "term": "Bloku ya Mwanzo",
+      "explanation": "Bloku ya kwanza kabisa kwa mlolongo wa Blockchain.",
+      "notes": ""
+    },
+    {
+      "key": "halving",
+      "term": "Kukatwa kwa Nusu",
+      "explanation": "Tukio linalopunguza kiwango cha malipo ya uchimbaji kwa nusu kila baada ya miaka minne.",
+      "notes": ""
+    },
+    {
+      "key": "supply-cap",
+      "term": "Kikomo cha usambazaji",
+      "explanation": "Idadi ya juu kabisa ya bitcoins ambazo zitawahi kuwepo(milioni ishirini na moja)",
+      "notes": ""
+    },
+    {
+      "key": "open-source",
+      "term": "Programu huria",
+      "explanation": "Programu ambayo msimbo wake unaweza kukaguliwa na kurekebishwa na mtu yeyote",
+      "notes": ""
+    },
+    {
+      "key": "permissionless",
+      "term": "Isiyohitaji ruhusa",
+      "explanation": "Mfumo ambao mtu yeyote anaweza kutumia bila ruhusa.",
+      "notes": ""
+    },
+    {
+      "key": "censorship-resistance",
+      "term": "Upinzani wa uminyaji",
+      "explanation": "Uwezo wa kupinga uzuizi wa miamala.",
+      "notes": ""
+    },
+    {
+      "key": "incentive-mining-rewards",
+      "term": "Marupurupu",
+      "explanation": "Malipo yanayopewa mtengenezaji wa bloku mpya ili kuhimiza watu kusaidia mtandao. Malipo haya yanahusisha sarafu mpya za Bitcoin na ada ya miamla yanayolipwa na watumizi.",
+      "notes": ""
+    }
+  ],
+  "wallets": [
+    {
+      "key": "wallet",
+      "term": "Pochi",
+      "explanation": "Programu au maunzi yanayotumika kusimamia bitcoin na kusaini miamala",
+      "notes": ""
+    },
+    {
+      "key": "bitcoin-wallet",
+      "term": "Pochi la bitcoin",
+      "explanation": "Pochi lililoundwa kwa minajili ya miamala ya Bitcoin.",
+      "notes": ""
+    },
+    {
+      "key": "lightning-wallet",
+      "term": "Pochi la umeme/Lightning Wallet",
+      "explanation": "Pochi linalohimili malipo ya mtandao wa umeme",
+      "notes": ""
+    },
+    {
+      "key": "custodial-wallet",
+      "term": "Pochi linalosimamiwa na mtoa huduma",
+      "explanation": "Pochi ambalo vifunguo vya mtumiaji vinatawaliwa na mtu mwingine",
+      "notes": ""
+    },
+    {
+      "key": "non-custodial-wallet",
+      "term": "Pochi linalosimamiwa na mtumiaji",
+      "explanation": "Pochi ambalo vifunguo vinatawaliwa na mtumiaji",
+      "notes": ""
+    },
+    {
+      "key": "self-custody",
+      "term": "Usimamizi binafsi",
+      "explanation": "Kuweka na kutawala bitcoin yako pasi kutegemea mtoaji huduma",
+      "notes": ""
+    },
+    {
+      "key": "hardware-wallet",
+      "term": "Pochi maunzi",
+      "explanation": "Kifaa/kidude kinachotumiwa kuhifadhi funguo za kuingia salama",
+      "notes": ""
+    },
+    {
+      "key": "hot-wallet",
+      "term": "Pochi la mtandaoni",
+      "explanation": "Pochi la kijiditali lililounganishwa na mtandao",
+      "notes": ""
+    },
+    {
+      "key": "cold-wallet",
+      "term": "Pochi lililo nje ya mtandao",
+      "explanation": "Pochi lililo nje ya mtando kwa minajili ya usalama",
+      "notes": ""
+    },
+    {
+      "key": "watch-only-wallet",
+      "term": "Pochi tazamizi tu",
+      "explanation": "Pochi lililo na uwezo wa kutazamia salio lakini haliwezi kutumia fedha",
+      "notes": ""
+    },
+    {
+      "key": "multisig-wallet",
+      "term": "Pochi ya sahihi nyingi",
+      "explanation": "Pochi linalohitaji saini zaidi ya moja ili kuwe na utumizi wa fedha",
+      "notes": ""
+    },
+    {
+      "key": "vault",
+      "term": "Kuba",
+      "explanation": "Pochi lenye mpangilio wa juu lenye vizuizi vya ziada",
+      "notes": ""
+    },
+    {
+      "key": "airgapped",
+      "term": "Kutengwa kutoka kwa mtandao",
+      "explanation": "Kutengwa kutoka kwa vifaa/vidude vilivounganishwa kwa mtandao.",
+      "notes": ""
+    },
+    {
+      "key": "seedsigner",
+      "term": "Kifaa cha kusaini",
+      "explanation": "Kifaa huria kilichotengwa kutoka kwa mtandao cha kusahihia Bitcoin",
+      "notes": ""
+    },
+    {
+      "key": "sign-transaction",
+      "term": "Kusaini muamala",
+      "explanation": "Kusaini muamala kutumia vifunguo vya kriptografia",
+      "notes": ""
+    },
+    {
+      "key": "broadcast-transaction",
+      "term": "Kusukuma muamala",
+      "explanation": "Kusukuma muamala wako uliosainiwa nje ya mtandao wa umma",
+      "notes": ""
+    },
+    {
+      "key": "receive-bitcoin",
+      "term": "Pokea Bitcoin",
+      "explanation": "Kukubali bitcoin kwa pochi lako",
+      "notes": ""
+    },
+    {
+      "key": "send-bitcoin",
+      "term": "Kutuma Bitcoin",
+      "explanation": "Kuhamisha bitcoin kwa anwani nyingine",
+      "notes": ""
+    },
+    {
+      "key": "wallet-balance",
+      "term": "Salio la pochi",
+      "explanation": "Salio la Bitcoin lililo kwenye pochi",
+      "notes": ""
+    },
+    {
+      "key": "available-balance",
+      "term": "Salio lililopo",
+      "explanation": "Fedha ambazo zinaweza kutumika saa hii",
+      "notes": ""
+    },
+    {
+      "key": "pending-balance",
+      "term": "Salio ambalo halijaingia",
+      "explanation": "Fedha zinazosubiri udhibitisho",
+      "notes": ""
+    },
+    {
+      "key": "address-book",
+      "term": "Kitabu cha anwani",
+      "explanation": "Orodha lililowekwa la anwani za wapokeaji",
+      "notes": ""
+    },
+    {
+      "key": "wallet-backup",
+      "term": "Chelezo cha pochi",
+      "explanation": "Nakala ya urejeshaji ya vitambulisho vya udhitisho vya pochi ama maneno ya siri",
+      "notes": ""
+    },
+    {
+      "key": "restore-wallet",
+      "term": "Kurejesha pochi",
+      "explanation": "Kurejesha upatikanaji kwa pochi kutumia taarifa chelezo",
+      "notes": ""
+    },
+    {
+      "key": "import-wallet",
+      "term": "Kuingiza pochi",
+      "explanation": "Kuongeza pochi lililopo kwa programu tumizi",
+      "notes": ""
+    },
+    {
+      "key": "export-wallet",
+      "term": "Kutoa pocha",
+      "explanation": "Kuhamisha taarifa ya pochi kutoka kwa programu tumizi",
+      "notes": ""
+    },
+    {
+      "key": "wallet-descriptor",
+      "term": "Kielelezo cha pochi",
+      "explanation": "Umbizo unaoelezea muundo wa pochi na vifunguo.",
+      "notes": ""
+    },
+    {
+      "key": "wallet-recovery",
+      "term": "Urejeshaji wa pochi",
+      "explanation": "Kurejesha ufikiaji kwa pochi baada ya kifaa/kidude kupotea ama kufeli",
+      "notes": ""
+    }
+  ],
+  "security": [
+    {
+      "key": "private-key",
+      "term": "Funguo za faragha",
+      "explanation": "Kitufe cha kiptografia cha siri kinachotumiwa kuidhinisha matumizi ya bitcoin.",
+      "notes": ""
+    },
+    {
+      "key": "public-key",
+      "term": "Funguo za kibinafsi",
+      "explanation": "Ufunguo wa kriptografia unaotumika kutengeneza anwani na kuthibitisha saini",
+      "notes": ""
+    },
+    {
+      "key": "seed-phrase",
+      "term": "Orodha ya maneno ambayo yanatumika",
+      "explanation": "Orodha ya maneno ya uokoaji yanayotumiwa kurejesha pochi.",
+      "notes": ""
+    },
+    {
+      "key": "recovery-phrase",
+      "term": "Kauli ya urejeshaji",
+      "explanation": "Neno lingine la neno seedphrase.",
+      "notes": ""
+    },
+    {
+      "key": "backup-phrase",
+      "term": "Kauli ya mchelezo",
+      "explanation": "Kauli inayotumika kurejesha pochi lako la bitcoin",
+      "notes": ""
+    },
+    {
+      "key": "secret-words",
+      "term": "Maneno ya siri",
+      "explanation": "Taminolojia nyingine ya seedphrase isiyo rasmi.",
+      "notes": ""
+    },
+    {
+      "key": "mnemonic-phrase",
+      "term": "Kauli ya mnemoniki",
+      "explanation": "Neno la kitaalamu la seed phrase",
+      "notes": ""
+    },
+    {
+      "key": "recovery-words",
+      "term": "Maneno ya urejeshaji",
+      "explanation": "Maneno ya binafsi ya seed phrase",
+      "notes": ""
+    },
+    {
+      "key": "passphrase",
+      "term": "fungu siri",
+      "explanation": "Neno siri lililobinafsishwa na kuongezwa kwa maneno yako 12/24 kwa minajili ya usalama wa ziada.",
+      "notes": ""
+    },
+    {
+      "key": "password",
+      "term": "Nywila",
+      "explanation": "Ni maneno yasiri yanayotumika kuzuia programu au kifaa.",
+      "notes": ""
+    },
+    {
+      "key": "pin",
+      "term": "Neno siri",
+      "explanation": "Ni nywila ambayo ni nambari fupi",
+      "notes": ""
+    },
+    {
+      "key": "encryption",
+      "term": "Usimbaji fiche",
+      "explanation": "Kubadilisha data kuwa mfumo usiosomeka ili kuizuia isifikie mtu mwingine asiye na idhini.",
+      "notes": ""
+    },
+    {
+      "key": "decryption",
+      "term": "Usimbaji Fumbaji",
+      "explanation": "Kubadilisha data kuwa mfumo unaosomeka.",
+      "notes": ""
+    },
+    {
+      "key": "digital-signature",
+      "term": "Saini dijitali",
+      "explanation": "Ushahidi wa kriptografia unaodhibitisha muamala.",
+      "notes": ""
+    },
+    {
+      "key": "verify-signature",
+      "term": "Thibiti Saini",
+      "explanation": "Kudhibitisha kwamba saini ni halali kidijitali",
+      "notes": ""
+    },
+    {
+      "key": "authentication",
+      "term": "Uhalisishaji",
+      "explanation": "Kuhakikisha utambulisho wa mtumiaji",
+      "notes": ""
+    },
+    {
+      "key": "two-factor-authentication-2fa",
+      "term": "Uhalisishaji wa mara mbili",
+      "explanation": "Hatua nyongezi ya usalama inayohitaji uhalilishaji mara mbili",
+      "notes": ""
+    },
+    {
+      "key": "biometric-authentication",
+      "term": "Udhibitishaji wa kibayometriki",
+      "explanation": "Matumizi ya alama za vidole, uso au njia nyingine kama hizi kudhibitisha",
+      "notes": ""
+    },
+    {
+      "key": "backup",
+      "term": "Chelezo",
+      "explanation": "Kopi salama ya taarifa muhimu ya pochi.",
+      "notes": ""
+    },
+    {
+      "key": "restore",
+      "term": "Kurejesha",
+      "explanation": "Rejesha Chelezo ya taarifa iliyopotea",
+      "notes": ""
+    },
+    {
+      "key": "recovery",
+      "term": "Urejeshaji",
+      "explanation": "Ni hatua ya urejeshaji wa ufikiaji wa pochi",
+      "notes": ""
+    },
+    {
+      "key": "secure-storage",
+      "term": "Hifadhi salama",
+      "explanation": "Kuweka na kulinda ujumbe nyeti kutokana na wizi au kupotea",
+      "notes": ""
+    },
+    {
+      "key": "offline-storage",
+      "term": "Hifadhi nje ya mtandao",
+      "explanation": "Kuweka ujumbe nyeti bila matumizi ya mtandao",
+      "notes": ""
+    },
+    {
+      "key": "tamper-resistant",
+      "term": "Kukingwa dhidi ya uharibifu",
+      "explanation": "Imetengenezwa kuonyesha au kukataa kubadilishwa bila idhini.",
+      "notes": ""
+    },
+    {
+      "key": "secure-element",
+      "term": "Kipengele dhabiti",
+      "explanation": "Kifaa maalum cha kuchunga vifunguo vya kriptografia",
+      "notes": ""
+    },
+    {
+      "key": "phishing",
+      "term": "Wizi wa mtandaoni",
+      "explanation": "Ni majaribio ya kupata ujumbe siri kwa njia ya udanganyifu",
+      "notes": ""
+    },
+    {
+      "key": "scam",
+      "term": "Utapeli",
+      "explanation": "Ni jaribio la wizi la kuiba pesa au kupata pesa kwa njia gushi",
+      "notes": ""
+    },
+    {
+      "key": "malware",
+      "term": "Programu hasidi",
+      "explanation": "Ni programu pepetevu ambayo imetengenezwa kudhuru au kuiba data",
+      "notes": ""
+    },
+    {
+      "key": "spyware",
+      "term": "Programu ya udakuzi/kijasusi",
+      "explanation": "Programu pepetevu ambayo imetengenezwa kupata taarifa kutoka kwa kifaa cha kielektroniki kwa njia ya siri",
+      "notes": ""
+    },
+    {
+      "key": "social-engineering",
+      "term": "Uhandisi wa kijamii",
+      "explanation": "Kuwadanganyilia watu ili kutoa taarifa ambazo hawapaswi kuzitoa; taarifa za siri.",
+      "notes": ""
+    },
+    {
+      "key": "compromised-device",
+      "term": "Kifaa kilichoathirika",
+      "explanation": "Kifaa ambacho tayari kiko kwenye hatari yataarifa iliyomo kupatikana kwa njia ghushi",
+      "notes": ""
+    },
+    {
+      "key": "device-lock",
+      "term": "Kizuizi cha kifaa",
+      "explanation": "Kizuizi cha skrini cha kuzuia ufikiaji/upatikanaji wa kifaa.",
+      "notes": ""
+    },
+    {
+      "key": "screenshot-risk",
+      "term": "Hatari ya kielelezo skrini",
+      "explanation": "Hatari ya kutoa taarifa kupitia kielelezo skrini.",
+      "notes": ""
+    },
+    {
+      "key": "never-share-your-seed-phrase",
+      "term": "Usionyeshane seed phrase",
+      "explanation": "Tahadhari kwamba maneno ambayo yamerejeshwa ni lazima yatunzwe kwa siri",
+      "notes": ""
+    },
+    {
+      "key": "write-it-down-offline",
+      "term": "Iandike nje ya mtandao",
+      "explanation": "Maagizo ya kuweka maneno ambayo yamerejeshwa kwenye karatasi au kwa vifaa vingine ambavyo havina mtandao",
+      "notes": ""
+    },
+    {
+      "key": "verify-recovery-phrase",
+      "term": "Hakikisha kauli ya urejeshaji",
+      "explanation": "Hakikishha kwamba maneno ya urejeshaji yamenakiliwa vizuri.",
+      "notes": ""
+    }
+  ],
+  "safety": [
+    {
+      "key": "never-share-your-private-key",
+      "term": "Usiweke wazi funguo zako za faragha",
+      "explanation": "Onyo kuwa funguo zako za faragha lazima zibaki siri.",
+      "notes": ""
+    },
+    {
+      "key": "anyone-with-these-words-can-steal-your-funds",
+      "term": "Yeyote aliye na maneno haya, anaweza kuiba fedha zako.",
+      "explanation": "Onyo dhidi ya hatari ya kujulikana kwa Seed Phrase",
+      "notes": ""
+    },
+    {
+      "key": "verify-before-sending",
+      "term": "Dhibitisha kabla ya kutuma",
+      "explanation": "Dhibitisha maelezo ya malipo kabla ya kutuma",
+      "notes": ""
+    },
+    {
+      "key": "irreversible-transaction",
+      "term": "Mualamala usioweza kutenduliwa",
+      "explanation": "Miamala ya Bitcoin kijumla haiwezi kutenduliwa",
+      "notes": ""
+    },
+    {
+      "key": "backup-required",
+      "term": "Chelezo inahitajika",
+      "explanation": "Taarifa ya urejeshaji ya pochi lazima iwekwe salama",
+      "notes": ""
+    },
+    {
+      "key": "this-action-cannot-be-undone",
+      "term": "Kitendo hiki hakiwezi kutenduliwa",
+      "explanation": "Onyo dhidi ya vitendo vya kudumu",
+      "notes": ""
+    },
+    {
+      "key": "untrusted-source",
+      "term": "Kiini kisichoaminika",
+      "explanation": "Kiini ambacho labda si salama ama hakijadhibitishwa",
+      "notes": ""
+    },
+    {
+      "key": "suspicious-activity",
+      "term": "Kitendo cha kutiliwa shaka",
+      "explanation": "Kitendo kinachoshukiwa kuwa tapeli ama kuathirika",
+      "notes": ""
+    },
+    {
+      "key": "security-check",
+      "term": "Udhibitishaji wa usalama",
+      "explanation": "Njia ya kudhibitisha usalama au uadilifu",
+      "notes": ""
+    },
+    {
+      "key": "device-not-secure",
+      "term": "Kifaa ambacho si salama",
+      "explanation": "Onyo dhidi ya kifaa ambacho labda kimeathirika.",
+      "notes": ""
+    },
+    {
+      "key": "low-battery",
+      "term": "Kiwango kidogo cha chaji",
+      "explanation": "Kiwango cha chaji kinaweza kukatiza shughuli muhimu",
+      "notes": ""
+    },
+    {
+      "key": "update-available",
+      "term": "Sasisho linapatikana",
+      "explanation": "Toleo jipya la programu lipo tayari",
+      "notes": ""
+    },
+    {
+      "key": "verify-download",
+      "term": "Dhibitisha kupakua",
+      "explanation": "Thibitisha kuwa programu iliyopakuliwa ni halisi",
+      "notes": ""
+    }
+  ],
+  "lightning-network": [
+    {
+      "key": "lightning-network",
+      "term": "Mtandao wa lightning",
+      "explanation": "Mtandao wa haraka na wa bei nafuu ulioundwa kwa bitcoin.",
+      "notes": ""
+    },
+    {
+      "key": "lightning-payment",
+      "term": "Malipo ya lightning",
+      "explanation": "Malipo yaliyofanywa kwa mtandao wa lightning.",
+      "notes": ""
+    },
+    {
+      "key": "lightning-invoice",
+      "term": "Ankara ya lightning",
+      "explanation": "Ombi la malipo linalotumika na lightning.",
+      "notes": ""
+    },
+    {
+      "key": "invoice",
+      "term": "Ankara",
+      "explanation": "Ombi la malipo.",
+      "notes": ""
+    },
+    {
+      "key": "pay-invoice",
+      "term": "Lipa ankara",
+      "explanation": "Tuma malipo kwa kutumia ankara ya lightning.",
+      "notes": ""
+    },
+    {
+      "key": "payment-request",
+      "term": "Agizo la malipo",
+      "explanation": "Ombi liulizalo kuhusu malipo.",
+      "notes": ""
+    },
+    {
+      "key": "payment-channel",
+      "term": "Mkondo wa malipo",
+      "explanation": "Uhusiano wa watumizi wa lightning kwa malipo ya papo kwa hapo.",
+      "notes": ""
+    },
+    {
+      "key": "open-channel",
+      "term": "Mkondo wazi",
+      "explanation": "Unda mkondo wa malipo wa lightning.",
+      "notes": ""
+    },
+    {
+      "key": "close-channel",
+      "term": "Mkondo funge",
+      "explanation": "Maliza mkondo wa malipo wa lightning",
+      "notes": ""
+    },
+    {
+      "key": "routing",
+      "term": "Kupitisha",
+      "explanation": "Kupitisha malipo ya lightning kupitia nodi zinazohusiana",
+      "notes": ""
+    },
+    {
+      "key": "routing-fee",
+      "term": "Ada ya kupitisha",
+      "explanation": "Ada inayotozwa kutokana na kutuma malipo ya lightning",
+      "notes": ""
+    },
+    {
+      "key": "lightning-address",
+      "term": "Anwani ya lightning",
+      "explanation": "Kitambulishi kinachoweza kusomeka na binadamu cha malipo ya lightning.",
+      "notes": ""
+    },
+    {
+      "key": "lnurl",
+      "term": "LNURL",
+      "explanation": "Kiwango kinachotumika kurahisisha mwingiliano wa lightning.",
+      "notes": ""
+    },
+    {
+      "key": "instant-payment",
+      "term": "Malipo ya papo hapo",
+      "explanation": "Malipo yanayokamilika mara moja.",
+      "notes": ""
+    },
+    {
+      "key": "micropayment",
+      "term": "Malipo madogo",
+      "explanation": "Kiasi kidogo sana cha malipo.",
+      "notes": ""
+    },
+    {
+      "key": "payment-failed",
+      "term": "Malipo yaliyoshindikana",
+      "explanation": "Malipo ambayo hayakuweza kukamilika.",
+      "notes": ""
+    },
+    {
+      "key": "route-not-found",
+      "term": "Njia haijapatikana",
+      "explanation": "Hakuna njia halali ya malipo ya lightning.",
+      "notes": ""
+    },
+    {
+      "key": "channel-capacity",
+      "term": "Uwezo wa mkondo",
+      "explanation": "Kiasi ambacho mkondo wa lightning inaweza kubeba",
+      "notes": ""
+    },
+    {
+      "key": "inbound-liquidity",
+      "term": "Ukwasi unaoingia",
+      "explanation": "Uwezo uliopo wa kupokea malipo ya lightning",
+      "notes": ""
+    },
+    {
+      "key": "outbound-liquidity",
+      "term": "Ukwasi unaotoka",
+      "explanation": "Uwezo uliopo wa kutuma malipo ya lightning.",
+      "notes": ""
+    },
+    {
+      "key": "rebalance",
+      "term": "Kusawazisha",
+      "explanation": "Kurekebisha liquidity ya lightning kati ya mikondo.",
+      "notes": ""
+    },
+    {
+      "key": "keysend",
+      "term": "Keysend",
+      "explanation": "Kutuma malipo ya lightning bila ankara.",
+      "notes": ""
+    },
+    {
+      "key": "bolt11-invoice",
+      "term": "Ankara ya Bolt11",
+      "explanation": "Umbizo wa ankara ya lightning ya kawaida iliyosimbwa.",
+      "notes": ""
+    },
+    {
+      "key": "expired-invoice",
+      "term": "Ankara iliyoisha muda",
+      "explanation": "Ankara ambayo haiwezi kulipwa tena.",
+      "notes": ""
+    },
+    {
+      "key": "hold-invoice",
+      "term": "Shikilia ankara",
+      "explanation": "Ankara inayochelewesha malipo hadi ikubaliwe bila msaada.",
+      "notes": ""
+    }
+  ],
+  "payments": [
+    {
+      "key": "bitcoin-address",
+      "term": "Anwani ya bitcoin",
+      "explanation": "Mahali panapotumika kupokea bitcoin.",
+      "notes": ""
+    },
+    {
+      "key": "wallet-address",
+      "term": "Anwani ya pochi",
+      "explanation": "Mfuatano wa maneno na nambari unaotumiwa kupokea malipo ya sarafu ya cryptocurrency.",
+      "notes": ""
+    },
+    {
+      "key": "receive-address",
+      "term": "Anwani ya kupokea",
+      "explanation": "Anwani iliyoundwa kwa ajili ya malipo yanayoingia.",
+      "notes": ""
+    },
+    {
+      "key": "qr-code",
+      "term": "Kodi ya QR",
+      "explanation": "Picha inayoweza kuchanganuliwa inayowakilisha maelezo ya malipo.",
+      "notes": ""
+    },
+    {
+      "key": "scan-qr-code",
+      "term": "Changanua Kodi ya QR",
+      "explanation": "Tumia kamera kusoma maelezo ya malipo",
+      "notes": ""
+    },
+    {
+      "key": "copy-address",
+      "term": "Nakili anwani",
+      "explanation": "Nakili anwani ya mkoba kwenye ubao wa kunakili.",
+      "notes": ""
+    },
+    {
+      "key": "paste-address",
+      "term": "Weka anwani",
+      "explanation": "Weka anwani ya mkoba iliyonakiliwa.",
+      "notes": ""
+    },
+    {
+      "key": "invalid-address",
+      "term": "Anwani batili",
+      "explanation": "Umbizo wa anwani ambao hautambuliwi.",
+      "notes": ""
+    },
+    {
+      "key": "amount",
+      "term": "Kiasi",
+      "explanation": "Kiasi cha bitcoin au sarafu inayotumwa.",
+      "notes": ""
+    },
+    {
+      "key": "amount-too-low",
+      "term": "Kiasi ni kidogo sana",
+      "explanation": "Kiasi cha malipo ni chini ya kiwango cha chini kinachoruhusiwa.",
+      "notes": ""
+    },
+    {
+      "key": "amount-too-high",
+      "term": "Kiasi ni kikubwa sana",
+      "explanation": "Kiasi cha malipo kinazidi salio au vikomo vinavyopatikana.",
+      "notes": ""
+    },
+    {
+      "key": "recipient",
+      "term": "Mpokeaji/mpokezi",
+      "explanation": "Mtu anayepokea malipo.",
+      "notes": ""
+    },
+    {
+      "key": "sender",
+      "term": "Mtumaji/anayetuma",
+      "explanation": "Mtu anayetuma malipo.",
+      "notes": ""
+    },
+    {
+      "key": "payment-sent",
+      "term": "Malipo yametumwa",
+      "explanation": "Malipo yamekamilika vizuri.",
+      "notes": ""
+    },
+    {
+      "key": "payment-received",
+      "term": "Malipo yamepokelewa",
+      "explanation": "Malipo yamepokelewa vizuri.",
+      "notes": ""
+    },
+    {
+      "key": "pending-payment",
+      "term": "Malipo yanayosubiri",
+      "explanation": "Malipo yanangoja udhibitisho au kukamilika.",
+      "notes": ""
+    },
+    {
+      "key": "failed-payment",
+      "term": "Malipo yaliyofeli/yaliyoshindikana",
+      "explanation": "Malipo hayakuweza kukamilika.",
+      "notes": ""
+    },
+    {
+      "key": "payment-history",
+      "term": "Historia ya malipo",
+      "explanation": "Rekodi ya miamala ya awali.",
+      "notes": ""
+    },
+    {
+      "key": "memo",
+      "term": "Kumbukumbu",
+      "explanation": "Dokezo la hiari lililoambatishwa kwenye muamala.",
+      "notes": ""
+    },
+    {
+      "key": "description",
+      "term": "Maelezo",
+      "explanation": "Maelezo ya ziada kuhusu malipo.",
+      "notes": ""
+    },
+    {
+      "key": "network-fee",
+      "term": "Ada ya mtandao",
+      "explanation": "Ada inayotozwa kwa kuchakata malipo.",
+      "notes": ""
+    },
+    {
+      "key": "provider-fee-service-fee",
+      "term": "Ada ya mtoa huduma/ada ya huduma",
+      "explanation": "Gharama ya kibiashara inayotozwa na lango la mfumo wa ndani au wakala wa pesa kwa simu ili kuchakata ubadilishanaji wa mali.",
+      "notes": ""
+    },
+    {
+      "key": "miner-fee",
+      "term": "Ada ya mchimbaji",
+      "explanation": "Ada ya miamala ya Bitcoin inayolipwa kwa wachimbaji.",
+      "notes": ""
+    },
+    {
+      "key": "fee-rate",
+      "term": "Kiwango cha ada",
+      "explanation": "Kiwango cha ada kilichochaguliwa kwa shughuli ya muamala.",
+      "notes": ""
+    },
+    {
+      "key": "priority-fee",
+      "term": "Ada ya kipaumbele",
+      "explanation": "Ada ya juu kwa udhibitishaji wa haraka.",
+      "notes": ""
+    },
+    {
+      "key": "slow",
+      "term": "Polepole",
+      "explanation": "Kasi ya udhibitishaji wa kipaumbele cha chini.",
+      "notes": ""
+    },
+    {
+      "key": "fast",
+      "term": "Mbio/haraka",
+      "explanation": "Kasi ya udhibitishaji wa kipaumbele cha juu.",
+      "notes": ""
+    },
+    {
+      "key": "estimated-confirmation-time",
+      "term": "Makadirio ya muda wa udhibitisho",
+      "explanation": "Muda unaotarajiwa wa kusubiri kwa udhibitisho wa muamala.",
+      "notes": ""
+    },
+    {
+      "key": "broadcast",
+      "term": "Utumaji",
+      "explanation": "Tuma data ya muamala kwa mtandao.",
+      "notes": ""
+    },
+    {
+      "key": "replace-by-fee-rbf",
+      "term": "Kubadili kwa ada(RBF)",
+      "explanation": "Kipengele kinachoruhusu ongezeko la ada kwa miamala ambayo haijadhibitishwa.",
+      "notes": ""
+    },
+    {
+      "key": "child-pays-for-parent-cpfp",
+      "term": "Mtoto anlaipia mzazi (CPFP)",
+      "explanation": "Njia ya kuharakisha udhibitishaji wa miamala iliyokwama.",
+      "notes": ""
+    }
+  ],
+  "privacy": [
+    {
+      "key": "privacy",
+      "term": "Faragha",
+      "explanation": "Uwezo wa kuthibiti ufikiaji wa habari za kibinafsi.",
+      "notes": ""
+    },
+    {
+      "key": "financial-privacy",
+      "term": "Faragha ya kifedha",
+      "explanation": "Ulinzi wa muamala na habari za kifedha.",
+      "notes": ""
+    },
+    {
+      "key": "pseudonymous",
+      "term": "jina bandia/jina fiche",
+      "explanation": "Kutumia vitambulishi ambavyo havifungamani moja kwa moja na utambulisho halisi.",
+      "notes": ""
+    },
+    {
+      "key": "surveillance",
+      "term": "Ufuatiliaji",
+      "explanation": "Kuangalia kazi ya mtumizi na mawasiliano.",
+      "notes": ""
+    },
+    {
+      "key": "metadata",
+      "term": "Metadata",
+      "explanation": "Habari kuhusu miamala ama mawasiliano.",
+      "notes": ""
+    },
+    {
+      "key": "coin-control",
+      "term": "Coin Control",
+      "explanation": "Kuchagua UTXOs ya kutumia kwa muamala.",
+      "notes": ""
+    },
+    {
+      "key": "coinjoin",
+      "term": "Coinjoin",
+      "explanation": "Mbinu shirikishi ya muamala kuboresha faragha.",
+      "notes": ""
+    },
+    {
+      "key": "address-reuse",
+      "term": "Kutumia tena anwani",
+      "explanation": "kutumia anwani moja ya bitcoin mara nyingi.",
+      "notes": ""
+    },
+    {
+      "key": "do-not-reuse-addresses",
+      "term": "Usirudie anwani tena",
+      "explanation": "Pendekezo la kuunda anwani mpya mara kwa mara.",
+      "notes": ""
+    },
+    {
+      "key": "tor",
+      "term": "Tor",
+      "explanation": "Mtandao wa faragha unaotumiwa kuficha shughuli za mtandao.",
+      "notes": ""
+    },
+    {
+      "key": "vpn",
+      "term": "VPN",
+      "explanation": "Huduma ambayo huficha trafiki ya mtandao kutoka kwa waangalizi wa ndani.",
+      "notes": ""
+    },
+    {
+      "key": "sovereignty",
+      "term": "Mamlaka huru",
+      "explanation": "Udhibiti huru wa pesa na mifumo ya kidijitali.",
+      "notes": ""
+    },
+    {
+      "key": "financial-freedom",
+      "term": "Uhuru wa kifedha",
+      "explanation": "Uwezo wa kufanya muamala bila kuzuiliwa pasi sababu.",
+      "notes": ""
+    },
+    {
+      "key": "permissionless-access",
+      "term": "Uhuru wa ufikiaji",
+      "explanation": "Ufikiaji bila kuhitaji idhini kutoka kwa mamlaka.",
+      "notes": ""
+    },
+    {
+      "key": "open-network",
+      "term": "Mtandao wazi",
+      "explanation": "mtandao ambao kila mtu ana uwezo wa kushiriki.",
+      "notes": ""
+    },
+    {
+      "key": "self-reliance",
+      "term": "Kujitegemea",
+      "explanation": "Kujisimamia kimali.",
+      "notes": ""
+    }
+  ],
+  "markets": [
+    {
+      "key": "exchange",
+      "term": "Jukwaa la ubadilishanaji wa crypto",
+      "explanation": "Jukwaa la kununua au kuuza cryptocurrency.",
+      "notes": ""
+    },
+    {
+      "key": "centralized-exchange-cex",
+      "term": "Centralized Exchange(CEX)",
+      "explanation": "Jukwaa la ubadilishanaji wa crypto unaoendeshwa na kampuni inayodhibiti fedha za watumiaji.",
+      "notes": ""
+    },
+    {
+      "key": "decentralized-exchange-dex",
+      "term": "Decentralized Exchange(DEX)",
+      "explanation": "Jukwaa la biashara linalofanya kazi bila ulinzi wa kati.",
+      "notes": ""
+    },
+    {
+      "key": "buy-bitcoin",
+      "term": "Nunua Bitcoin",
+      "explanation": "Kununua bitcoin kutumia sarafu tofauti.",
+      "notes": ""
+    },
+    {
+      "key": "sell-bitcoin",
+      "term": "Uza Bitcoin",
+      "explanation": "Badilisha bitcoin kupata sarafu nyingine.",
+      "notes": ""
+    },
+    {
+      "key": "trade",
+      "term": "Kubadilisha",
+      "explanation": "Kubadilisha mali moja kupata nyingine.",
+      "notes": ""
+    },
+    {
+      "key": "fiat-currency",
+      "term": "Pesa za serikali",
+      "explanation": "Pesa zinazotolewa na serikali kama vile USD au KES.",
+      "notes": ""
+    },
+    {
+      "key": "local-currency",
+      "term": "Sarafu ya kinyumbani",
+      "explanation": "Pesa zinazotolewa na serikali YA mkoa ama serikali ya kitaifa.",
+      "notes": ""
+    },
+    {
+      "key": "exchange-rate",
+      "term": "Kiwango cha ubadilishanaji",
+      "explanation": "Uhusiano wa thamani kati ya sarafu mbili.",
+      "notes": ""
+    },
+    {
+      "key": "market-price",
+      "term": "Bei ya soko",
+      "explanation": "Thamani ya sasa ya ubadilishanaji wa mali.",
+      "notes": ""
+    },
+    {
+      "key": "volatility",
+      "term": "Mabadiliko ya bei",
+      "explanation": "Kubadilika kwa haraka kwa bei kwa wakati.",
+      "notes": ""
+    },
+    {
+      "key": "stablecoin",
+      "term": "Stablecoin",
+      "explanation": "Sarafu ya crypto iliyoundwa ili kudumisha thamani thabiti.",
+      "notes": ""
+    },
+    {
+      "key": "usdt",
+      "term": "USDT",
+      "explanation": "Stablecoin ya Tether iliyofungwa kwenye Dola ya Marekani.",
+      "notes": ""
+    },
+    {
+      "key": "usdc",
+      "term": "USDC",
+      "explanation": "Stablecoin ya Circle iliyofungwa kwenye Dola ya Marekani.",
+      "notes": ""
+    },
+    {
+      "key": "liquidity",
+      "term": "Ukwasi",
+      "explanation": "Uwepo wa mali kwa minajili ya kununua na kuuza.",
+      "notes": ""
+    },
+    {
+      "key": "spread",
+      "term": "Spread",
+      "explanation": "Tofauti kati bei ya kuuza na kununua.",
+      "notes": ""
+    },
+    {
+      "key": "slippage",
+      "term": "Slippage",
+      "explanation": "Uhamisho wa bei wakati wa utekelezaji wa agizo.",
+      "notes": ""
+    },
+    {
+      "key": "order-book",
+      "term": "Kitabu cha maagizo",
+      "explanation": "Orodha hai ya ofa za kununua na kuuza.",
+      "notes": ""
+    },
+    {
+      "key": "market-order",
+      "term": "Market Order",
+      "explanation": "Agizo linalotekelezwa mara moja kwa bei ya sasa.",
+      "notes": ""
+    },
+    {
+      "key": "limit-order",
+      "term": "Limit Order",
+      "explanation": "Agizo linalotekelezwa kwa bei iliyochaguliwa pekee.",
+      "notes": ""
+    },
+    {
+      "key": "deposit",
+      "term": "Weka",
+      "explanation": "Ongeza pesa kwa jukwaa ama pochi",
+      "notes": ""
+    },
+    {
+      "key": "withdraw",
+      "term": "Toa",
+      "explanation": "Toa pesa kwenye jukwaa au pochi.",
+      "notes": ""
+    },
+    {
+      "key": "remittance",
+      "term": "Uhamishaji wa fedha nje ya mipaka",
+      "explanation": "Kutuma pesa kwa umbali au mipaka.",
+      "notes": ""
+    },
+    {
+      "key": "cash-out",
+      "term": "Kutoa pesa",
+      "explanation": "Badilisha mali za kidijitali ziwe fedha za ndani au pesa taslimu.",
+      "notes": ""
+    },
+    {
+      "key": "on-ramp",
+      "term": "On-Ramp",
+      "explanation": "Huduma inayobadilisha pesa ya serikali kuwa cryptocurrency.",
+      "notes": ""
+    },
+    {
+      "key": "off-ramp",
+      "term": "Off-Ramp",
+      "explanation": "Huduma inayobadilisha cryptocurrency kuwa pesa ya serikali.",
+      "notes": ""
+    }
+  ],
+  "mobile-money": [
+    {
+      "key": "mobile-money",
+      "term": "Huduma ya kifedha kwa njia simu",
+      "explanation": "Huduma ya kifedha inayotegemea simu inayotumika bila akaunti ya benki",
+      "notes": ""
+    },
+    {
+      "key": "airtime",
+      "term": "Salio",
+      "explanation": "Salio ya simu ya mkononi iliyolipiwa mapema.",
+      "notes": ""
+    },
+    {
+      "key": "ussd",
+      "term": "USSD",
+      "explanation": "Itifaki ya mawasiliano ya simu inayotokana na maandishi inayotumika bila mtandao.",
+      "notes": ""
+    },
+    {
+      "key": "feature-phone",
+      "term": "Simu ndogo/mulika mwizi",
+      "explanation": "Simu ya msingi isiyo na vipengele vya juu vya simu janja/mahiri.",
+      "notes": ""
+    },
+    {
+      "key": "sim-card",
+      "term": "Kaidi ya simu",
+      "explanation": "Chipu inayotumiwa kuunganisha simu kwenye mtandao wa simu.",
+      "notes": ""
+    },
+    {
+      "key": "phone-number",
+      "term": "Nambari ya simu",
+      "explanation": "Nambari inayotumika kwa mawasiliano na huduma za rununu.",
+      "notes": ""
+    },
+    {
+      "key": "paybill",
+      "term": "Paybill",
+      "explanation": "Nambari ya malipo inayotumika katika baadhi ya huduma za kifedha kwa njia ya simu.",
+      "notes": ""
+    },
+    {
+      "key": "agent",
+      "term": "Mhudumu",
+      "explanation": "Mwakilishi wa ndani anayetoa huduma za kifedha.",
+      "notes": ""
+    },
+    {
+      "key": "cash-agent",
+      "term": "Mhudumu wa fedha/pesa",
+      "explanation": "Mtu anayewezesha kuweka na kutoa pesa kwa huduma ya kifedha kwa njia ya simu.",
+      "notes": ""
+    },
+    {
+      "key": "send-money",
+      "term": "Tuma pesa",
+      "explanation": "Hamisha hela kwa mtumizi mwingine.",
+      "notes": ""
+    },
+    {
+      "key": "receive-money",
+      "term": "Pokea pesa",
+      "explanation": "Kubali pesa zinazo ingia",
+      "notes": ""
+    },
+    {
+      "key": "balance-inquiry",
+      "term": "Kuangalia salio",
+      "explanation": "Kuangalia pesa zilizo salia.",
+      "notes": ""
+    },
+    {
+      "key": "withdrawal-code",
+      "term": "Kodi ya kutoa",
+      "explanation": "Nambari inayotumika kukusanya pesa.",
+      "notes": ""
+    },
+    {
+      "key": "transfer-failed",
+      "term": "Uhamisho umeshindikana",
+      "explanation": "Uhamisho ambao haukuweza kukamilika.",
+      "notes": ""
+    },
+    {
+      "key": "insufficient-balance",
+      "term": "Salio halitoshi",
+      "explanation": "Hakuna fedha za kutosha.",
+      "notes": ""
+    }
+  ],
+  "seedsigner": [
+    {
+      "key": "psbt",
+      "term": "PSBT",
+      "explanation": "Muamala wa Bitcoin uliosainiwa kwa Sehemu; umbizo la kusaini shughuli kwa usalama.",
+      "notes": ""
+    },
+    {
+      "key": "signer",
+      "term": "Kitia sahihi",
+      "explanation": "Kifaa au programu inayotumiwa kuidhinisha miamala",
+      "notes": ""
+    },
+    {
+      "key": "offline-signing",
+      "term": "Sahihi isiyohitaji mtandao",
+      "explanation": "Kusaini/kutia sahihi shughuli bila ufikiaji wa mtandao.",
+      "notes": ""
+    },
+    {
+      "key": "qr-transfer",
+      "term": "Kuhamisha kwa kutumia QR",
+      "explanation": "Kupitisha data ya muamala kwa kutumia misimbo ya QR.",
+      "notes": ""
+    },
+    {
+      "key": "entropy",
+      "term": "Entropy",
+      "explanation": "Nasibu inayotumika kutengeneza funguo salama.",
+      "notes": ""
+    },
+    {
+      "key": "dice-roll-entropy",
+      "term": "Entropy ya kurusha kete",
+      "explanation": "Nasibu inayozalishwa kwa kutumia kete.",
+      "notes": ""
+    },
+    {
+      "key": "camera-scan",
+      "term": "Skani ya kamera",
+      "explanation": "Kutumia kamera kuchanganua misimbo ya QR au data.",
+      "notes": ""
+    },
+    {
+      "key": "microsd-card",
+      "term": "Kadi ya MicroSD",
+      "explanation": "Kadi ndogo ya hifadhi inayotumika kuhamisha faili au chelezo.",
+      "notes": ""
+    },
+    {
+      "key": "unsigned-transaction",
+      "term": "Muamala ambao haukutiwa sahihi",
+      "explanation": "Muamala unaongoja uidhinishaji.",
+      "notes": ""
+    },
+    {
+      "key": "signed-transaction",
+      "term": "Muamala uliotiwa sahihi",
+      "explanation": "Muamala ambao ushaidhinishwa na funguo.",
+      "notes": ""
+    },
+    {
+      "key": "verify-address",
+      "term": "Dhibitisha anwani",
+      "explanation": "Thibitisha kuwa anwani inalingana na mpokeaji aliyekusudiwa.",
+      "notes": ""
+    },
+    {
+      "key": "verify-amount",
+      "term": "Dhibitisha kiwango",
+      "explanation": "Thibitisha kuwa kiasi cha malipo ni sahihi.",
+      "notes": ""
+    },
+    {
+      "key": "tamper-check",
+      "term": "Ukaguzi wa uingiliaji",
+      "explanation": "Mchakato wa kuthibitisha uadilifu wa kifaa.",
+      "notes": ""
+    },
+    {
+      "key": "stateless-device",
+      "term": "Stateless Device",
+      "explanation": "Kitengo cha maunzi kilichoundwa ili kufuta kabisa data na funguo zote za kriptografia kutoka kwenye kumbukumbu yake wakati nishati inakatwa.",
+      "notes": ""
+    },
+    {
+      "key": "calculate-checksum",
+      "term": "Piga hesabu ya Checksum",
+      "explanation": "Hatua ya mwisho ya uthibitishaji wa hisabati inahitajika ili kukokotoa neno mahususi la kishazi cha kurejesha uwezo wa kufikia matokeo.",
+      "notes": ""
+    },
+    {
+      "key": "brightness",
+      "term": "Kiwango cha Mwangaza",
+      "explanation": "Mipangilio inayotumiwa kurekebisha usikivu wa mwanga ili lenzi ya kifaa iweze kupiga picha lengwa kwa usahihi.",
+      "notes": ""
+    },
+    {
+      "key": "unsigned-psbt",
+      "term": "PSBT ambayo haikutiwa sahihi",
+      "explanation": "Faili ya data ya Muamala wa Bitcoin iliyotiwa Saini kwa Kiasi inayongoja uidhinishaji wa nje ya mtandao kutoka kwa funguo kuu za kibinafsi.",
+      "notes": ""
+    }
+  ],
+  "crypto-ecosystem": [
+    {
+      "key": "cryptocurrency",
+      "term": "Sarafu ya Crypto/Kripto",
+      "explanation": "Pesa dijitali zimelindwa kwa kutumia kriptografia.",
+      "notes": ""
+    },
+    {
+      "key": "altcoin",
+      "term": "Altcoin",
+      "explanation": "Cryptocurrency yoyote isipokuwa Bitcoin. Mifano ni pamoja na Ethereum, Litecoin, na maelfu ya wengine.",
+      "notes": ""
+    },
+    {
+      "key": "token",
+      "term": "Token",
+      "explanation": "mali ya dijitali iliyotolewa kwenye jukwaa la blockchain.",
+      "notes": ""
+    },
+    {
+      "key": "all-time-high-ath",
+      "term": "All-Time High (ATH)",
+      "explanation": "Bei ya juu zaidi ambayo sarafu ya crypto mahususi imewahi kufikia katika historia yake.",
+      "notes": ""
+    },
+    {
+      "key": "all-time-low-atl",
+      "term": "All-Time Low (ATL)",
+      "explanation": "Bei ya chini kabisa ambayo sarafu ya crypto imewahi kushuka katika historia yake.",
+      "notes": ""
+    },
+    {
+      "key": "smart-contract",
+      "term": "Smart Contract",
+      "explanation": "Msimbo wa blockchain unaojiendesha mwenyewe.",
+      "notes": ""
+    },
+    {
+      "key": "rug-pull",
+      "term": "Rug Pull",
+      "explanation": "Ulaghai ambapo waundaji wa mradi hutoweka na pesa za watumiaji.",
+      "notes": ""
+    },
+    {
+      "key": "fomo",
+      "term": "FOMO",
+      "explanation": "Hofu ya Kukosa - inayopelekea kuwekeza kwa msukumo.",
+      "notes": ""
+    },
+    {
+      "key": "hodl",
+      "term": "HODL",
+      "explanation": "Shikilia Maisha Mpendwa: Msamiati wa mtaani unaomaanisha kushikilia bitcoin kwa muda mrefu.",
+      "notes": ""
+    },
+    {
+      "key": "whale",
+      "term": "Whale",
+      "explanation": "Mtu au huluki inayoshikilia kiasi kikubwa sana cha sarafu za crypto.",
+      "notes": ""
+    },
+    {
+      "key": "bear-market",
+      "term": "Bear Market",
+      "explanation": "muda wa bei kuanguka",
+      "notes": ""
+    },
+    {
+      "key": "bull-market",
+      "term": "Bull Market",
+      "explanation": "muda wa bei kupanda",
+      "notes": ""
+    },
+    {
+      "key": "portfolio",
+      "term": "Jalada la uwekezaji",
+      "explanation": "jumla ya mali yote yanayomilikiwa",
+      "notes": ""
+    },
+    {
+      "key": "diversification",
+      "term": "Kuendeleza rasilimali/mseto",
+      "explanation": "Kueneza uwekezaji kwenye mali nyingi.",
+      "notes": ""
+    },
+    {
+      "key": "market-capitalization",
+      "term": "Jumla ya Thamani ya Soko/Mtaji wa soko",
+      "explanation": "Jumla ya thamani ya soko ya usambazaji wa mali.",
+      "notes": ""
+    },
+    {
+      "key": "liquidity-pool",
+      "term": "Liquidity Pool",
+      "explanation": "Fedha za pamoja zinazotumika kwa uuzaji uliogatuliwa",
+      "notes": ""
+    },
+    {
+      "key": "governance-token",
+      "term": "Token ya utawala",
+      "explanation": "Token inayotumika kupiga kura ndani ya mradi.",
+      "notes": ""
+    }
+  ],
+  "ui": [
+    {
+      "key": "continue",
+      "term": "Endelea",
+      "explanation": "endelea hadi hatua ifuatayo",
+      "notes": ""
+    },
+    {
+      "key": "confirm",
+      "term": "Thibitisha",
+      "explanation": "Idhinisha au thibitisha hatua",
+      "notes": ""
+    },
+    {
+      "key": "cancel",
+      "term": "Ghairi",
+      "explanation": "Sisitisha au toka kwenye hatua",
+      "notes": ""
+    },
+    {
+      "key": "back",
+      "term": "Nyuma",
+      "explanation": "Rudi hadi skrini ya nyuma",
+      "notes": ""
+    },
+    {
+      "key": "next",
+      "term": "Ifuatayo",
+      "explanation": "Endelea hadi skrini ifuatayo",
+      "notes": ""
+    },
+    {
+      "key": "finish",
+      "term": "Maliza",
+      "explanation": "Maliza mchakato",
+      "notes": ""
+    },
+    {
+      "key": "save",
+      "term": "Hifadhi",
+      "explanation": "Hifadhi ujumbe",
+      "notes": ""
+    },
+    {
+      "key": "delete",
+      "term": "Futa",
+      "explanation": "Toa ujumbe kabisa",
+      "notes": ""
+    },
+    {
+      "key": "edit",
+      "term": "Rekebisha",
+      "explanation": "Rekebisha ujumbe uliopo",
+      "notes": ""
+    },
+    {
+      "key": "retry",
+      "term": "Jaribu tena",
+      "explanation": "Jaribu tena hatua",
+      "notes": ""
+    },
+    {
+      "key": "refresh",
+      "term": "Jaribu upya",
+      "explanation": "Sasisha ujumbe uliopo",
+      "notes": ""
+    },
+    {
+      "key": "enable",
+      "term": "Wezesha",
+      "explanation": "Wezesha kipengee",
+      "notes": ""
+    },
+    {
+      "key": "disable",
+      "term": "Lemaza",
+      "explanation": "Lemaza kipengee",
+      "notes": ""
+    },
+    {
+      "key": "connect",
+      "term": "Unganisha",
+      "explanation": "Unganisha muunganisho",
+      "notes": ""
+    },
+    {
+      "key": "disconnect",
+      "term": "Tenganisha",
+      "explanation": "Tenganisha muunganisho",
+      "notes": ""
+    },
+    {
+      "key": "sync",
+      "term": "Landanisha",
+      "explanation": "Landanisha data",
+      "notes": ""
+    },
+    {
+      "key": "loading",
+      "term": "Inapakia",
+      "explanation": "Maudhui yanachakatwa au kurejeshwa",
+      "notes": ""
+    },
+    {
+      "key": "processing",
+      "term": "Inachakata",
+      "explanation": "Mfumo unamaliza mchakato",
+      "notes": ""
+    },
+    {
+      "key": "success",
+      "term": "Imefaulu",
+      "explanation": "Hatua imefanyika kwa ukamilifu",
+      "notes": ""
+    },
+    {
+      "key": "error",
+      "term": "Hitilafu",
+      "explanation": "Hitilafu imetokea",
+      "notes": ""
+    },
+    {
+      "key": "warning",
+      "term": "Tahadhirisho",
+      "explanation": "Tahadhari kuhusu hatari inayoweza kutokea",
+      "notes": ""
+    },
+    {
+      "key": "information",
+      "term": "Ujumbe",
+      "explanation": "Ujumbe wa jumla",
+      "notes": ""
+    },
+    {
+      "key": "settings",
+      "term": "Mipangilio",
+      "explanation": "Chaguo ya mipangilio kwa programu tumizi",
+      "notes": ""
+    },
+    {
+      "key": "advanced-settings",
+      "term": "Mipangilio ya ziada",
+      "explanation": "Chaguo ya mipangilio ya ziada kwa watumiaji mahiri",
+      "notes": ""
+    },
+    {
+      "key": "security-settings",
+      "term": "Mipangilio ya usalama",
+      "explanation": "Mipangilio inayohusiana na akaunti au usalama wa pochi",
+      "notes": ""
+    },
+    {
+      "key": "language",
+      "term": "Lugha",
+      "explanation": "Chaguo la lugha ya kiole sura",
+      "notes": ""
+    },
+    {
+      "key": "currency",
+      "term": "Sarafu",
+      "explanation": "Kitengo cha sarafu iliyochaguliwa",
+      "notes": ""
+    },
+    {
+      "key": "search",
+      "term": "Tafuta",
+      "explanation": "Tafuta ujumbe ndani ya programu tumizi",
+      "notes": ""
+    },
+    {
+      "key": "filter",
+      "term": "Chuja",
+      "explanation": "Punguza matokeo yaliyoonyeshwa",
+      "notes": ""
+    },
+    {
+      "key": "scan",
+      "term": "Skani",
+      "explanation": "Tumia kamera au kisoma kadi kudaka maelezo",
+      "notes": ""
+    },
+    {
+      "key": "upload",
+      "term": "Pakia",
+      "explanation": "Tuma faili au picha kwa programu tumizi",
+      "notes": ""
+    },
+    {
+      "key": "download",
+      "term": "Pakua",
+      "explanation": "Hifadhi ujumbe kutoka kwa programu tumizi hadi kwa kifaa.",
+      "notes": ""
+    },
+    {
+      "key": "share",
+      "term": "Tuma",
+      "explanation": "Tuma ujumbe kwa mtumiaji mwingine au programu tumizi",
+      "notes": ""
+    },
+    {
+      "key": "clipboard",
+      "term": "Ubao nakili",
+      "explanation": "Hifadhi ya muda kwa ujumbe ulionakiliwa",
+      "notes": ""
+    },
+    {
+      "key": "copied",
+      "term": "Imenakiliwa",
+      "explanation": "Ujumbe umefanikiwa kunakiliwa",
+      "notes": ""
+    },
+    {
+      "key": "invalid-input",
+      "term": "Maelezo batili",
+      "explanation": "Ujumbe ulioingizwa ni batili",
+      "notes": ""
+    },
+    {
+      "key": "try-again",
+      "term": "Jaribu tena",
+      "explanation": "Rejelea hatua ya awali",
+      "notes": ""
+    },
+    {
+      "key": "required-field",
+      "term": "Sehemu inayohitajika",
+      "explanation": "Ujumbe unaohitajika kuingizwa kabla ya kuendelea",
+      "notes": ""
+    },
+    {
+      "key": "session-timeout",
+      "term": "Kipindi kimeisha muda",
+      "explanation": "kiotomaki tenganisha ambacho utokea ambapo mtumizi anachukua muda mrefu zaidi kujibu menyu ya USSD iliyotumwa.",
+      "notes": ""
+    },
+    {
+      "key": "dial-code-shortcode",
+      "term": "Msimbo wa kupiga simu",
+      "explanation": "Mchanganiko wa kipekee wa nambari na alama unaopigwa kwenye kibodi ili kufungua menyu ya pochi (kwa mfano *384#)",
+      "notes": ""
+    },
+    {
+      "key": "main-menu",
+      "term": "Menyu kuu",
+      "explanation": "Skrini kuu ya kwanza au eneo la mwanzo la mpangilio wa urambazaji wa programu.",
+      "notes": ""
+    }
+  ],
+  "wallet-ui": [
+    {
+      "key": "create-wallet",
+      "term": "Tengeneza Pochi",
+      "explanation": "Tengeneza pochi mpya",
+      "notes": ""
+    },
+    {
+      "key": "restore-existing-wallet",
+      "term": "Rejesha Pochi ya awali",
+      "explanation": "Rejesha pochi ya awali kutumia taarifa ya nakala rudufu.",
+      "notes": ""
+    },
+    {
+      "key": "create-backup",
+      "term": "Tengeneza nakala rudufu",
+      "explanation": "Hifadhi salama ujumbe wa kurejesha pochi.",
+      "notes": ""
+    },
+    {
+      "key": "verify-backup",
+      "term": "Thibitisha nakala rudufu",
+      "explanation": "Thibitisha ujumbe wa nakala rudufu ni sahihi.",
+      "notes": ""
+    },
+    {
+      "key": "wallet-created-successfully",
+      "term": "Pochi imetengenezwa kwa mafinikio",
+      "explanation": "Uthibitisho kuwa uundaji wa pochi umekamilika.",
+      "notes": ""
+    },
+    {
+      "key": "enter-seed-phrase",
+      "term": "Weka seed phrase",
+      "explanation": "Weka maneno ya siri ya kurejesha ufikiaji wa pochi.",
+      "notes": ""
+    },
+    {
+      "key": "invalid-pin",
+      "term": "Pini batili",
+      "explanation": "Ujumbe wa hitilafu unaoonyesha kuwa msimbo wa nambari uliowekwa sio sahihi.",
+      "notes": ""
+    },
+    {
+      "key": "incorrect-seed-phrase",
+      "term": "Seed phrase sio sahihi",
+      "explanation": "Maneno rejeshi yaliyowekwa sio sahihi.",
+      "notes": ""
+    },
+    {
+      "key": "invalid-word",
+      "term": "Neno batili",
+      "explanation": "Neno lisilotambulika kwenye orodha ya Seed Phrase.",
+      "notes": ""
+    },
+    {
+      "key": "wrong-passphrase",
+      "term": "Nenosiri lisilo sahihi",
+      "explanation": "Nenosiri lisilo sahihi limewekwa.",
+      "notes": ""
+    },
+    {
+      "key": "wallet-locked",
+      "term": "Pochi imefungwa",
+      "explanation": "Uzuizi wa muda kwenye ufikiaji wa Pochi.",
+      "notes": ""
+    },
+    {
+      "key": "unlock-wallet",
+      "term": "Fungua Pochi",
+      "explanation": "Rejesha ufikiaji wa pochi.",
+      "notes": ""
+    },
+    {
+      "key": "confirm-transaction",
+      "term": "Thibitisha Muamala",
+      "explanation": "Angalia kisha thibitsha muamala.",
+      "notes": ""
+    },
+    {
+      "key": "review-details",
+      "term": "Pitia taarifa",
+      "explanation": "Angalia muamala au ujumbe wa pochi kwa uangalifu.",
+      "notes": ""
+    },
+    {
+      "key": "recipient-address",
+      "term": "Anwani Pokeaji",
+      "explanation": "Anwani inayopokea malipo.",
+      "notes": ""
+    },
+    {
+      "key": "sending-amount",
+      "term": "Kiasi kinachotumwa.",
+      "explanation": "Kiwango cha hela kinachotumwa.",
+      "notes": ""
+    },
+    {
+      "key": "remaining-balance",
+      "term": "Hifadhi iliyobaki",
+      "explanation": "Kiwango cha hela kilichobaki baada ya muamala kumalizika.",
+      "notes": ""
+    },
+    {
+      "key": "transaction-successful",
+      "term": "Muamala uliofanikiwa",
+      "explanation": "Muamala umefanikiwa kikamilifu.",
+      "notes": ""
+    },
+    {
+      "key": "transaction-failed",
+      "term": "Muamala ambao haujafaulu",
+      "explanation": "Muamala haujafinikiwa kumalizika",
+      "notes": ""
+    },
+    {
+      "key": "network-unavailable",
+      "term": "Mtandao usiopatikana",
+      "explanation": "Mtandao wa Intaneti au ufikiaji haupatikani.",
+      "notes": ""
+    },
+    {
+      "key": "syncing-wallet",
+      "term": "Inasawazisha pochi",
+      "explanation": "Pochi inasasisha ujumbe wa blockchain",
+      "notes": ""
+    },
+    {
+      "key": "generating-address",
+      "term": "Anwani inatengenezwa",
+      "explanation": "Tengeneza anwani mpya pokezi",
+      "notes": ""
+    },
+    {
+      "key": "address-copied",
+      "term": "Anwani imenakiliwa",
+      "explanation": "Anwani ya pochi imenakiliwa kikamilifu.",
+      "notes": ""
+    },
+    {
+      "key": "qr-code-detected",
+      "term": "Msimbo wa QR umengunduliwa",
+      "explanation": "Msimbo wa QR umechanganuliwa kikamilifu.",
+      "notes": ""
+    },
+    {
+      "key": "camera-permission-required",
+      "term": "Ruhusa ya kutumia kamera inahitajika",
+      "explanation": "Programu inahitaji ufikiaji wa kamera",
+      "notes": ""
+    },
+    {
+      "key": "enable-notifications",
+      "term": "Wezesha taarifa",
+      "explanation": "Wezesha arifa na taarifa.",
+      "notes": ""
+    },
+    {
+      "key": "backup-reminder",
+      "term": "Kumbusho la kuhifadhi chelezo",
+      "explanation": "Kikumbusho cha kuhifadhi ujumbe wa urejeshaji",
+      "notes": ""
+    },
+    {
+      "key": "low-balance",
+      "term": "Salio ndogo",
+      "explanation": "Huenda salio la pochi halitoshi",
+      "notes": ""
+    },
+    {
+      "key": "fee-estimate",
+      "term": "Makadirio ya ada",
+      "explanation": "Makadirio ya ada ya muamala",
+      "notes": ""
+    },
+    {
+      "key": "recommended-fee",
+      "term": "Ada iliyopendekezwa",
+      "explanation": "Kiwango cha ada ya muamala kilichopendekezwa",
+      "notes": ""
+    },
+    {
+      "key": "export-backup",
+      "term": "Safirisha chelezo",
+      "explanation": "Hifadhi habari chelezo nje",
+      "notes": ""
+    },
+    {
+      "key": "import-backup",
+      "term": "Ingiza chelezo",
+      "explanation": "Pakia habari ya chelezo kwenye pochi.",
+      "notes": ""
+    },
+    {
+      "key": "connect-hardware-wallet",
+      "term": "Unganisha pochi maunzi",
+      "explanation": "Oanisha pochi maunzi.",
+      "notes": ""
+    },
+    {
+      "key": "device-connected",
+      "term": "Kifaa kimeunganishwa",
+      "explanation": "Pochi maunzi imeunganishwa kikamilifu.",
+      "notes": ""
+    },
+    {
+      "key": "device-disconnected",
+      "term": "Kifaa kimekatishwa",
+      "explanation": "Muunganisho wa pochi maunzi umepotea",
+      "notes": ""
+    },
+    {
+      "key": "firmware-update",
+      "term": "Sasisho la firmware",
+      "explanation": "Usasishaji wa kifaa cha kuendesha programu.",
+      "notes": ""
+    },
+    {
+      "key": "verify-on-device",
+      "term": "Thibitisha kwenye kifaa",
+      "explanation": "Thibitisha maelezo moja kwa moja kwenye kifaa cha maunzi",
+      "notes": ""
+    }
+  ],
+  "advanced-bitcoin": [
+    {
+      "key": "soft-fork",
+      "term": "Soft fork",
+      "explanation": "Maboresho ya programu ya bitcoin ambayo huleta sheria mpya ,lakini bado inaruhusu nodi za zamani kuendelea kufanya kazi bila mtandao kugawanyika",
+      "notes": ""
+    },
+    {
+      "key": "hard-fork",
+      "term": "Hard fork",
+      "explanation": "Maboresho ya programu ya Bitcoin ambayo yanabadilisha kabisa sheria za mtandao ambazo haziambatani na sheria zilizokueko",
+      "notes": ""
+    },
+    {
+      "key": "taproot",
+      "term": "Tap root",
+      "explanation": "Aina ya soft fork inayowezeswha kuboresha faragha kwa njia rahisi katika mtandao wa bitcoin",
+      "notes": ""
+    },
+    {
+      "key": "segwit",
+      "term": "Segwit",
+      "explanation": "Njia inayowezesha uboreshaji wa kufanya muamala kwa njia rahisi.",
+      "notes": ""
+    },
+    {
+      "key": "bech32-address",
+      "term": "Bech32 Address",
+      "explanation": "Anwani ya bitcoin ya kisasa ambayo huanza na bc1",
+      "notes": ""
+    },
+    {
+      "key": "legacy-address",
+      "term": "Anwani urithi",
+      "explanation": "Mfumo wa zamani wa anwani za Bitcoin",
+      "notes": ""
+    },
+    {
+      "key": "script",
+      "term": "Hati",
+      "explanation": "Masharti ya programu yanayotumika kwenye mtandao wa Bitcoin kuthibitisha matumizi ya Bitcoin.",
+      "notes": ""
+    },
+    {
+      "key": "witness-data",
+      "term": "Data ya Ushahidi",
+      "explanation": "Data ya ushahidi kwenye bitcoin inayotambulishwa na SegWit yenye saini za siri na funguo za umma zinazothibitisha umiliki wa miamala",
+      "notes": ""
+    },
+    {
+      "key": "block-reward",
+      "term": "Tuzo la block",
+      "explanation": "Kiasi cha bitcoin kinachotolewa kwa wachimbaji kama motisha wa kuhakiki miamala na ada zake.",
+      "notes": ""
+    },
+    {
+      "key": "coinbase-transaction",
+      "term": "Muamala wa Coinbase",
+      "explanation": "Muamala wa kwanza katika block mpya iliyochimbwa unaotumika kulipa mchimbaji.",
+      "notes": ""
+    },
+    {
+      "key": "dust",
+      "term": "Dust",
+      "explanation": "Kiasi kidogo cha bitcoin ambacho kinagharimu zaidi kutumia kuliko thamani yake.",
+      "notes": ""
+    },
+    {
+      "key": "dust-limit",
+      "term": "Kikomo cha dust",
+      "explanation": "Kiwango cha chini zaidi cha muamala/sarafu kinachoweza kutumika",
+      "notes": ""
+    },
+    {
+      "key": "time-lock",
+      "term": "Time lock",
+      "explanation": "Muda wa kusubiri/kuzuiwa kwa miamala/akaunti kutokana na usalama, sheria au msongamano wa mtandao.",
+      "notes": ""
+    },
+    {
+      "key": "multi-path-payment",
+      "term": "Malipo yenye njia mbalimbali",
+      "explanation": "Njia ya malipo kwa mtandao wa lightning iliyogawanywa kwa viwango vidogo vya malipo.",
+      "notes": ""
+    },
+    {
+      "key": "fee-bumping",
+      "term": "Uongezaji ada",
+      "explanation": "Njia ya uongezaji ada ya muamala baada ya kutuma.",
+      "notes": ""
+    },
+    {
+      "key": "replaceable-transaction",
+      "term": "Muamala unaoweza kubadilishwa",
+      "explanation": "Kipengele kinachokuwezesha kubadilisha muamala uliokwama kabla ya kuthibitishwa na mtandao kwa kuutuma upya ukiwa na ada kubwa zaidi",
+      "notes": ""
+    },
+    {
+      "key": "confirmation-target",
+      "term": "Confirmation Target",
+      "explanation": "Idadi ya bloku au muda unaotaka muamala wako uchukue ili uthibitishwe na kuingizwa kwenye mtandao",
+      "notes": ""
+    },
+    {
+      "key": "blockchain-explorer",
+      "term": "Kichunguzi cha Blockchain",
+      "explanation": "Tovuti au ala inayoangalia data za blockchain",
+      "notes": ""
+    },
+    {
+      "key": "merkle-tree",
+      "term": "Merkle Tree",
+      "explanation": "Muundo wa kriptografia unaopanga miamala kwenye block",
+      "notes": ""
+    },
+    {
+      "key": "timestamp",
+      "term": "Muhuri wa muda",
+      "explanation": "Muda uliorekodiwa unaohusiana na data za blockchain.",
+      "notes": ""
+    },
+    {
+      "key": "reorg",
+      "term": "Reorg/ Panga tena",
+      "explanation": "Marekebisho ya historia ya blockchain ya muda.",
+      "notes": ""
+    },
+    {
+      "key": "final-settlement",
+      "term": "Malipo ya Mwisho",
+      "explanation": "Malipo ambayo yanazingatiwa kuwa yamekamilika kabisa.",
+      "notes": ""
+    }
+  ]
+}
